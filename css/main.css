@@ -665,8 +665,7 @@ a.tile:hover {
     max-width: 100%;
     float: left; }
     .nav .logo img {
-      max-width: 200px;
-      padding-top: 5px; }
+      max-width: 150px; }
   .nav .primary {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
