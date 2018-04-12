@@ -1,0 +1,87 @@
+<doctype html>
+<head>
+    <title>Project Title</title>
+    <!-- main -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon@32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon@16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e205d">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <!-- links & scripts -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+    <script type="text/javascript"src="js/gradient.js"></script>
+    <script type="text/javascript"src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
+</head>
+<body>
+    
+
+<div id="landing-hero" class="row primary-gradient full-width lg-hero">
+    <div id="nav" class="nav nav-scrolled"></div>
+    <div class="row full-width centered-text" style="background-image: url(/assets/img/bg-wave-white.svg); background-repeat: no-repeat; background-position: bottom; background-size: 105%;">
+        <div class="row full-width full-height header-image" style="background-image: url(assets/img/bg-header1.svg); margin-top: -5%;">
+            <div class="center-align">
+                <h1 class="primary-color sm-padding">Project Name</h1>
+                <h3>Client Name Here</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="" style="background-image: url(assets/img/bg-1.svg); background-repeat: no-repeat; background-position: 100% 5%; background-size: 50%;">
+    <div class="row md-section max-width">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 sm-padding center-align centered-on-sm">
+            <h4>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</h4>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+            <img class="full-width" src="assets/img/projects/logo-royaldigits.png"/>
+        </div>
+    </div>
+    <div class="row md-section max-width">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 sm-padding center-align centered-on-sm">
+            <img class="full-width" src="assets/img/projects/logo-royaldigits.png"/>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+            <img class="full-width" src="assets/img/square.png"/>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+    
+<script>
+    $("#nav").load("closet/header.html");
+    $("#footer").load("closet/footer.html");
+</script>
+<script>    
+//navigation scroll function
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= $('#landing-hero').outerHeight()) {
+      $("#nav").addClass("nav-scrolled");
+      //$("#bump").addClass("nav-padding");
+    } else {
+      $("#nav").removeClass("nav-scrolled");
+      //$("#bump").removeClass("nav-padding");
+    }
+  });
+</script>
+<script>
+//add active class to current link
+$(function(){
+    var current = location.pathname;
+    $('#nav a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
+})
+</script>
+        
+</body>
+</doctype>
