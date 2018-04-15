@@ -143,6 +143,10 @@ $name: xs;
   order: 1;
 }
 
+.hide-on-#{$name} {
+  display: none;
+}
+
 
 @each $breakpoint in $flexboxgrid-breakpoints {
   $name: nth($breakpoint, 1);
