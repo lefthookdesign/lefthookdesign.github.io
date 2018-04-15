@@ -143,9 +143,7 @@ $name: xs;
   order: 1;
 }
 
-.hide-on-#{$name} {
-  display: none;
-}
+
 
 
 @each $breakpoint in $flexboxgrid-breakpoints {
@@ -198,15 +196,27 @@ $name: xs;
       text-align: right;
     }
 
+    .top {
+      @include align-items(flex-start);
+    }
+    
     .top-#{$name} {
       @include align-items(flex-start);
     }
 
+    .middle {
+      @include align-items(center);
+    }
+    
     .middle-#{$name} {
       @include align-items(center);
     }
 
     .bottom-#{$name} {
+      @include align-items(flex-end);
+    }
+    
+    .bottom {
       @include align-items(flex-end);
     }
 
@@ -224,6 +234,10 @@ $name: xs;
 
     .last-#{$name} {
       order: 1;
+    }
+    
+    .hide-on-#{$name} {
+      display: none;
     }
   }
 }
