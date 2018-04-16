@@ -3030,8 +3030,6 @@ input, textarea {
 
 /*button text*/
 .button-text {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
   padding: 5px;
   position: relative;
   top: 0;
@@ -3052,17 +3050,10 @@ input, textarea {
     top: 5px;
     padding-left: 0px; }
 
-.button-text:hover {
+.button-text:hover img {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  position: relative;
-  -ms-transform: translateY(-3px);
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px); }
-  .button-text:hover img {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    padding-left: 20px; }
+  padding-left: 20px; }
 
 /*button white*/
 .button-white {

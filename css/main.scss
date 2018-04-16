@@ -334,7 +334,6 @@ opacity: 1; /* Firefox */
 }
 /*button text*/
 .button-text {
-    @include transition;
     padding: 5px;
     position:relative;
     top:0;
@@ -355,10 +354,7 @@ opacity: 1; /* Firefox */
         top: 5px;
         padding-left: 0px;}
 }
-.button-text:hover{
-    @include transition;
-    @include rise;
-    
+.button-text:hover{  
     img {
         @include transition;
         padding-left: 20px;}
