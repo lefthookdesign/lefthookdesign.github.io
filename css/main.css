@@ -3030,8 +3030,8 @@ input, textarea {
 
 /*button text*/
 .button-text {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   padding: 5px;
   position: relative;
   top: 0;
@@ -3044,14 +3044,25 @@ input, textarea {
   margin-left: auto;
   margin-right: auto;
   color: #0bbcd4 !important; }
+  .button-text img {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    padding-left: 0px; }
 
 .button-text:hover {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   position: relative;
   -ms-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px); }
+  .button-text:hover img {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding-left: 20px; }
 
 /*button white*/
 .button-white {

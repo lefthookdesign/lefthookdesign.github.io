@@ -334,7 +334,7 @@ opacity: 1; /* Firefox */
 }
 /*button text*/
 .button-text {
-    @include slow-transition;
+    @include transition;
     padding: 5px;
     position:relative;
     top:0;
@@ -347,10 +347,22 @@ opacity: 1; /* Firefox */
     margin-left: auto;
     margin-right: auto;
     color: $teal-color !important;
+    
+    img {
+        @include transition;
+        position: relative;
+        display: inline-block;
+        top: 5px;
+        padding-left: 0px;}
 }
 .button-text:hover{
-    @include slow-transition;
-    @include rise;}
+    @include transition;
+    @include rise;
+    
+    img {
+        @include transition;
+        padding-left: 20px;}
+}
 
 /*button white*/
 .button-white {
