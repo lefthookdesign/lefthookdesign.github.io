@@ -285,8 +285,8 @@ a.tile:hover{
     margin: auto;
     text-align: center;
     background: none;
-    ul{
-      list-style: none;}
+    ul {
+        list-style: none;}
     .logo{
         @include transition;
         max-width: 100%;
@@ -298,11 +298,12 @@ a.tile:hover{
     .primary{
         @include transition;
         max-width: 100%;
+        float:right;
         text-align: right;}
 }
 .nav-scrolled{    
-    background: $primary-accent !important;
-    @include transition;}
+    @include transition;
+    background: $primary-accent !important;}
 
 
 /* inputs and buttons */
@@ -334,7 +335,6 @@ opacity: 1; /* Firefox */
 /*button text*/
 .button-text {
     @include slow-transition;
-    @include border-radius;
     padding: 5px;
     position:relative;
     top:0;
@@ -349,8 +349,7 @@ opacity: 1; /* Firefox */
     color: $teal-color !important;
 }
 .button-text:hover{
-    @include transition;
-    @include shadow-light;
+    @include slow-transition;
     @include rise;}
 
 /*button white*/

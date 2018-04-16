@@ -2993,12 +2993,13 @@ a.tile:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     max-width: 100%;
+    float: right;
     text-align: right; }
 
 .nav-scrolled {
-  background: #251b55 !important;
   -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  background: #251b55 !important; }
 
 /* inputs and buttons */
 input, textarea {
@@ -3031,10 +3032,6 @@ input, textarea {
 .button-text {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px;
   padding: 5px;
   position: relative;
   top: 0;
@@ -3049,12 +3046,8 @@ input, textarea {
   color: #0bbcd4 !important; }
 
 .button-text:hover {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  -webkit-box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
-  -moz-box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
-  -ms-box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
-  box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   position: relative;
   -ms-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
