@@ -3053,7 +3053,7 @@ input, textarea {
 .button-text:hover img {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  padding-left: 20px; }
+  padding-left: 10px; }
 
 /*button white*/
 .button-white {
