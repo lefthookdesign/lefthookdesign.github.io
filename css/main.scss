@@ -457,7 +457,8 @@ opacity: 1; /* Firefox */
     z-index: 2;
 }
 .wave-width {
-    width: 103%;}
+    width: 103%;
+    margin-top: 3px;}
 .rise{
     @include transition;}
 .rise:hover  {

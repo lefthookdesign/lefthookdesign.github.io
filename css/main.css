@@ -3196,7 +3196,8 @@ input, textarea {
   z-index: 2; }
 
 .wave-width {
-  width: 103%; }
+  width: 103%;
+  margin-top: 3px; }
 
 .rise {
   -webkit-transition: all .5s ease-in-out;
