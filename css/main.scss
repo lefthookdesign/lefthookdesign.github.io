@@ -430,6 +430,13 @@ opacity: 1; /* Firefox */
     background: #fff;
 }
 .card-title {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    padding: $sm;
+    color: #fff !important;
+}
+.card-title:hover {
     display: block;
     position: absolute;
     z-index: 2;
