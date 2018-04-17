@@ -655,3 +655,20 @@ i.material-icons {
 .oversized-right{
     @include oversized-right;}
 
+@media only screen and (min-device-width: 48em){
+    
+    h1 {
+      font-size: 3em;
+      font-weight: 200;}
+    h2 {
+      font-size: 2.27em;
+        font-weight: 200;}
+    h3 {
+      font-size: 1.214em/*1.999em*/;
+      font-weight: 800;
+      text-transform: uppercase;}
+    h4 {
+      font-size: 1.214em;
+      font-weight: 600;}
+    
+}
