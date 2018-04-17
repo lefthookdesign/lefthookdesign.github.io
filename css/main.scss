@@ -655,7 +655,7 @@ i.material-icons {
 .oversized-right{
     @include oversized-right;}
 
-@media only screen and (min-device-width: 48em){
+@media only screen and (max-device-width: 48em){
     
     h1 {
       font-size: 3em;

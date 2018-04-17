@@ -3482,7 +3482,7 @@ i.material-icons {
   -webkit-transform: rotate(10deg) scale(1.2);
   transform: rotate(10deg) scale(1.2); }
 
-@media only screen and (min-device-width: 48em) {
+@media only screen and (max-device-width: 48em) {
   h1 {
     font-size: 3em;
     font-weight: 200; }
