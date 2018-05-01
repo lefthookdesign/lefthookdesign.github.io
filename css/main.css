@@ -2825,7 +2825,7 @@ body {
   -webkit-font-smoothing: antialiased !important; }
 
 .footer {
-  background: #161641;
+  background: #fff;
   color: #d1c3e0;
   position: relative;
   z-index: 1; }
