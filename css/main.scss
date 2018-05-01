@@ -633,9 +633,11 @@ i.material-icons {
 
 /* sizes + transformations */
 .sm-max-width{
+    width: 86%;
     max-width:700px;
     margin: 0 auto;}
 .max-width{
+    width: 96%;
     max-width:1200px;
     margin: auto;}
 .half-width {
