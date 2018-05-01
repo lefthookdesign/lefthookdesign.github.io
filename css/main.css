@@ -68,8 +68,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  padding-right: 0;
+  padding-left: 0; }
 
 .row {
   box-sizing: border-box;
@@ -3278,8 +3278,10 @@ i.material-icons {
   height: calc(100vh);
   margin: auto; }
 
-.sm-hero a, .md-hero a, .lg-hero a {
-  color: #fff; }
+.sm-hero, .md-hero, .lg-hero {
+  min-height: 400px; }
+  .sm-hero a, .md-hero a, .lg-hero a {
+    color: #fff; }
 
 /* sections */
 .sm-section {
