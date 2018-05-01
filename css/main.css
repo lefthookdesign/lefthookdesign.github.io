@@ -3034,10 +3034,6 @@ input, textarea {
 
 /* items and misc styles */
 .card {
-  -webkit-box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
-  -moz-box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
-  -ms-box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
-  box-shadow: 0px 15px 30px rgba(209, 195, 224, 0.4);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;

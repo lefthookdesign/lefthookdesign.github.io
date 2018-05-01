@@ -433,7 +433,6 @@ opacity: 1; /* Firefox */
 
 /* items and misc styles */
 .card {
-    @include shadow-light;
     @include border-radius;
     background: #fff;
 }
