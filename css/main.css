@@ -2832,7 +2832,7 @@ a.tile:hover {
     display: inline-block;
     font-size: .8em;
     padding: 5px 10px;
-    opacity: 1; }
+    opacity: .6; }
   #nav .link:hover {
     font-size: .9em;
     opacity: 1; }
