@@ -437,6 +437,7 @@ opacity: 1; /* Firefox */
     background: #fff;
 }
 .card-title {
+    @include transition;
     display: none;
     position: absolute;
     z-index: 2;
@@ -444,6 +445,7 @@ opacity: 1; /* Firefox */
     color: #fff !important;
 }
 .card-title:hover {
+    @include transition;
     display: block;
     position: absolute;
     z-index: 2;
