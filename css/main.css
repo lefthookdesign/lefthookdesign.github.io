@@ -3040,7 +3040,7 @@ input, textarea {
   border-radius: 6px;
   background: #fff; }
 
-.card-title {
+.project-title {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   display: none;
@@ -3049,14 +3049,11 @@ input, textarea {
   padding: 10px;
   color: #fff !important; }
 
-.card-title:hover {
+.project-title:hover {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   display: block;
-  position: absolute;
-  z-index: 2;
-  padding: 10px;
-  color: #fff !important; }
+  background: rgba(37, 27, 80, 0.8); }
 
 .absolute {
   display: block;

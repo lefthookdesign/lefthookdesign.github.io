@@ -436,7 +436,7 @@ opacity: 1; /* Firefox */
     @include border-radius;
     background: #fff;
 }
-.card-title {
+.project-title {
     @include transition;
     display: none;
     position: absolute;
@@ -444,13 +444,10 @@ opacity: 1; /* Firefox */
     padding: $sm;
     color: #fff !important;
 }
-.card-title:hover {
+.project-title:hover {
     @include transition;
     display: block;
-    position: absolute;
-    z-index: 2;
-    padding: $sm;
-    color: #fff !important;
+    background: rgba(37,27,80,.8);
 }
 .absolute{
     display: block;
