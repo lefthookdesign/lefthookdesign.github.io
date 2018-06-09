@@ -3,9 +3,9 @@ $fonts: Montserrat, Open Sans, Helvetica, Arial, sans-serif;
 $radius: 6px;
 $button-radius: 50px;
 
-$shadow: 0px 20px 30px rgba(37,27,80,.1);
-$shadow-light: 0px 15px 30px rgba(209,195,224,.4);
-$shadow-dark: 0px 10px 30px rgba(0,0,0,.3);
+$shadow: 0px 13px 20px rgba(37,27,80,.15);
+$shadow-light: 0px 16px 20px rgba(209,195,224,.4);
+$shadow-dark: 0px 10px 20px rgba(0,0,0,.3);
 $xs: 5px;
 $sm: 10px;
 $md: 20px;
@@ -17,10 +17,10 @@ $primary-color: #2e205d;
 $primary-accent: #251b55;
 $secondary-color: #4f69b1;
 $teal-color:#0bbcd4;
-$secondary-accent: #d1c3e0;
-$light-grey-color: #f1eff2;
+$secondary-accent: #EAE1ED; //#d1c3e0;
+$light-grey-color: #FDFAFD;
 $dark-color: #161641;
-$grey-color: #787878;
+$grey-color: #66646F;
 
 * { padding: 0; margin: 0; }
 
@@ -46,6 +46,7 @@ $grey-color: #787878;
 /* fonts */
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 /* import grid */
 @import "flexboxgrid";
@@ -151,7 +152,7 @@ body {
     font: 100% $fonts;
     font-weight: 400;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.15;
     color: $primary-color;
     background: #fff;
     margin:0;
@@ -160,10 +161,13 @@ body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    -webkit-font-smoothing: antialiased !important;}
+    -webkit-font-smoothing: antialiased !important;
+    img {
+        line-height: 0;}
+}
 
 .footer{
-    background: #fff;
+    background: $light-grey-color;
     color: $secondary-accent;
     position: relative;
     z-index: 1;
@@ -185,7 +189,7 @@ body {
     z-index: 0;}
 .header-image{
     @include transition;
-    
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;}
 
@@ -202,7 +206,7 @@ body {
 /* text and headers */
 h1, h2, h3, h4 {
   color: $primary-accent;
-  margin: 1.3 0 0.5em;
+  margin: 0;
   font-weight:400;
   width: 100%;}
 h1 {
@@ -218,8 +222,27 @@ h3 {
 h4 {
   font-size: 1.414em;
   font-weight: 600;}
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: $primary-color;
+    opacity: .7;
+}
+.text-behind {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 14px;
+    z-index: -1;
+    color: $secondary-accent !important;
+}
 .sm-text {
   font-size: 0.707em !important;}
+.lg-text {
+    font-size: 3em;
+}
 .xl-text {
     font-size: 6em !important;}
 .centered-text {
@@ -239,10 +262,6 @@ a:hover {
     color: $secondary-color !important;}
 
 
-a.tile:hover{
-    @include rise;
-    @include transition;
-}
 
 /* nav bar */
 
@@ -284,7 +303,7 @@ a.tile:hover{
     width: 95%;
     margin: auto;
     text-align: center;
-    background: none;
+    background:'';
     ul {
         list-style: none;}
     .logo{
@@ -292,7 +311,7 @@ a.tile:hover{
         max-width: 100%;
         float: left;
         img{
-            max-width: 200px;
+            max-width: 30px;
             padding-top: 5px;}
     }
     .primary{
@@ -303,6 +322,7 @@ a.tile:hover{
 }
 .nav-scrolled{    
     @include transition;
+    @include shadow-light;
     background: $primary-accent !important;}
 
 
@@ -364,13 +384,13 @@ opacity: 1; /* Firefox */
 .button-white {
     @include slow-transition;
     @include button-radius;
-    @include shadow-light;
-    padding: 15px 50px;
+    padding: 12px 28px;
+    border: 1px solid $light-grey-color;
     position:relative;
     top:0;
     cursor: pointer;
-    font-weight: 800;
-    font-size: .9em;
+    font-weight: 700;
+    font-size: .8em;
     text-transform: uppercase;
     letter-spacing: .05em;
     display: inline-block;
@@ -380,20 +400,21 @@ opacity: 1; /* Firefox */
 }
 .button-white:hover{
     @include slow-transition;
-    @include shadow;
-    @include rise;}
+    @include shadow-light;
+    @include rise;
+    border: none;}
 
 /*button dark*/
 .button-secondary {
     @include slow-transition;
     @include button-radius;
     background: $secondary-color;
-    padding: 15px 50px;
+    padding: 12px 28px;
     position:relative;
     top:0;
     cursor: pointer;
     font-weight: 800;
-    font-size: .9em;
+    font-size: .8em;
     text-transform: uppercase;
     letter-spacing: .05em;
     display: inline-block;
@@ -409,15 +430,15 @@ opacity: 1; /* Firefox */
 /*button light/teal */
 .button {
     @include slow-transition;
-    @include teal-gradient;
+    @include primary-gradient;
     @include button-radius;
-    padding: 15px 50px;
+    padding: 12px 28px;
     position:relative;
     border: none;
     top:0;
     cursor: pointer;
-    font-weight: 800;
-    font-size: .9em;
+    font-weight: 600;
+    font-size: .8em;
     text-transform: uppercase;
     letter-spacing: .05em;
     display: inline-block;
@@ -426,7 +447,7 @@ opacity: 1; /* Firefox */
     color: #fff !important;
 }
 .button:hover{
-    @include shadow-dark;
+    @include shadow;
     @include slow-transition;
     @include rise;
     }
@@ -435,6 +456,35 @@ opacity: 1; /* Firefox */
 .card {
     @include border-radius;
     background: #fff;
+    position: relative;
+}
+.project {
+    .card {
+        @include border-radius;
+        @include transition;
+        .tile {
+            @include slow-transition;
+            @include border-radius;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: #fff;
+            h4 {
+                color: $secondary-color;}
+            h3 {
+                color: $secondary-accent;}
+        }
+    }
+    .card:hover {
+        @include slow-transition;
+        @include shadow;
+        @include rise;
+        .tile {
+            @include transition;
+            opacity: 1;
+        }
+    }
 }
 .project-title {
     @include transition;
@@ -446,6 +496,7 @@ opacity: 1; /* Firefox */
 }
 .project-title:hover {
     @include transition;
+    @include rise;
     display: block;
     background: rgba(37,27,80,.8);
 }
@@ -455,8 +506,8 @@ opacity: 1; /* Firefox */
     z-index: 2;
 }
 .wave-width {
-    width: 103%;
-    margin-top: 3px;}
+    width: 100%;
+}
 .rise{
     @include transition;}
 .rise:hover  {
@@ -477,6 +528,9 @@ i.material-icons {
     border-right: solid 2px rgba(0,0,0,.15);}
 .inline {
     display: inline-block !important;}
+.relative {
+    position: relative;
+}
 .circled {
     @include circle;}
 .shadow{
@@ -590,7 +644,7 @@ i.material-icons {
 /* margin lips */
 .lip-top{
     position: relative;
-    top: -200px !important;}
+    top: -100px !important;}
 .lip-bottom{
     position: relative;
     top: 100px !important;}
@@ -637,7 +691,7 @@ i.material-icons {
     margin: 0 auto;}
 .max-width{
     width: 96%;
-    max-width:1200px;
+    max-width:1120px;
     margin: auto;}
 .half-width {
 	width: 50%;

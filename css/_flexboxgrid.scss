@@ -59,7 +59,7 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
 
 @mixin flexboxgrid-sass-col-common {
   box-sizing: border-box;
-
+  
   // split @include flex(0, 0, auto) into individual props
   @include flex-grow(0);
   @include flex-shrink(0);
@@ -70,7 +70,6 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
 
   //padding-right: $half-gutter-width;
   //padding-left: $half-gutter-width;
-    min-height: 150px;
 }
 
 $name: xs;
