@@ -20,42 +20,36 @@
 </head>
 <body>
     
-<div id="landing-hero" class="primary-gradient full-width">
-    <div id="nav" class="nav"></div>
-    
-    <div class="sm-padding primary-color left-text" style="background-image: url(/assets/img/bg-wave-blue.svg); background-repeat: no-repeat; background-position: bottom; background-size: 105%;">
-        
-        <div class="row " style="background-image: url(assets/img/stars.svg); background-position: 50% 15%; background-repeat: no-repeat; background-size: 1200px;">
-            <div class="row sm-max-width xl-top-padding"><!--<h1 class="no-margin">Left Hook</h1>-->
-                <h2 class="no-margin white-color">Let's talk goals.</h2>
-                
-                <form name="contact" class="row" action="/closet/send-to-email.php" method="post" enctype="text/plain">
-                    <div class="col-xs-12 col-sm-6 col-md-6 xs-padding">
-                        <input type="text" name="name" placeholder="Name">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 xs-padding">
-                        <input type="email" name="email" placeholder="example@gmail.com">
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 xs-padding">
-                        <textarea style="width: 100%; height: 300px;" name="message" placeholder="Write your message here. Replies typically in ~3 business days..." maxlength="1000"></textarea>
-                    </div>
-                    <div class="col-xs-12 md-top-padding">
-                        <button type="submit" name="" class="button" style="min-width: 250px;">send</button>
-                    </div>
-                </form>
-            </div>   
+<div id="nav" class="nav nav-scrolled"></div>
+<div class="sm-padding primary-color left-text">
+    <div class="row sm-max-width xl-top-padding"><!--<h1 class="no-margin">Left Hook</h1>-->
+        <h2 class="sm-padding">Let's talk details.</h2>
+        <div class="md-top-padding">
+            <form name="contact" class="row" action="/closet/send-to-email.php" method="post" enctype="text/plain">
+                <div class="col-xs-12 col-sm-6 col-md-6 sm-padding">
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 sm-padding">
+                    <input type="email" name="email" placeholder="example@gmail.com">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 sm-padding">
+                    <textarea style="width: 100%; height: 240px;" name="message" placeholder="Write your message here. Replies typically in ~3 business days..." maxlength="1000"></textarea>
+                </div>
+                <div class="col-xs-12 md-top-padding centered-text">
+                    <button type="submit" name="" class="button">send</button>
+                </div>
+            </form>
         </div>
-        <div class="row full-width max-width" style="z-index: 3;margin-top: -160px;">  
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align">
-                <img class="full-width" src="assets/img/ufo.svg"/>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align" style="margin-bottom: 0; margin-top: auto;">
-                <img class="half-width" style="min-width: 200px; max-width: 400px;" src="assets/img/signs.svg"/>
-            </div>
-        </div>
+    </div>   
+</div>
+<div class="row lg-max-width">  
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align">
+        <img class="three-quarter-width" src="assets/img/ufo.png"/>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align" style="margin-bottom: 0; margin-top: auto;">
+        <img class="half-width" style="min-width: 200px; max-width: 400px;" src="assets/img/people-welcome-signs.png"/>
     </div>
 </div>
-
 <div id="footer"></div>
     
 <script>
@@ -67,10 +61,8 @@
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#landing-hero').outerHeight()) {
       $("#nav").addClass("nav-scrolled");
-      //$("#bump").addClass("nav-padding");
     } else {
-      $("#nav").removeClass("nav-scrolled");
-      //$("#bump").removeClass("nav-padding");
+      //$("#nav").removeClass("nav-scrolled");
     }
   });
 </script>
