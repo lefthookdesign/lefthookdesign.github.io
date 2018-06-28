@@ -2932,7 +2932,10 @@ input, textarea {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   border-radius: 50px;
-  background: #f05741;
+  background: -webkit-linear-gradient(left top, #f05741, #ec1a61);
+  background: -o-linear-gradient(right bottom, #f05741, #ec1a61);
+  background: -moz-linear-gradient(right bottom, #f05741, #ec1a61);
+  background: linear-gradient(to right bottom, #f05741, #ec1a61);
   padding: 15px 30px;
   position: relative;
   border: none;
@@ -2958,7 +2961,10 @@ input, textarea {
   -ms-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
-  background: #ec1a61; }
+  background: -webkit-linear-gradient(left top, #f05741, #f05741);
+  background: -o-linear-gradient(right bottom, #f05741, #f05741);
+  background: -moz-linear-gradient(right bottom, #f05741, #f05741);
+  background: linear-gradient(to right bottom, #f05741, #f05741); }
 
 /* items and misc styles */
 .card {

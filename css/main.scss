@@ -471,7 +471,11 @@ opacity: 1; /* Firefox */
 .button {
     @include slow-transition;
     @include button-radius;
-    background: $orange-color;
+    //background: $orange-color;
+    background: -webkit-linear-gradient(left top, $orange-color, $pink-color);
+    background: -o-linear-gradient(right bottom, $orange-color, $pink-color); 
+    background: -moz-linear-gradient(right bottom, $orange-color, $pink-color);
+    background: linear-gradient(to right bottom, $orange-color, $pink-color);
     padding: 15px 30px;
     position:relative;
     border: none;
@@ -490,7 +494,10 @@ opacity: 1; /* Firefox */
     @include shadow;
     @include slow-transition;
     @include rise;
-    background: $pink-color;
+    background: -webkit-linear-gradient(left top, $orange-color, $orange-color);
+    background: -o-linear-gradient(right bottom, $orange-color, $orange-color); 
+    background: -moz-linear-gradient(right bottom, $orange-color, $orange-color);
+    background: linear-gradient(to right bottom, $orange-color, $orange-color);
     }
 
 /* items and misc styles */
