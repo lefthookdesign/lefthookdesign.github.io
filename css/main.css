@@ -2723,24 +2723,13 @@ a:hover {
   top: 0px;
   left: 0px;
   z-index: 100000; }
-  #nav a {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    color: #fff;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase; }
-  #nav a:hover {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    color: #fff !important; }
   #nav .link {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     display: inline-block;
     font-size: .8em;
     padding: 5px 10px;
-    opacity: .6; }
+    opacity: .8; }
   #nav .link:hover {
     font-size: .9em;
     opacity: 1; }
@@ -2755,6 +2744,17 @@ a:hover {
   margin: auto;
   text-align: center;
   background: ''; }
+  .nav a {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .nav a:hover {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #fff !important; }
   .nav ul {
     list-style: none; }
   .nav .logo {
@@ -2794,7 +2794,7 @@ a:hover {
   .nav-scrolled a:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    color: #4f69b1 !important; }
+    color: #ec1a61 !important; }
 
 #close {
   position: fixed;

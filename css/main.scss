@@ -290,22 +290,13 @@ a:hover {
     top: 0px;
     left: 0px;
     z-index: 100000;
-    a{
-        @include transition;
-        color: $white-color;
-        font-weight: 800;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        }
-    a:hover {
-        @include transition;
-        color: $white-color !important;}
+    
     .link{
         @include transition;
         display: inline-block;
         font-size: .8em;
         padding: $xs $sm;
-        opacity: .6;}
+        opacity: .8;}
     .link:hover{
         font-size: .9em;
         opacity: 1;}
@@ -320,7 +311,16 @@ a:hover {
     margin: auto;
     text-align: center;
     background:'';
-    
+    a{
+        @include transition;
+        color: $white-color;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        }
+    a:hover {
+        @include transition;
+        color: $white-color !important;}
     ul {
         list-style: none;}
     .logo{
@@ -356,7 +356,7 @@ a:hover {
         }
     a:hover {
         @include transition;
-        color: $secondary-color !important;}
+        color: $pink-color !important;}
 }
 
 #close {
