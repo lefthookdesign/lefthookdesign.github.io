@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-* {
+*, ::before, ::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
@@ -2577,7 +2577,8 @@ body {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased !important; }
   body img {
-    line-height: 0; }
+    line-height: 0;
+    vertical-align: bottom; }
 
 .footer {
   background: -webkit-linear-gradient(left top, #2e205d, #161641);
@@ -2618,10 +2619,10 @@ body {
   background: linear-gradient(to right bottom, #2e205d, #161641); }
 
 .primary-white-gradient {
-  background: -webkit-linear-gradient(left top, #251b55, rgba(255, 255, 255, 0));
-  background: -o-linear-gradient(right bottom, #251b55, rgba(255, 255, 255, 0));
-  background: -moz-linear-gradient(right bottom, #251b55, rgba(255, 255, 255, 0));
-  background: linear-gradient(to right bottom, #251b55, rgba(255, 255, 255, 0)); }
+  background: -webkit-linear-gradient(165deg, #251b55, rgba(37, 27, 80, 0.25));
+  background: -o-linear-gradient(165deg, #251b55, rgba(37, 27, 80, 0.25));
+  background: -moz-linear-gradient(165deg, #251b55, rgba(37, 27, 80, 0.25));
+  background: linear-gradient(165deg, #251b55, rgba(37, 27, 80, 0.25)); }
 
 .secondary-gradient {
   background: -webkit-linear-gradient(left top, #0bbcd4, #4f69b1);
@@ -2795,6 +2796,10 @@ a:hover {
     transition: all .5s ease-in-out;
     color: #4f69b1 !important; }
 
+#close {
+  position: fixed;
+  padding: 20px; }
+
 /* inputs and buttons */
 input, textarea {
   background: #FDFAFD;
@@ -2943,10 +2948,10 @@ input, textarea {
   color: #fff !important; }
 
 .button:hover {
-  -webkit-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  -moz-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  -ms-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
+  -webkit-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  -moz-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  -ms-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   position: relative;
@@ -2970,7 +2975,11 @@ input, textarea {
   -ms-border-radius: 6px;
   border-radius: 6px;
   -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0px 16px 20px rgba(209, 195, 224, 0.3);
+  -moz-box-shadow: 0px 16px 20px rgba(209, 195, 224, 0.3);
+  -ms-box-shadow: 0px 16px 20px rgba(209, 195, 224, 0.3);
+  box-shadow: 0px 16px 20px rgba(209, 195, 224, 0.3); }
   .project .card .tile {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
@@ -2991,10 +3000,10 @@ input, textarea {
 .project .card:hover {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -webkit-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  -moz-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  -ms-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
+  -webkit-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  -moz-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  -ms-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
   position: relative;
   -ms-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
@@ -3075,10 +3084,10 @@ i.material-icons {
   border-radius: 50%; }
 
 .shadow {
-  -webkit-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  -moz-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  -ms-box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15);
-  box-shadow: 0px 13px 20px rgba(37, 27, 80, 0.15); }
+  -webkit-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  -moz-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  -ms-box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12);
+  box-shadow: 0px 23px 28px rgba(37, 27, 80, 0.12); }
 
 .shadow-light {
   -webkit-box-shadow: 0px 16px 20px rgba(209, 195, 224, 0.3);
