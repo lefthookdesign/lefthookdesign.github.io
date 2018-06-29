@@ -272,7 +272,8 @@ a {
     color: $primary-color;
     font-weight: 600;
     font-size: inherit;
-    text-decoration: none;}
+    text-decoration: none;
+    cursor: pointer;}
 a:hover {
     @include slow-transition;
     color: $secondary-color !important;}
@@ -489,6 +490,8 @@ opacity: 1; /* Firefox */
     margin-left: auto;
     margin-right: auto;
     color: $white-color !important;
+    min-width: 200px;
+    text-align: center !important;
 }
 .button:hover{
     @include shadow;
