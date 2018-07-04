@@ -20,35 +20,40 @@
 </head>
 <body>
     
-<div id="nav" class="nav nav-scrolled"></div>
-<div class="sm-padding primary-color left-text">
-    <div class="row sm-max-width xl-top-padding"><!--<h1 class="no-margin">Left Hook</h1>-->
-        <h2 class="sm-padding">Let's talk details.</h2>
-        <div class="md-top-padding">
-            <form name="contact" class="row" action="/closet/send-to-email.php" method="post" enctype="text/plain">
-                <div class="col-xs-12 col-sm-6 col-md-6 sm-padding">
-                    <input type="text" name="name" placeholder="Name">
+<div id="nav" class="nav"></div>
+<div class="lg-hero primary-gradient" >
+    <div class="md-padding full-width full-height row middle center-xs bg-image" style="background-image: url(assets/img/wave-header.svg); background-repeat: no-repeat; background-position: top; z-index: 1;"><!--<h1 class="no-margin">Left Hook</h1>-->
+        <div class="col-xs-12 sm-max-width">
+            <h2 class="sm-padding white-color">Let's Talk</h2>
+            <h4 class="white-color opacity sm-top-padding">Send us a note with the important details, like an overview of your project or idea, what your goals are, and any questions you may have.</h4>
+            <div class="sm-max-width lg-top-padding">
+                <form name="contact" class="row" action="/closet/send-to-email.php" method="post" enctype="text/plain">
+                    <div class="col-xs-12 col-sm-6 col-md-6 sm-padding">
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 sm-padding">
+                        <input type="email" name="email" placeholder="name@gmail.com">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 sm-padding">
+                        <textarea style="width: 100%; min-height: 200px;" name="message" placeholder="Write your message here..." maxlength="2000"></textarea>
+                    </div>
+                    <div class="col-xs-12 md-top-padding centered-text">
+                        <button type="submit" name="" class="button-white">send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="absolute lg-max-width fixed" style="z-index: 0; bottom: 0;"> 
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align">
+                    <img class="full-width" style="max-width: 350px;" src="assets/img/ufo.png"/>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 sm-padding">
-                    <input type="email" name="email" placeholder="example@gmail.com">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align" style="margin-bottom: 0; margin-top: auto;">
+                    <img class="half-width" style="min-width: 200px; max-width: 250px;" src="assets/img/people-welcome-signs.png"/>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 sm-padding">
-                    <textarea style="width: 100%; height: 240px;" name="message" placeholder="Write your message here. Replies typically in ~3 business days..." maxlength="1000"></textarea>
-                </div>
-                <div class="col-xs-12 md-top-padding centered-text">
-                    <button type="submit" name="" class="button">send</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>   
-</div>
-<div class="row lg-max-width">  
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align">
-        <img class="three-quarter-width" src="assets/img/ufo.png"/>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 center-align" style="margin-bottom: 0; margin-top: auto;">
-        <img class="half-width" style="min-width: 200px; max-width: 400px;" src="assets/img/people-welcome-signs.png"/>
-    </div>
 </div>
 <div id="footer"></div>
     

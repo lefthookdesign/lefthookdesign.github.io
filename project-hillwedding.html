@@ -24,9 +24,9 @@
 <div id="landing-hero" class="full-width md-hero bg-image" style="background-image: url(assets/projects/wedding-hill/venue.jpg)"> 
     <div class="row full-width center-xs primary-white-gradient">
         <div id="close" class="row lg-max-width">
-            <a href="work.html"><div class="circled icon-60 sm-padding white-bg shadow"><img class="icon-40" src="assets/img/icon-close.svg" /></div></a>
+            <a onclick="goBack()"><div class="circled icon-60 sm-padding white-bg shadow"><img class="icon-40" src="assets/img/icon-close.svg" /></div></a>
         </div>
-        <div class="row full-width full-height middle center" style="background-image: url(/assets/img/wave-white.svg); background-repeat: no-repeat; background-position: bottom; background-size: 101%;">
+        <div class="row full-width full-height middle center-xs" style="background-image: url(/assets/img/wave-white.svg); background-repeat: no-repeat; background-position: bottom; background-size: 101%;">
             <div class="col-xs-12 col-sm-6">
                 <h1 class="sm-padding  white-color">Mr & Mrs Hill</h1>
                 <h3 class="white-color">Wedding Package</h3>
@@ -205,6 +205,11 @@ $(function(){
     })
 })
 </script>
-        
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+    
 </body>
 </doctype>

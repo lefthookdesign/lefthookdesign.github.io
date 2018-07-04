@@ -1,7 +1,7 @@
 var colors = new Array(
-    [240,87,65],
+    [11,9,53],
     [37,27,80],
-    [236,26,97],
+    [66,49,126], 
     [66,49,126]);
 
 var step = 0;
@@ -38,7 +38,7 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
 
  $('#gradient').css({
    background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
-    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+    background: "-moz-linear-gradient(left top, "+color1+" 0%, "+color2+" 100%)"});
   
   step += gradientSpeed;
   if ( step >= 1 )
