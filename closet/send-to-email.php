@@ -22,10 +22,10 @@ if(IsInjected($visitor_email))
 }
 
 $email_from = "$visitor_email";//<== update the email address
-$email_subject = "LeftHook Request/Comms";
+$email_subject = "LeftHook Project Inquiry";
 $email_body = "You received a new message from $name:\n".
     
-$to = "hthampton672@gmail.com";//<== update the email address
+$to = "hello@lefthook.design";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
