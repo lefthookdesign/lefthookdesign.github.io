@@ -2622,6 +2622,12 @@ body {
   background: -moz-linear-gradient(165deg, #251b55, rgba(37, 27, 80, 0.25));
   background: linear-gradient(165deg, #251b55, rgba(37, 27, 80, 0.25)); }
 
+.black-white-gradient {
+  background: -webkit-linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25));
+  background: -o-linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25));
+  background: -moz-linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)); }
+
 .secondary-gradient {
   background: -webkit-linear-gradient(left top, #0bbcd4, #4f69b1);
   background: -o-linear-gradient(right bottom, #0bbcd4, #4f69b1);
@@ -2829,6 +2835,52 @@ input, textarea {
   outline-color: #f05741;
   outline-offset: -2px;
   box-sizing: border-box; }
+
+/* fade in animation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.fade-in .one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+
+.fade-in .two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s; }
+
+.fade-in .three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s; }
 
 /*button text*/
 .button-text {
@@ -3394,7 +3446,7 @@ i.material-icons {
     font-weight: 200; }
 
   h2 {
-    font-size: 2.27em;
+    font-size: 2em;
     font-weight: 200; }
 
   h3 {

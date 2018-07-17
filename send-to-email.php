@@ -5,29 +5,29 @@ if(!isset($_POST['submit']))
 	echo "error; you need to submit the form!";
 }
 $name = $_POST['name'];
-$visitor_email = $_POST['email'];
+$email = $_POST['email'];
 $message = $_POST['message'];
 
 //Validate first
-if(empty($name)||empty($visitor_email)) 
+if(empty($name)||empty($email)) 
 {
     echo "Name and email are mandatory!";
     exit;
 }
 
-if(IsInjected($visitor_email))
+if(IsInjected($email))
 {
     echo "Bad email value!";
     exit;
 }
 
-$email_from = "$visitor_email";//<== update the email address
+$email_from = "$email";//<== update the email address
 $email_subject = "LeftHook Project Inquiry";
 $email_body = "You received a new message from $name:\n".
     
 $to = "hello@lefthook.design";//<== update the email address
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
+$headers .= "Reply-To: $email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
