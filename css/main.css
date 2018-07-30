@@ -2629,10 +2629,10 @@ body {
   background: linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)); }
 
 .secondary-gradient {
-  background: -webkit-linear-gradient(left top, #2e205d, #523);
-  background: -o-linear-gradient(right bottom, #2e205d, #523);
-  background: -moz-linear-gradient(right bottom, #2e205d, #523);
-  background: linear-gradient(to right bottom, #2e205d, #523); }
+  background: -webkit-linear-gradient(left top, #2e205d, #832e4a);
+  background: -o-linear-gradient(right bottom, #2e205d, #832e4a);
+  background: -moz-linear-gradient(right bottom, #2e205d, #832e4a);
+  background: linear-gradient(to right bottom, #2e205d, #832e4a); }
 
 .teal-gradient {
   background: -webkit-linear-gradient(left top, #5ecae7, #0bbcd4);
