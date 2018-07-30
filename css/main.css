@@ -3441,6 +3441,9 @@ i.material-icons {
   transform: rotate(10deg) scale(1.2); }
 
 @media only screen and (max-device-width: 48em) {
+  .bg-image {
+    background-attachment: scroll; }
+
   h1 {
     font-size: 3em;
     font-weight: 200; }

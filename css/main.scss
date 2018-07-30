@@ -852,7 +852,9 @@ i.material-icons {
     @include oversized-right;}
 
 @media only screen and (max-device-width: 48em){
-    
+    .bg-image {
+        background-attachment: scroll;
+    }
     h1 {
       font-size: 3em;
       font-weight: 200;}
