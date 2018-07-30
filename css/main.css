@@ -2810,7 +2810,7 @@ a:hover {
 
 /* inputs and buttons */
 input, textarea {
-  background: #FDFAFD;
+  background: #fff;
   color: #2e205d;
   font-size: 1.6em;
   line-height: 1.9em;
