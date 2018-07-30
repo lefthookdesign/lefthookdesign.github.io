@@ -390,6 +390,21 @@ input, textarea {
     padding: 10px 20px;
     width: 100%;
 }
+input .button-white {
+    background: $white-color;
+    padding: 15px 28px;
+    position:relative;
+    top:0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    color: $orange-color !important;
+}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 color: $secondary-color;
