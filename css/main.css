@@ -2815,7 +2815,7 @@ input, textarea {
   font-size: 2em;
   line-height: 2em;
   border: none;
-  padding: 10px 30px;
+  padding: 5px 30px;
   width: 100%; }
 
 ::placeholder {
