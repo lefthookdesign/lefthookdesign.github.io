@@ -2629,10 +2629,10 @@ body {
   background: linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)); }
 
 .secondary-gradient {
-  background: -webkit-linear-gradient(left top, #d1c3e0, #4f69b1);
-  background: -o-linear-gradient(right bottom, #d1c3e0, #4f69b1);
-  background: -moz-linear-gradient(right bottom, #d1c3e0, #4f69b1);
-  background: linear-gradient(to right bottom, #d1c3e0, #4f69b1); }
+  background: -webkit-linear-gradient(left top, #ec1a61, #4f69b1);
+  background: -o-linear-gradient(right bottom, #ec1a61, #4f69b1);
+  background: -moz-linear-gradient(right bottom, #ec1a61, #4f69b1);
+  background: linear-gradient(to right bottom, #ec1a61, #4f69b1); }
 
 .teal-gradient {
   background: -webkit-linear-gradient(left top, #5ecae7, #0bbcd4);
