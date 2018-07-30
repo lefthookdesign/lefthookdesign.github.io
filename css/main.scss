@@ -17,7 +17,7 @@ $primary-color: #2e205d;
 $primary-accent: #251b55;
 $secondary-color: #4f69b1;
 $teal-color:#0bbcd4;
-$secondary-accent: #EAE1ED; //#d1c3e0;
+$secondary-accent: #d1c3e0; //#EAE1ED;
 $light-grey-color: #FDFAFD;
 $dark-color: #161641;
 $grey-color: #A6A3B7;
@@ -382,8 +382,8 @@ a:hover {
 input, textarea {
     background: $white-color;
     color: $primary-color;
-    font-size: 1.6em;
-    line-height: 1.9em;
+    font-size: 2em;
+    line-height: 2.5em;
     border: none;
     text-indent: 5px;
     font: inherit;
@@ -392,12 +392,12 @@ input, textarea {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-color: $secondary-color;
+color: $secondary-accent;
 opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $secondary-color;
+    color: $secondary-accent;
 }
 :focus {
     outline: -webkit-focus-ring-color auto;

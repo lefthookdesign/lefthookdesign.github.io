@@ -25,10 +25,10 @@
   background: #4f69b1; }
 
 .secondary-accent-color {
-  color: #EAE1ED; }
+  color: #d1c3e0; }
 
 .secondary-accent-bg {
-  background: #EAE1ED; }
+  background: #d1c3e0; }
 
 .light-grey-color {
   color: #FDFAFD; }
@@ -2582,7 +2582,7 @@ body {
   background: -o-linear-gradient(right bottom, #2e205d, #161641);
   background: -moz-linear-gradient(right bottom, #2e205d, #161641);
   background: linear-gradient(to right bottom, #2e205d, #161641);
-  color: #EAE1ED !important;
+  color: #d1c3e0 !important;
   position: relative;
   z-index: 1; }
   .footer a {
@@ -2685,7 +2685,7 @@ p {
   margin-top: -20px;
   margin-left: 14px;
   z-index: -1;
-  color: #EAE1ED !important; }
+  color: #d1c3e0 !important; }
 
 .sm-text {
   font-size: 0.707em !important; }
@@ -2812,8 +2812,8 @@ a:hover {
 input, textarea {
   background: #fff;
   color: #2e205d;
-  font-size: 1.6em;
-  line-height: 1.9em;
+  font-size: 2em;
+  line-height: 2.5em;
   border: none;
   text-indent: 5px;
   font: inherit;
@@ -2822,13 +2822,13 @@ input, textarea {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #4f69b1;
+  color: #d1c3e0;
   opacity: 1;
   /* Firefox */ }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #4f69b1; }
+  color: #d1c3e0; }
 
 :focus {
   outline: -webkit-focus-ring-color auto;
