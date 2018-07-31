@@ -21,7 +21,7 @@
 </head>
 <body>
 
-<div id="landing-hero">    
+<!--<div id="landing-hero">    
 <div id="" class="row secondary-gradient full-width xs-hero">
     <div id="nav" class="nav"></div>
     <div class="row middle-xs center-xs full-width full-height primary-color no-padding" style="background-image: url(/assets/img/wave-white2.svg); background-repeat: no-repeat; background-position: bottom; background-size: 102%;">
@@ -30,10 +30,11 @@
         </div>
     </div>
 </div>
-</div>
-
+</div>-->
+<div id="nav" class="nav nav-scrolled"></div>
 <div class="row max-width md-section middle-xs center-xs">
     <div class="col-xs-12 col-sm-10 col-md-8 lg-padding">
+        <h1 class="center-align md-padding lg-bottom-padding">Smart Design(ers)</h1>
         <h4 class="grey-color">Trained in the heart of Silicon Valley, and based in the beautiful Pacific Northwest.</h4><br>
         <h4 class="grey-color">We specialize in designing culturally compatible experiences and branding solutions.</h4><br>
         <h4 class="grey-color sm-top-padding">You hear us say "we" a lot. We work closely with our clients for months. We always have a lot of questions, and we strive for excellence on every project.<br><br>We're here to help<br>(and tell you there's no one-size-fits-all plan).</h4>
@@ -98,20 +99,20 @@
     </div>
 </div>
 <div id="footer"></div>
-><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>  
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>  
 <script>
     $("#nav").load("closet/header.html");
     $("#footer").load("closet/footer.html");
 </script>
 <script>    
 //navigation scroll function
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= $('#landing-hero').outerHeight() - 100) {
-      $("#nav").addClass("nav-scrolled");
-    } else {
-      $("#nav").removeClass("nav-scrolled");
-    }
-  });
+ // $(window).scroll(function() {
+ //   if ($(window).scrollTop() >= $('#landing-hero').outerHeight() - 100) {
+ //     $("#nav").addClass("nav-scrolled");
+ //   } else {
+ //     $("#nav").removeClass("nav-scrolled");
+ //   }
+ // });
 </script>
 <script>
 //add active class to current link
