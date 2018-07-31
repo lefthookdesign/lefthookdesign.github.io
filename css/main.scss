@@ -67,10 +67,10 @@ $pink-color: #ec1a61;
     background: -moz-linear-gradient(right bottom, $primary-color, $dark-color);
     background: linear-gradient(to right bottom, $primary-color, $dark-color);}
 @mixin primary-white-gradient {
-    background: -webkit-linear-gradient(165deg, $primary-accent, rgba(37,27,80,0.25));
-    background: -o-linear-gradient(165deg, $primary-accent, rgba(37,27,80,0.25)); 
-    background: -moz-linear-gradient(165deg, $primary-accent, rgba(37,27,80,0.25));
-    background: linear-gradient(165deg, $primary-accent, rgba(37,27,80,0.25));}
+    background: -webkit-linear-gradient(165deg, $primary-accent, rgba(131,46,74,0.25));
+    background: -o-linear-gradient(165deg, $primary-accent, rgba(131,46,74,0.25)); 
+    background: -moz-linear-gradient(165deg, $primary-accent, rgba(131,46,74,0.25));
+    background: linear-gradient(165deg, $primary-accent, rgba(131,46,74,0.25));}
 @mixin black-white-gradient {
     background: -webkit-linear-gradient(165deg, rgba(#000000, 0.8), rgba(0,0,0,0.25));
     background: -o-linear-gradient(165deg, rgba(#000000, 0.8), rgba(0,0,0,0.25)); 
