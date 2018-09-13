@@ -67,15 +67,15 @@ $pink-color: #ec1a61;
     background: -moz-linear-gradient(right bottom, $primary-color, $dark-color);
     background: linear-gradient(to right bottom, $primary-color, $dark-color);}
 @mixin primary-white-gradient {
-    background: -webkit-linear-gradient(165deg, $primary-accent, rgba($secondary-color,0.3));
-    background: -o-linear-gradient(165deg, $primary-accent, rgba($secondary-color,0.3)); 
-    background: -moz-linear-gradient(165deg, $primary-accent, rgba($secondary-color,0.3));
-    background: linear-gradient(165deg, $primary-accent, rgba($secondary-color,0.3));}
+    background: -webkit-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));
+    background: -o-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5)); 
+    background: -moz-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));
+    background: linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));}
 @mixin dark-transparent-gradient {
-    background: -webkit-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($dark-color,0.75));
-    background: -o-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($dark-color,0.75)); 
-    background: -moz-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($dark-color,0.75));
-    background: linear-gradient(165deg, rgba($primary-color, 0.85), rgba($dark-color,0.75));}
+    background: -webkit-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2));
+    background: -o-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2)); 
+    background: -moz-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2));
+    background: linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2));}
 @mixin secondary-gradient {
     background: -webkit-linear-gradient(left top, $primary-color, #832e4a);
     background: -o-linear-gradient(right bottom, $primary-color, #832e4a); 
@@ -234,7 +234,7 @@ h1, h2, h3, h4 {
   width: 100%; 
 }
 h1 {
-  font-size: 4.15em;
+  font-size: 4.5em;
   font-weight: 100;
   line-height: 1.2em !important;
   }
