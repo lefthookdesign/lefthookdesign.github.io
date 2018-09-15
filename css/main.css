@@ -2710,6 +2710,9 @@ p {
 .uppercase {
   text-transform: uppercase; }
 
+.bold {
+  font-weight: 600; }
+
 a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;

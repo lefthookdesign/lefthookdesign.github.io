@@ -281,6 +281,9 @@ p {
     text-align: left;}
 .uppercase{
     text-transform: uppercase;}
+.bold {
+    font-weight: 600;
+}
 a {
     @include transition;
     color: $primary-color;
