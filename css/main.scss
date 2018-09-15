@@ -3,9 +3,9 @@ $fonts: Montserrat, Open Sans, Helvetica, Arial, sans-serif;
 $radius: 6px;
 $button-radius: 50px;
 
-$shadow: 0px 15px 30px rgba(37,27,80,.1);
-$shadow-light: 0px 10px 20px rgba(110,146,247, .1);
-$shadow-dark: 0px 10px 20px rgba(22,22,65,.3);
+$shadow: 0px 5px 10px rgba(110,146,247,.1);
+$shadow-light: 0px 4px 5px rgba(110,146,247, .1);
+$shadow-dark: 0px 5px 10px rgba(22,22,65,.2);
 $xs: 5px;
 $sm: 10px;
 $md: 20px;
@@ -13,13 +13,13 @@ $lg: 50px;
 $xl: 100px;
 
 
-$primary-color: #2e205d;
-$primary-accent: #A19CB1;
+$primary-color: #1e1848;
+$primary-accent: #442F89;
 $secondary-color: #6E92F7;
 $teal-color:#0bbcd4;
 $secondary-accent: #d1c3e0; //#EAE1ED;
 $light-grey-color: #FDFAFD;
-$dark-color: #161641;
+$dark-color: #16141f;
 $grey-color: #A6A3B7;
 $white-color: #fff;
 $orange-color: #f05741;
@@ -72,10 +72,10 @@ $pink-color: #ec1a61;
     background: -moz-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));
     background: linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));}
 @mixin dark-transparent-gradient {
-    background: -webkit-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2));
-    background: -o-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2)); 
-    background: -moz-linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2));
-    background: linear-gradient(165deg, rgba($primary-color, 0.85), rgba($pink-color,0.2));}
+    background: -webkit-linear-gradient(165deg, rgba($primary-color, 0.9), rgba($primary-color,0.4));
+    background: -o-linear-gradient(165deg, rgba($primary-color, 0.9), rgba($primary-color,0.4)); 
+    background: -moz-linear-gradient(165deg, rgba($primary-color, 0.9), rgba($primary-color,0.4));
+    background: linear-gradient(165deg, rgba($primary-color, 0.9), rgba($primary-color,0.4));}
 @mixin secondary-gradient {
     background: -webkit-linear-gradient(left top, $primary-color, #832e4a);
     background: -o-linear-gradient(right bottom, $primary-color, #832e4a); 
@@ -353,14 +353,10 @@ a:hover {
 }
 .nav-scrolled{    
     @include transition;
-    @include shadow-light;
+    @include shadow;
     background: $white-color !important;
     .active {
-        color: $pink-color !important;
-    }
-    .button-secondary.active {
-        color: $white-color !important;
-        background: $pink-color;
+        color: $secondary-color !important;
     }
     .logo{
         @include transition;
@@ -373,15 +369,18 @@ a:hover {
     }
     a{
         @include transition;
-        color: $primary-accent;
+        color: $primary-accent !important;
         }
     a:hover {
         @include transition;
-        color: $pink-color !important;}
-    .button-secondary:hover {
-        @include transition;
+        color: $secondary-color !important;}
+    .button-secondary.active {
         color: $white-color !important;
         background: $pink-color;
+    }
+    .button-secondary {
+        @include transition;
+        color: $white-color !important;
     }
 }
 
@@ -395,6 +394,7 @@ input, textarea {
     background: $white-color;
     color: $primary-color;
     font-size: 2em;
+    font-weight: 100;
     line-height: 2em;
     border: none;
     padding: 5px 30px;
@@ -515,10 +515,10 @@ opacity: 1; /* Firefox */
 .button-secondary {
     @include slow-transition;
     @include button-radius;
-    background: -webkit-linear-gradient(left top, $secondary-color, $secondary-color);
-    background: -o-linear-gradient(right bottom, $secondary-color, $secondary-color); 
-    background: -moz-linear-gradient(right bottom, $secondary-color, $secondary-color);
-    background: linear-gradient(to right bottom, $secondary-color, $secondary-color);
+    background: -webkit-linear-gradient(left top, #517AFF, $secondary-color);
+    background: -o-linear-gradient(right bottom, #517AFF, $secondary-color); 
+    background: -moz-linear-gradient(right bottom, #517AFF, $secondary-color);
+    background: linear-gradient(to right bottom, #517AFF, $secondary-color);
     padding: 8px 20px !important;
     position:relative;
     top:0;
@@ -535,10 +535,10 @@ opacity: 1; /* Firefox */
 .button-secondary:hover{
     @include shadow-light;
     @include slow-transition;
-    background: -webkit-linear-gradient(left top, #517AFF, $secondary-color);
-    background: -o-linear-gradient(right bottom, #517AFF, $secondary-color); 
-    background: -moz-linear-gradient(right bottom, #517AFF, $secondary-color);
-    background: linear-gradient(to right bottom, #517AFF, $secondary-color);}
+    background: -webkit-linear-gradient(left top, #517AFF, #517AFF);
+    background: -o-linear-gradient(right bottom, #517AFF, #517AFF); 
+    background: -moz-linear-gradient(right bottom, #517AFF, #517AFF);
+    background: linear-gradient(to right bottom, #517AFF, #517AFF);}
 
 /*button */
 .button {
@@ -731,7 +731,15 @@ i.material-icons {
     text-align: right;}
 .no-padding{padding: 0 !important;}
 .no-margin{margin: 0 !important;}
-.no-bottom-padding {padding-bottom: 0 !important;}
+
+.no-top-padding{
+    padding-top: 0 !important;}
+.no-right-padding{
+    padding-right: 0 !important;}
+.no-bottom-padding{
+    padding-bottom: 0 !important;}
+.no-left-padding{
+    padding-left: 0 !important;}
 
 .xs-padding{
     padding: $xs; }
