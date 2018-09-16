@@ -59,10 +59,10 @@ $pink-color: #FF0068;
 
 /* mixins */
 @mixin primary-gradient {
-    background: -webkit-linear-gradient(left top, $primary-color, $primary-accent);
-    background: -o-linear-gradient(right bottom, $primary-color, $primary-accent); 
-    background: -moz-linear-gradient(right bottom, $primary-color, $primary-accent);
-    background: linear-gradient(to right bottom, $primary-color, $primary-accent);}
+    background: -webkit-linear-gradient(left top, $primary-accent, $primary-color);
+    background: -o-linear-gradient(right bottom, $primary-accent, $primary-color); 
+    background: -moz-linear-gradient(right bottom, $primary-accent, $primary-color);
+    background: linear-gradient(to right bottom, $primary-accent, $primary-color);}
 @mixin primary-white-gradient {
     background: -webkit-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));
     background: -o-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5)); 
