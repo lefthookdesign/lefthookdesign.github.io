@@ -2829,13 +2829,13 @@ input, textarea {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #E8E4F7;
+  color: #A6A3B7;
   opacity: 1;
   /* Firefox */ }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #E8E4F7; }
+  color: #A6A3B7; }
 
 :focus {
   outline: -webkit-focus-ring-color auto;
