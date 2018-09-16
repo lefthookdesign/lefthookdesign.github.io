@@ -2582,7 +2582,7 @@ body {
   .footer a {
     color: #FF0068; }
   .footer img {
-    opacity: .6;
+    opacity: .4;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
   .footer img:hover {
@@ -3156,7 +3156,7 @@ i.material-icons {
   top: 6px; }
 
 .lighter {
-  opacity: .6; }
+  opacity: .4; }
 
 .bottom-border {
   border-bottom: solid 1px #A6A3B7; }
@@ -3201,7 +3201,7 @@ i.material-icons {
   box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2); }
 
 .opacity {
-  opacity: .6; }
+  opacity: .4; }
 
 .border-radius {
   -webkit-border-radius: 6px;
