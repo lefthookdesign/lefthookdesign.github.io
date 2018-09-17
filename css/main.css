@@ -3466,7 +3466,7 @@ i.material-icons {
   -webkit-transform: rotate(10deg) scale(1.2);
   transform: rotate(10deg) scale(1.2); }
 
-@media only screen and (max-device-width: 48em) {
+@media only screen and (max-device-width: 1024px) {
   .bg-image {
     background-attachment: scroll; }
 

@@ -877,7 +877,10 @@ i.material-icons {
 .oversized-right{
     @include oversized-right;}
 
-@media only screen and (max-device-width: 48em){
+@media only screen and (max-device-width: 812px){
+    
+}
+@media only screen and (max-device-width: 1024px){
     .bg-image {
         background-attachment: scroll;
     }
