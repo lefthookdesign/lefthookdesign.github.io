@@ -13,10 +13,10 @@
   background: #1e1848; }
 
 .primary-accent-color {
-  color: #442F89; }
+  color: #202746; }
 
 .primary-accent-bg {
-  background: #442F89; }
+  background: #202746; }
 
 .secondary-color {
   color: #6B96FF; }
@@ -49,10 +49,10 @@
   background: #0FCFD7; }
 
 .dark-color {
-  color: #16141f; }
+  color: #0E0F34; }
 
 .dark-bg {
-  background: #16141f; }
+  background: #0E0F34; }
 
 .white-color {
   color: #fff; }
@@ -61,10 +61,10 @@
   background: #fff; }
 
 .pink-color {
-  color: #FF0068; }
+  color: #FF4080; }
 
 .pink-bg {
-  background: #FF0068; }
+  background: #FF4080; }
 
 /* fonts */
 /* import grid */
@@ -2572,15 +2572,15 @@ body {
     vertical-align: bottom; }
 
 .footer {
-  background: -webkit-linear-gradient(left top, #442F89, #1e1848);
-  background: -o-linear-gradient(right bottom, #442F89, #1e1848);
-  background: -moz-linear-gradient(right bottom, #442F89, #1e1848);
-  background: linear-gradient(to right bottom, #442F89, #1e1848);
+  background: -webkit-linear-gradient(left top, #202746, #1e1848);
+  background: -o-linear-gradient(right bottom, #202746, #1e1848);
+  background: -moz-linear-gradient(right bottom, #202746, #1e1848);
+  background: linear-gradient(to right bottom, #202746, #1e1848);
   color: #E8E4F7 !important;
   position: relative;
   z-index: 1; }
   .footer a {
-    color: #FF0068; }
+    color: #FF4080; }
   .footer img {
     opacity: .4;
     -webkit-transition: all .5s ease-in-out;
@@ -2605,10 +2605,10 @@ body {
   background-repeat: no-repeat; }
 
 .primary-gradient {
-  background: -webkit-linear-gradient(left top, #442F89, #1e1848);
-  background: -o-linear-gradient(right bottom, #442F89, #1e1848);
-  background: -moz-linear-gradient(right bottom, #442F89, #1e1848);
-  background: linear-gradient(to right bottom, #442F89, #1e1848); }
+  background: -webkit-linear-gradient(left top, #202746, #1e1848);
+  background: -o-linear-gradient(right bottom, #202746, #1e1848);
+  background: -moz-linear-gradient(right bottom, #202746, #1e1848);
+  background: linear-gradient(to right bottom, #202746, #1e1848); }
 
 .primary-white-gradient {
   background: -webkit-linear-gradient(165deg, rgba(255, 255, 255, 0.9), rgba(232, 228, 247, 0.5));
@@ -2635,14 +2635,14 @@ body {
   background: linear-gradient(to right bottom, #5ecae7, #0FCFD7); }
 
 .bright-gradient {
-  background: -webkit-linear-gradient(left top, #6B96FF, #FF0068);
-  background: -o-linear-gradient(right bottom, #6B96FF, #FF0068);
-  background: -moz-linear-gradient(right bottom, #6B96FF, #FF0068);
-  background: linear-gradient(to right bottom, #6B96FF, #FF0068); }
+  background: -webkit-linear-gradient(left top, #6B96FF, #FF4080);
+  background: -o-linear-gradient(right bottom, #6B96FF, #FF4080);
+  background: -moz-linear-gradient(right bottom, #6B96FF, #FF4080);
+  background: linear-gradient(to right bottom, #6B96FF, #FF4080); }
 
 /* text and headers */
 h1, h2, h3, h4 {
-  color: #442F89;
+  color: #202746;
   margin: 0;
   font-weight: 400;
   width: 100%; }
@@ -2799,14 +2799,14 @@ a:hover {
   .nav-scrolled a {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    color: #442F89 !important; }
+    color: #202746 !important; }
   .nav-scrolled a:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     color: #6B96FF !important; }
   .nav-scrolled .button-secondary.active {
     color: #fff !important;
-    background: #FF0068; }
+    background: #FF4080; }
   .nav-scrolled .button-secondary {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -2839,55 +2839,9 @@ input, textarea {
 
 :focus {
   outline: -webkit-focus-ring-color auto;
-  outline-color: #FF0068;
+  outline-color: #FF4080;
   outline-offset: -2px;
   box-sizing: border-box; }
-
-/* fade in animation */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-.fade-in {
-  opacity: 0;
-  /* make things invisible upon start */
-  -webkit-animation: fadeIn ease-in 1;
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s; }
-
-.fade-in .one {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s; }
-
-.fade-in .two {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  animation-delay: 1.2s; }
-
-.fade-in .three {
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-  animation-delay: 1.6s; }
 
 /*button text*/
 .button-text {
@@ -3020,7 +2974,7 @@ input, textarea {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  color: #FF0068 !important;
+  color: #FF4080 !important;
   text-align: center !important; }
 
 .button:hover {

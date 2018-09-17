@@ -25,8 +25,9 @@
     <!-- End Google Analytics -->
     <!-- links & scripts -->
     <link rel="stylesheet" type="text/css" href="css/main.css" /> 
-    <script type="text/javascript"src="js/gradient.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
 </head>
@@ -36,7 +37,7 @@
     <div id="" class="row light-grey-bg full-width xs-hero">
         <div id="nav" class="nav nav-scrolled"></div>
         <div class="row full-width middle-xs center-xs sm-padding" style="background-image: url(/assets/img/wave-white.svg); background-repeat: no-repeat; background-position: bottom; background-size: 103%;">
-            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 sm-padding">
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 sm-padding" data-aos="zoom-out">
                 <h1 class="center-align md-padding">Case Studies</h1>
             </div>
         </div>
@@ -44,7 +45,7 @@
 </div>
 <div class="lg-top-padding max-width">
     <div class="row center-xs middle">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding" data-aos="fade-up">
             <div class="featured-card" style="background-image: url('assets/projects/tablerockdairy/featured-tile.png');">
                 <a href="project-tablerockdairy.html">
                 <div class="absolute md-padding full-width full-height centered-text border-radius" style="background: rgba(37,27,80,.85); bottom: 0;">
@@ -59,7 +60,7 @@
                 <img class="full-width" src="assets/img/square.png"/>
             </div> 
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding" data-aos="fade-up" data-aos-delay="200">
             <div class="featured-card" style="background-image: url('assets/projects/scottylabs/featured-tile.png');">
                 <a href="project-scottylabs.html">
                 <div class="absolute md-padding full-width full-height centered-text border-radius" style="background: rgba(37,27,80,.85); bottom: 0;">
@@ -74,7 +75,7 @@
                 <img class="full-width" src="assets/img/square.png"/>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding" data-aos="fade-up">
             <div class="featured-card" style="background-image: url('assets/projects/royaldigits/featured-tile.png');">
                 <a href="project-royaldigits.html">
                 <div class="absolute md-padding full-width full-height centered-text border-radius" style="background: rgba(37,27,80,.85); bottom: 0;">
@@ -89,7 +90,7 @@
                 <img class="full-width" src="assets/img/square.png"/>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 sm-padding" data-aos="fade-up" data-aos-delay="200">
             <div class="featured-card" style="background-image: url('assets/projects/wedding-hill/featured-tile.png');">
                 <a href="project-hillwedding.html">
                 <div class="absolute md-padding full-width full-height centered-text border-radius" style="background: rgba(37,27,80,.85); bottom: 0;">
@@ -173,7 +174,7 @@
         <div class="col-xs-6 col-sm-4 sm-padding">
             <img class="full-width border-radius" src="assets/img/people-books.png"/>
         </div>
-        <div class="col-xs-6 col-sm-8 sm-padding">
+        <div class="col-xs-6 col-sm-8 sm-padding" data-aos="fade-up">
             <h4 class="grey-color left-text">Our case studies represent several months of hard work with our clients. Each project with its own goals and unique objectives. If you have any questions, or want to discuss a potential project don't hesitate to contact us.</h4>
             <div class="md-top-padding right-text">
                 <a href="contact.html"><div class="button">Let's Talk About a Project</div></a>
@@ -212,6 +213,15 @@ $(function(){
         }
     })
 })
+</script>
+<script type="text/javascript" src="js/gradient.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay: 20,
+    duration: 800,
+    easing: 'ease-in-out',
+  });
 </script>
 </body>
 </doctype>

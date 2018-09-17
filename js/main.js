@@ -1,22 +1,23 @@
-//form field entry validation
-function validateForm() {
-    var x = document.forms["contact"]["name"].value;
-    if (x == "") {
-        alert("Please enter your name.");
-        return false;
-    }
-}
-function validateForm() {
-    var x = document.forms["contact"]["email"].value;
-    if (x == "") {
-        alert("You must enter an email address.");
-        return false;
-    }
-}
-function validateForm() {
-    var x = document.forms["contact"]["message"].value;
-    if (x == "") {
-        alert("Please summarize your request or project in 1,000 characters or less and try again.");
-        return false;
-    }
-}
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fade-in').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
