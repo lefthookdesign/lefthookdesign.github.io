@@ -448,7 +448,7 @@ opacity: 1; /* Firefox */
     @include slow-transition;
     @include button-radius;
     @include transition;
-    background: rgba($white-color, .2);
+    background: rgba($white-color, .9);
     padding: 15px 28px;
     position:relative;
     top:0;
@@ -460,7 +460,7 @@ opacity: 1; /* Firefox */
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    color: $white-color !important;
+    color: $primary-color !important;
 }
 .button-white:hover{
     @include slow-transition;
@@ -468,7 +468,7 @@ opacity: 1; /* Firefox */
     @include rise;
     @include transition;
     background: $white-color;
-    color:  $secondary-color !important;
+    color:  $pink-color !important;
 }
 
 /*button dark*/
