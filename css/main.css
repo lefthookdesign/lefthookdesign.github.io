@@ -584,9 +584,9 @@
 .last-xs {
   order: 1; }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 40em) {
   .container {
-    width: 46rem; }
+    width: 41rem; }
 
   .col-xs {
     box-sizing: border-box;
@@ -2559,7 +2559,6 @@ body {
   font-size: 1em;
   line-height: 1.15;
   color: #1e1848;
-  background: #1e1848;
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -2763,21 +2762,14 @@ a:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     color: #fff !important; }
-  .nav ul {
-    list-style: none; }
   .nav .logo {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    max-width: 100%;
-    float: left; }
-    .nav .logo img {
-      max-width: 170px; }
+    width: 170px; }
   .nav .primary {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    max-width: 100%;
-    float: right;
-    text-align: right; }
+    max-width: 100%; }
 
 .nav-scrolled {
   -webkit-transition: all .5s ease-in-out;
@@ -2804,13 +2796,14 @@ a:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     color: #6B96FF !important; }
-  .nav-scrolled .button-secondary.active {
-    color: #fff !important;
-    background: #FF4080; }
   .nav-scrolled .button-secondary {
+    color: #fff !important; }
+  .nav-scrolled .button-secondary:hover {
+    color: #fff !important; }
+  .nav-scrolled .button-secondary.active {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    color: #fff !important; }
+    background: #FF4080; }
 
 #close {
   position: fixed;
@@ -2921,10 +2914,10 @@ input, textarea {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   border-radius: 50px;
-  background: -webkit-linear-gradient(left top, #517AFF, #6B96FF);
-  background: -o-linear-gradient(right bottom, #517AFF, #6B96FF);
-  background: -moz-linear-gradient(right bottom, #517AFF, #6B96FF);
-  background: linear-gradient(to right bottom, #517AFF, #6B96FF);
+  background: -webkit-linear-gradient(left top, #1e1848, #202746);
+  background: -o-linear-gradient(right bottom, #1e1848, #202746);
+  background: -moz-linear-gradient(right bottom, #1e1848, #202746);
+  background: linear-gradient(to right bottom, #1e1848, #202746);
   padding: 8px 20px !important;
   position: relative;
   top: 0;
@@ -3170,6 +3163,7 @@ i.material-icons {
 
 .sm-hero {
   height: 60vh;
+  max-height: 600px;
   margin: auto; }
 
 .md-hero {
@@ -3420,6 +3414,9 @@ i.material-icons {
   -webkit-transform: rotate(10deg) scale(1.2);
   transform: rotate(10deg) scale(1.2); }
 
+@media only screen and (max-device-width: 780px) {
+  .nav .logo {
+    margin: auto; } }
 @media only screen and (max-device-width: 1024px) {
   .bg-image {
     background-attachment: scroll; }

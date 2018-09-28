@@ -168,7 +168,6 @@ body {
     font-size: 1em;
     line-height: 1.15;
     color: $primary-color;
-    background: $primary-color;
     margin:0;
 	padding:0;
     min-height: 100%;
@@ -336,20 +335,13 @@ a:hover {
     a:hover {
         @include transition;
         color: $white-color !important;}
-    ul {
-        list-style: none;}
     .logo{
         @include transition;
-        max-width: 100%;
-        float: left;
-        img{
-            max-width: 170px;}
+        width: 170px;
     }
     .primary{
         @include transition;
-        max-width: 100%;
-        float:right;
-        text-align: right;}
+        max-width: 100%;}
 }
 .nav-scrolled{    
     @include transition;
@@ -374,13 +366,15 @@ a:hover {
     a:hover {
         @include transition;
         color: $secondary-color !important;}
-    .button-secondary.active {
+    .button-secondary{
         color: $white-color !important;
-        background: $pink-color;
     }
-    .button-secondary {
-        @include transition;
+    .button-secondary:hover{
         color: $white-color !important;
+    }
+    .button-secondary.active {
+        @include transition;
+        background: $pink-color;
     }
 }
 
@@ -481,10 +475,10 @@ opacity: 1; /* Firefox */
 .button-secondary {
     @include slow-transition;
     @include button-radius;
-    background: -webkit-linear-gradient(left top, #517AFF, $secondary-color);
-    background: -o-linear-gradient(right bottom, #517AFF, $secondary-color); 
-    background: -moz-linear-gradient(right bottom, #517AFF, $secondary-color);
-    background: linear-gradient(to right bottom, #517AFF, $secondary-color);
+    background: -webkit-linear-gradient(left top, $primary-color, $primary-accent);
+    background: -o-linear-gradient(right bottom, $primary-color, $primary-accent); 
+    background: -moz-linear-gradient(right bottom, $primary-color, $primary-accent);
+    background: linear-gradient(to right bottom, $primary-color, $primary-accent);
     padding: 8px 20px !important;
     position:relative;
     top:0;
@@ -656,6 +650,7 @@ i.material-icons {
     }
 .sm-hero{
     height: 60vh;
+    max-height: 600px;
     margin: auto;
     }
 .md-hero{
@@ -843,8 +838,9 @@ i.material-icons {
 .oversized-right{
     @include oversized-right;}
 
-@media only screen and (max-device-width: 812px){
-    
+@media only screen and (max-device-width: 780px){
+    .nav .logo{
+        margin: auto;}
 }
 @media only screen and (max-device-width: 1024px){
     .bg-image {
