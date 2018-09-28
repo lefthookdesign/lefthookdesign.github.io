@@ -2860,7 +2860,7 @@ input, textarea {
 .button-text:hover {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  color: #0FCFD7; }
+  color: #FF4080; }
   .button-text:hover i {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;

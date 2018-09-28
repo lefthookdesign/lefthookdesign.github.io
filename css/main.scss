@@ -437,7 +437,7 @@ opacity: 1; /* Firefox */
 }
 .button-text:hover{  
     @include transition;
-    color: $teal-color;
+    color: $pink-color;
     i {
         @include transition;
         margin-left: 7px;}
