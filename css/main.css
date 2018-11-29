@@ -2801,10 +2801,6 @@ a:hover {
     color: #fff !important; }
   .nav-scrolled .button-secondary:hover {
     color: #fff !important; }
-  .nav-scrolled .button-secondary.active {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    background: #FF4080; }
 
 #close {
   position: fixed;
@@ -2915,10 +2911,10 @@ input, textarea {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   border-radius: 50px;
-  background: -webkit-linear-gradient(left top, #1e1848, #202746);
-  background: -o-linear-gradient(right bottom, #1e1848, #202746);
-  background: -moz-linear-gradient(right bottom, #1e1848, #202746);
-  background: linear-gradient(to right bottom, #1e1848, #202746);
+  background: -webkit-linear-gradient(left top, #FF4080, #202746);
+  background: -o-linear-gradient(right bottom, #FF4080, #202746);
+  background: -moz-linear-gradient(right bottom, #FF4080, #202746);
+  background: linear-gradient(to right bottom, #FF4080, #202746);
   padding: 8px 20px !important;
   position: relative;
   top: 0;

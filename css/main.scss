@@ -374,10 +374,6 @@ a:hover {
     .button-secondary:hover{
         color: $white-color !important;
     }
-    .button-secondary.active {
-        @include transition;
-        background: $pink-color;
-    }
 }
 
 #close {
@@ -477,10 +473,10 @@ opacity: 1; /* Firefox */
 .button-secondary {
     @include slow-transition;
     @include button-radius;
-    background: -webkit-linear-gradient(left top, $primary-color, $primary-accent);
-    background: -o-linear-gradient(right bottom, $primary-color, $primary-accent); 
-    background: -moz-linear-gradient(right bottom, $primary-color, $primary-accent);
-    background: linear-gradient(to right bottom, $primary-color, $primary-accent);
+    background: -webkit-linear-gradient(left top, $pink-color, $primary-accent);
+    background: -o-linear-gradient(right bottom, $pink-color, $primary-accent); 
+    background: -moz-linear-gradient(right bottom, $pink-color, $primary-accent);
+    background: linear-gradient(to right bottom, $pink-color, $primary-accent);
     padding: 8px 20px !important;
     position:relative;
     top:0;
