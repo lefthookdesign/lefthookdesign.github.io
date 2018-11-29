@@ -2740,7 +2740,6 @@ a:hover {
     padding: 5px 20px;
     opacity: .7; }
   #nav .link:hover {
-    font-size: .9em;
     opacity: 1; }
   #nav .active {
     font-size: .9em !important;
