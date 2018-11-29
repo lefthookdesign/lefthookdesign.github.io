@@ -178,6 +178,9 @@ body {
     img {
         line-height: 0;
         vertical-align:bottom;}
+    img::before, img::after {
+        clear: both;
+    }
 }
 
 .footer{

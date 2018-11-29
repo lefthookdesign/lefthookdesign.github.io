@@ -2569,6 +2569,8 @@ body {
   body img {
     line-height: 0;
     vertical-align: bottom; }
+  body img::before, body img::after {
+    clear: both; }
 
 .footer {
   background: -webkit-linear-gradient(left top, #202746, #1e1848);
