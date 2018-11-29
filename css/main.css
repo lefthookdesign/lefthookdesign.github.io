@@ -2668,8 +2668,11 @@ h4 {
   line-height: 1.4em;
   font-weight: 400; }
 
+h5 {
+  font-size: 1em; }
+
 p {
-  font-size: 1em;
+  font-size: 18px;
   line-height: 1.5;
   padding: 10px 0;
   font-family: 'Open Sans', sans-serif;
