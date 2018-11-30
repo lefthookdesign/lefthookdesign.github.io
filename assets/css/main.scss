@@ -69,10 +69,10 @@ $pink-color: #FF4080;
     background: -moz-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));
     background: linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));}
 @mixin dark-transparent-gradient {
-    background: -webkit-linear-gradient(165deg, rgba($primary-color, 0.5), rgba($primary-color,0.4));
-    background: -o-linear-gradient(165deg, rgba($primary-color, 0.5), rgba($primary-color,0.4)); 
-    background: -moz-linear-gradient(165deg, rgba($primary-color, 0.5), rgba($primary-color,0.4));
-    background: linear-gradient(165deg, rgba($primary-color, 0.5), rgba($primary-color,0.4));}
+    background: -webkit-linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4));
+    background: -o-linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4)); 
+    background: -moz-linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4));
+    background: linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4));}
 @mixin secondary-gradient {
     background: -webkit-linear-gradient(left top, $primary-color, $secondary-color);
     background: -o-linear-gradient(right bottom, $primary-color, $secondary-color); 
