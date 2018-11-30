@@ -449,7 +449,7 @@ opacity: 1; /* Firefox */
 .button-white {
     @include button-radius;
     @include transition;
-    background: rgba($white-color, .9);
+    background: rgba($white-color, 1);
     padding: 15px 28px;
     position:relative;
     top:0;
@@ -467,7 +467,6 @@ opacity: 1; /* Firefox */
     @include shadow-dark;
     transform: translateY(-2px) !important;
     @include transition;
-    background: $white-color;
     color:  $pink-color !important;
 }
 
