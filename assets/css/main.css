@@ -2807,6 +2807,7 @@ a:hover {
 
 #close {
   position: fixed;
+  z-index: 100;
   padding: 20px; }
 
 /* inputs and buttons */

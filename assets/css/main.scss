@@ -381,6 +381,7 @@ a:hover {
 
 #close {
     position: fixed;
+    z-index: 100;
     padding: $md;
 }
 
