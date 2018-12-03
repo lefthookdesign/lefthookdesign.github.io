@@ -2594,7 +2594,7 @@ body {
 .bg-image {
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   z-index: 0; }
 
