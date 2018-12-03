@@ -3406,6 +3406,9 @@ i.material-icons {
   transform: rotate(10deg) scale(1.2); }
 
 @media only screen and (max-device-width: 386px) {
+  h1 {
+    font-weight: 400; }
+
   .xs-hero {
     height: 45vh;
     min-height: 360px;
