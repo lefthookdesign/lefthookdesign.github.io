@@ -2724,7 +2724,7 @@ a:hover {
   color: #6B96FF !important; }
 
 /* nav bar */
-#nav {
+#nav, #nav-casestudies {
   transform: none;
   position: fixed;
   display: block;
@@ -2733,16 +2733,16 @@ a:hover {
   top: 0px;
   left: 0px;
   z-index: 100000; }
-  #nav .link {
+  #nav .link, #nav-casestudies .link {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     display: inline-block;
     font-size: .8em;
     padding: 5px 20px;
     opacity: .7; }
-  #nav .link:hover {
+  #nav .link:hover, #nav-casestudies .link:hover {
     opacity: 1; }
-  #nav .active {
+  #nav .active, #nav-casestudies .active {
     font-size: .9em !important;
     opacity: 1 !important; }
 
