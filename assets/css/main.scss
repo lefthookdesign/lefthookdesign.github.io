@@ -842,17 +842,21 @@ i.material-icons {
     h1 {
         font-weight: 400;
     }
-    .xs-hero {
-        height: 45vh;
-        min-height: 360px;
-        margin: auto;
+    .mobile-top-padding {
+        padding-top: 80px;
     }
 }
 @media only screen and (max-device-width: 780px){
     .nav .logo{
         margin: auto;}
+    .mobile-top-padding {
+        padding-top: 40px;
+    }
 }
 @media only screen and (max-device-width: 1024px){
+    .mobile-top-padding {
+        padding-top: 0;
+    }
     .bg-image {
         background-attachment: scroll;
     }
