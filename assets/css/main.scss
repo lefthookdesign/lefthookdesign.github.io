@@ -838,6 +838,13 @@ i.material-icons {
 .oversized-right{
     @include oversized-right;}
 
+@media only screen and (max-device-width: 386px){
+    .xs-hero {
+        height: 45vh;
+        padding-top: 80px;
+        margin: auto;
+    }
+}
 @media only screen and (max-device-width: 780px){
     .nav .logo{
         margin: auto;}
