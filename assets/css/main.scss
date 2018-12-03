@@ -843,15 +843,12 @@ i.material-icons {
         font-weight: 400;
     }
     .mobile-top-padding {
-        padding-top: 80px;
+        padding-top: 60px;
     }
 }
 @media only screen and (max-device-width: 780px){
     .nav .logo{
         margin: auto;}
-    .mobile-top-padding {
-        padding-top: 40px;
-    }
 }
 @media only screen and (max-device-width: 1024px){
     .bg-image {
