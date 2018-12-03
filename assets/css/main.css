@@ -2645,12 +2645,10 @@ body {
 h1, h2, h3, h4 {
   color: #202746;
   margin: 0;
-  font-weight: 400;
   width: 100%; }
 
 h1 {
   font-size: 4.5em;
-  font-weight: 100;
   line-height: 1.2em !important; }
 
 h2 {

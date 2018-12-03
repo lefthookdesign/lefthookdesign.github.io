@@ -229,12 +229,10 @@ body {
 h1, h2, h3, h4 {
   color: $primary-accent;
   margin: 0;
-  font-weight:400;
   width: 100%; 
 }
 h1 {
   font-size: 4.5em;
-  font-weight: 100;
   line-height: 1.2em !important;
   }
 h2 {
@@ -838,19 +836,17 @@ i.material-icons {
 .oversized-right{
     @include oversized-right;}
 
-@media only screen and (max-width: 392px){
+@media only screen and (max-width: 392px) {
     h1 {
-        font-weight: 400;
-    }
+        font-weight: 400;}
     .mobile-top-padding {
-        padding-top: 60px;
-    }
+        padding-top: 60px;}
 }
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 780px) {
     .nav .logo{
         margin: auto;}
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
     .bg-image {
         background-attachment: scroll;
     }
