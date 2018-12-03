@@ -838,7 +838,7 @@ i.material-icons {
 .oversized-right{
     @include oversized-right;}
 
-@media only screen and (max-device-width: 392px){
+@media only screen and (max-width: 392px){
     h1 {
         font-weight: 400;
     }
@@ -846,11 +846,11 @@ i.material-icons {
         padding-top: 60px;
     }
 }
-@media only screen and (max-device-width: 780px){
+@media only screen and (max-width: 780px){
     .nav .logo{
         margin: auto;}
 }
-@media only screen and (max-device-width: 1024px){
+@media only screen and (max-width: 1024px){
     .bg-image {
         background-attachment: scroll;
     }

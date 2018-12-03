@@ -3405,16 +3405,16 @@ i.material-icons {
   -webkit-transform: rotate(10deg) scale(1.2);
   transform: rotate(10deg) scale(1.2); }
 
-@media only screen and (max-device-width: 392px) {
+@media only screen and (max-width: 392px) {
   h1 {
     font-weight: 400; }
 
   .mobile-top-padding {
     padding-top: 60px; } }
-@media only screen and (max-device-width: 780px) {
+@media only screen and (max-width: 780px) {
   .nav .logo {
     margin: auto; } }
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll; }
 
