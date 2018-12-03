@@ -3408,7 +3408,7 @@ i.material-icons {
 @media only screen and (max-device-width: 386px) {
   .xs-hero {
     height: 45vh;
-    padding-top: 80px;
+    min-height: 360px;
     margin: auto; } }
 @media only screen and (max-device-width: 780px) {
   .nav .logo {
