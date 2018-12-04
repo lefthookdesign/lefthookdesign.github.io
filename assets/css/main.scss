@@ -578,7 +578,6 @@ opacity: 1; /* Firefox */
     .card {
         @include border-radius;
         @include transition;
-        @include shadow-light;
         .tile {
             @include transition;
             @include border-radius;
@@ -596,7 +595,7 @@ opacity: 1; /* Firefox */
     }
     .card:hover {
         @include transition;
-        @include shadow;
+        @include shadow-dark;
         @include rise;
         .tile {
             @include transition;
