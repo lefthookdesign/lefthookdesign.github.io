@@ -2751,8 +2751,7 @@ a:hover {
     display: block;
     width: 100%;
     height: 3px;
-    background: #FF4080;
-    transition: width .3s ease; }
+    background: #FF4080; }
   #nav .link::after, #nav-casestudies .link::after {
     content: '';
     display: block;

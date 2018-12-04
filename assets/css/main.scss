@@ -327,8 +327,7 @@ a:hover {
         display: block;
         width: 100%;
         height: 3px;
-        background: $pink-color;
-        transition: width .3s ease;}
+        background: $pink-color;}
     .link::after {
         content: '';
         display: block;
