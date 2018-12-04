@@ -561,6 +561,8 @@ opacity: 1; /* Firefox */
 }
 .featured-card:hover {
     @include slow-transition;
+    @include rise;
+    @include shadow;
     background-size: 125%;
     background-position: center;
 }
