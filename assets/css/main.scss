@@ -368,7 +368,7 @@ a:hover {
     @include shadow;
     background: $white-color !important;
     .active {
-        color: $secondary-color !important;
+        color: $pink-color !important;
     }
     .logo{
         @include transition;
