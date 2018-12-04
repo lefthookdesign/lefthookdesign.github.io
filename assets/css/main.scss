@@ -382,7 +382,7 @@ a:hover {
         @include transition;
         opacity: .5 !important;}
     .link:hover{
-        opacity: 1;}
+        opacity: 1 !important;}
     a{
         @include transition;
         color: $primary-accent !important;

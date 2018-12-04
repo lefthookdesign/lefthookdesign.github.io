@@ -2810,7 +2810,7 @@ a:hover {
     transition: all .5s ease-in-out;
     opacity: .5 !important; }
   .nav-scrolled .link:hover {
-    opacity: 1; }
+    opacity: 1 !important; }
   .nav-scrolled a {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
