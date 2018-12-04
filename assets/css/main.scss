@@ -322,11 +322,11 @@ a:hover {
     .active{
         font-size: .9em !important;
         opacity: 1 !important;}
-    .active::after {
+    .link.active::after {
         content: '';
         display: block;
-        width: 100%;
         height: 3px;
+        width: 100%;
         background: $pink-color;}
     .link::after {
         content: '';
