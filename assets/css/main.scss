@@ -368,7 +368,7 @@ a:hover {
     @include shadow;
     background: $white-color !important;
     .active {
-        color: $secondary-color !important;
+        color: $dark-color !important;
     }
     .logo{
         @include transition;
@@ -385,7 +385,7 @@ a:hover {
         }
     a:hover {
         @include transition;
-        color: $secondary-color !important;}
+        color: $primary-color !important;}
     .button-secondary{
         color: $white-color !important;
     }
