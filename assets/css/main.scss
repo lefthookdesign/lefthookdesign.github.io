@@ -315,12 +315,17 @@ a:hover {
         display: inline-block;
         font-size: .8em;
         padding: $xs $md;
-        opacity: .7;}
+        opacity: .7;
+        border-bottom: none;}
     .link:hover{
-        opacity: 1;}
+        @include transition;
+        opacity: 1;
+        border-bottom: solid 3px $pink-color;}
     .active{
+        @include transition;
         font-size: .9em !important;
-        opacity: 1 !important;}
+        opacity: 1 !important;
+        border-bottom: solid 3px $pink-color;}
     
 }
 .nav{

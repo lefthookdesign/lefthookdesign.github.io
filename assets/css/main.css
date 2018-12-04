@@ -2739,12 +2739,19 @@ a:hover {
     display: inline-block;
     font-size: .8em;
     padding: 5px 20px;
-    opacity: .7; }
+    opacity: .7;
+    border-bottom: none; }
   #nav .link:hover, #nav-casestudies .link:hover {
-    opacity: 1; }
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    border-bottom: solid 3px #FF4080; }
   #nav .active, #nav-casestudies .active {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     font-size: .9em !important;
-    opacity: 1 !important; }
+    opacity: 1 !important;
+    border-bottom: solid 3px #FF4080; }
 
 .nav {
   -webkit-transition: all .5s ease-in-out;
