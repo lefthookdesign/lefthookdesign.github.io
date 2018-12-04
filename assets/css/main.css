@@ -2995,14 +2995,8 @@ input, textarea {
 
 /* items and misc styles */
 .featured-card {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  background-size: 100%;
-  background-position: center;
   position: relative; }
 
 .featured-card:hover {
@@ -3011,13 +3005,23 @@ input, textarea {
   position: relative;
   -ms-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+  transform: translateY(-3px); }
+
+.featured-card img {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+.featured-card img:hover {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   -webkit-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
   -moz-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
   -ms-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
-  box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
-  background-size: 110%;
-  background-position: center; }
+  box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2); }
 
 .card {
   -webkit-border-radius: 6px;
