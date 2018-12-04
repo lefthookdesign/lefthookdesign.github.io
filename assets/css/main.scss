@@ -333,7 +333,7 @@ a:hover {
         display: block;
         width: 0;
         height: 3px;
-        background: $pink-color;
+        background: $secondary-color;
         transition: width .3s ease;}
     .link:hover::after {
         width: 100%;
@@ -368,7 +368,7 @@ a:hover {
     @include shadow;
     background: $white-color !important;
     .active {
-        color: $pink-color !important;
+        color: $secondary-color !important;
     }
     .logo{
         @include transition;
