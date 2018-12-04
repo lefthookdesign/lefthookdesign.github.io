@@ -558,6 +558,8 @@ opacity: 1; /* Firefox */
 .featured-card:hover {
     @include transition;
     @include rise;
+    img {
+        @include shadow-dark;}
 }
 .featured-card img {
     @include border-radius;

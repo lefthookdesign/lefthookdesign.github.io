@@ -3006,6 +3006,11 @@ input, textarea {
   -ms-transform: translateY(-3px);
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px); }
+  .featured-card:hover img {
+    -webkit-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
+    -moz-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
+    -ms-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
+    box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2); }
 
 .featured-card img {
   -webkit-border-radius: 6px;
