@@ -3424,7 +3424,7 @@ i.material-icons {
   -webkit-transform: rotate(10deg) scale(1.2);
   transform: rotate(10deg) scale(1.2); }
 
-@media only screen and (max-width: 401px) {
+@media only screen and (max-width: 470px) {
   h1 {
     font-size: 3em !important;
     font-weight: 200; }
