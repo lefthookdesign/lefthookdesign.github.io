@@ -379,6 +379,9 @@ a:hover {
             display: none;
         }
     }
+    .link {
+        @include transition;
+        opacity: .5 !important;}
     a{
         @include transition;
         color: $primary-accent !important;
