@@ -2746,13 +2746,20 @@ a:hover {
   #nav .active, #nav-casestudies .active {
     font-size: .9em !important;
     opacity: 1 !important; }
+  #nav .active::after, #nav-casestudies .active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #FF4080;
+    transition: width .3s ease; }
   #nav .link::after, #nav-casestudies .link::after {
     content: '';
     display: block;
     width: 0;
     height: 3px;
     background: #FF4080;
-    transition: width .25s ease; }
+    transition: width .3s ease; }
   #nav .link:hover::after, #nav-casestudies .link:hover::after {
     width: 100%; }
 
