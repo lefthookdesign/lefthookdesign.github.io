@@ -553,13 +553,13 @@ opacity: 1; /* Firefox */
 /* items and misc styles */
 .featured-card {
     @include border-radius;
-    @include slow-transition;
+    @include transition;
     background-size: 100%;
     background-position: center;
     position: relative;
 }
 .featured-card:hover {
-    @include slow-transition;
+    @include transition;
     @include rise;
     @include shadow;
     background-size: 125%;
