@@ -28,6 +28,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
 </head>
 <body class="light-grey-bg">
 
@@ -53,28 +55,27 @@
         <div class="center-position left-text">
             <p>Creative Director and owner, Hilary Hampton, was trained in the heart of Silicon Valley, and is based in the beautiful Pacific Northwest.<br><br>
             Her team works with you to find the best design solution to fit your unique project. You'll hear "we" a lot, and we're here to help (and tell you there's no one-size-fits-all plan).</p>
-            <div class="lg-top-padding">
+            <div class="md-top-padding">
                 <a href="work.html"><div class="button-text">View Case Studies <i class="material-icons sm-left-padding">arrow_forward</i></div></a>
             </div>
             <div class="xs-top-padding" style="text-align: right !important;">
-                <img class="full-width" style="max-width: 200px;" src="assets/img/people-welcome-signs.png"/>
+                <img class="full-width" style="max-width: 220px;" src="assets/img/people-welcome-signs.png"/>
             </div>
         </div>
     </div>
 </div>
-<div class="row center-xs light-grey-bg end-sm middle smart-sm">
-    <div class="md-max-width">
-        <div class="col-xs-12 col-sm-12 col-md-12 lg-left-padding lg-right-padding">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4" data-aos="zoom-in" data-aos-once="true">
-                    <img class="full-width" src="assets/img/insta/flight.JPG"/>
-                </div>
-                <div class="col-xs-4 col-sm-4" data-aos="zoom-in" data-aos-once="true" data-aos-delay="100">
-                    <img class="full-width" src="assets/img/insta/moto.jpg"/>
-                </div>
-                <div class="col-xs-4 col-sm-4" data-aos="zoom-in" data-aos-once="true" data-aos-delay="200">
-                    <img class="full-width" src="assets/img/insta/mug.jpg"/>
-                </div>
+<div class="row center-xs light-grey-bg middle-xs">
+    <div class="sm-max-width">
+        <div id="testimonials-slider" class="slick-slider">
+            <div>
+                <h2 class="no-margin">Is that goat just the cutest or what!???</h2>
+                <p>Left Hook Design is compeletely amazing! The goat is not at all what I had in mind... but it's a million times better than anything I had thought of.</p>
+                <h4 class="right-text tiny-padding">&mdash; Lauralee Wallace<br><span class="opacity">Owner</span></h4>
+            </div>
+            <div>
+                <h2 class="no-margin">My cards are always fun to hand out because people love them so much!</h2>
+                <p>They are sturdy with an exceptional design and are CLEAR. When people read my card they know exactly what I offer without question, and that's important!</p>
+                <h4 class="right-text tiny-padding">&mdash; Crystal Curry<br><span class="opacity">Owner</span></h4>
             </div>
         </div>
     </div>
@@ -146,7 +147,21 @@ $(function(){
     })
 })
 </script>
-<script type="text/javascript" src="js/gradient.js"></script>
+<script>
+    //slick slider initialization
+      $('#testimonials-slider').slick({
+          accessibility: true,
+          autoplay: true,
+          infinite: true,
+          autoplaySpeed: 8000,
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+      });
+    
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({

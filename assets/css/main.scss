@@ -55,7 +55,9 @@ $pink-color: #FF4080;
 /* import grid */
 @import "flexboxgrid";
 
-
+ /* slick slider styling*/
+@import "slick";
+@import "slick-theme";
 
 /* mixins */
 @mixin primary-gradient {
