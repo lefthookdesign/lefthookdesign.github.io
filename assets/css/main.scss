@@ -894,3 +894,21 @@ i.material-icons {
         line-height: 1.5em;
         padding: 5px 20px;}
 }
+@media only screen and (max-width: 1880px) {
+    .sm-max-width{
+        width: 86%;
+        max-width:850px;
+        margin: 0 auto;}
+    .md-max-width{
+        width: 92%;
+        max-width:1100px;
+        margin: 0 auto;}
+    .max-width{
+        width: 96%;
+        max-width:1350px;
+        margin: auto;}
+    .lg-max-width{
+        width: 100%;
+        max-width:1600px;
+        margin: auto;}
+}
