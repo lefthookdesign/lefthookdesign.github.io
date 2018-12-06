@@ -2743,7 +2743,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        content: "■";
+        content: "•";
         width: 20px;
         height: 20px;
         font-family: "slick";
