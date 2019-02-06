@@ -3215,9 +3215,9 @@ input, textarea {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   position: relative;
-  -ms-transform: translateY(-3px);
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px); }
+  -ms-transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px); }
   .featured-card:hover img {
     -webkit-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
     -moz-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
@@ -3280,9 +3280,9 @@ input, textarea {
   -ms-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
   box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
   position: relative;
-  -ms-transform: translateY(-3px);
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px); }
+  -ms-transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px); }
   .project .card:hover .tile {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3301,9 +3301,9 @@ input, textarea {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   position: relative;
-  -ms-transform: translateY(-3px);
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+  -ms-transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
   display: block;
   background: rgba(37, 27, 80, 0.8); }
 
@@ -3321,9 +3321,9 @@ input, textarea {
 
 .rise:hover {
   position: relative;
-  -ms-transform: translateY(-3px);
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+  -ms-transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out; }
 
