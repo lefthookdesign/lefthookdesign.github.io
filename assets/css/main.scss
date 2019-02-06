@@ -566,21 +566,18 @@ opacity: 1; /* Firefox */
 .featured-card {
     @include transition;
     position: relative;
+    img {
+        @include border-radius;
+        @include transition;}
 }
 .featured-card:hover {
     @include transition;
     @include rise;
     img {
+        @include transition;
         @include shadow-dark;}
 }
-.featured-card img {
-    @include border-radius;
-    @include transition;
-}
-.featured-card img:hover {
-    @include transition;
-    @include shadow-dark;
-}
+
 .card {
     @include border-radius;
     background: $white-color;
