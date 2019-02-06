@@ -566,6 +566,7 @@ opacity: 1; /* Firefox */
 .featured-card {
     @include transition;
     position: relative;
+    max-width: 200px;
     img {
         @include border-radius;
         @include transition;}

@@ -3209,7 +3209,8 @@ input, textarea {
 .featured-card {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  position: relative; }
+  position: relative;
+  max-width: 200px; }
   .featured-card img {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
