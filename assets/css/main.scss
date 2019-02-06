@@ -367,7 +367,7 @@ a:hover {
 .nav-scrolled{    
     @include transition;
     @include shadow;
-    background: $white-color !important;
+    background: rgba($white-color, .1) !important;
     .active {
         color: $dark-color !important;
     }
