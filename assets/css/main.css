@@ -2779,10 +2779,10 @@ body {
     clear: both; }
 
 .footer {
-  background: -webkit-linear-gradient(left top, #202746, #1e1848);
-  background: -o-linear-gradient(right bottom, #202746, #1e1848);
-  background: -moz-linear-gradient(right bottom, #202746, #1e1848);
-  background: linear-gradient(to right bottom, #202746, #1e1848);
+  background: -webkit-linear-gradient(0deg, #1e1848, #202746);
+  background: -o-linear-gradient(0deg, #1e1848, #202746);
+  background: -moz-linear-gradient(0deg, #1e1848, #202746);
+  background: linear-gradient(0deg, #1e1848, #202746);
   color: #E8E4F7 !important;
   position: relative;
   z-index: 1; }
@@ -2812,10 +2812,10 @@ body {
   background-repeat: no-repeat; }
 
 .primary-gradient {
-  background: -webkit-linear-gradient(left top, #202746, #1e1848);
-  background: -o-linear-gradient(right bottom, #202746, #1e1848);
-  background: -moz-linear-gradient(right bottom, #202746, #1e1848);
-  background: linear-gradient(to right bottom, #202746, #1e1848); }
+  background: -webkit-linear-gradient(0deg, #1e1848, #202746);
+  background: -o-linear-gradient(0deg, #1e1848, #202746);
+  background: -moz-linear-gradient(0deg, #1e1848, #202746);
+  background: linear-gradient(0deg, #1e1848, #202746); }
 
 .primary-white-gradient {
   background: -webkit-linear-gradient(165deg, rgba(255, 255, 255, 0.9), rgba(232, 228, 247, 0.5));
@@ -3225,10 +3225,10 @@ input, textarea {
     box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2); }
 
 .featured-card img {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out; }
 
@@ -3241,27 +3241,27 @@ input, textarea {
   box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2); }
 
 .card {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
   background: #fff;
   position: relative; }
 
 .project .card {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out; }
   .project .card .tile {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    border-radius: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
     opacity: 0;
     height: 100%;
     width: 100%;
@@ -3384,10 +3384,10 @@ i.material-icons {
   opacity: .4; }
 
 .border-radius {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  border-radius: 15px; }
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px; }
 
 /* heros */
 .xs-hero {
@@ -3589,10 +3589,10 @@ i.material-icons {
   height: 200px; }
 
 .lightwidget img {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
   -webkit-box-shadow: 0px 4px 5px rgba(110, 146, 247, 0.1);
   -moz-box-shadow: 0px 4px 5px rgba(110, 146, 247, 0.1);
   -ms-box-shadow: 0px 4px 5px rgba(110, 146, 247, 0.1);
