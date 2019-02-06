@@ -56,7 +56,7 @@
   background: #0E0F34; }
 
 .white-color {
-  color: #fff; }
+  color: #fff !important; }
 
 .white-bg {
   background: #fff; }
