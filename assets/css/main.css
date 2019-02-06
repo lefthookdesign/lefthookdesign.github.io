@@ -3114,10 +3114,10 @@ input, textarea {
   margin-left: auto;
   margin-right: auto;
   color: #FF4080 !important;
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
-  -ms-box-shadow: 0;
-  box-shadow: 0; }
+  -webkit-box-shadow: 0px 0px 0px rgba(110, 146, 247, 0);
+  -moz-box-shadow: 0px 0px 0px rgba(110, 146, 247, 0);
+  -ms-box-shadow: 0px 0px 0px rgba(110, 146, 247, 0);
+  box-shadow: 0px 0px 0px rgba(110, 146, 247, 0); }
 
 .button-white:hover {
   transform: translateY(-2px) !important;

@@ -3,6 +3,7 @@ $fonts: Montserrat, Open Sans, Helvetica, Arial, sans-serif;
 $radius: 15px;
 $button-radius: 50px;
 
+$no-shadow: 0px 0px 0px rgba(110,146,247,0);
 $shadow: 0px 5px 10px rgba(110,146,247,.1);
 $shadow-light: 0px 4px 5px rgba(110,146,247, .1);
 $shadow-dark: 0px 5px 10px rgba(22,22,65,.2);
@@ -484,10 +485,10 @@ opacity: 1; /* Firefox */
     margin-left: auto;
     margin-right: auto;
     color: $pink-color !important;
-    -webkit-box-shadow: 0;
-     -moz-box-shadow: 0;
-      -ms-box-shadow: 0;
-          box-shadow: 0;
+    -webkit-box-shadow: $no-shadow;
+     -moz-box-shadow: $no-shadow;
+      -ms-box-shadow: $no-shadow;
+          box-shadow: $no-shadow;
 }
 .button-white:hover{
     transform: translateY(-2px) !important;
