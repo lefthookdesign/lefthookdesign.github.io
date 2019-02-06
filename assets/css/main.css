@@ -3001,7 +3001,7 @@ a:hover {
   -moz-box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
   -ms-box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
   box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
-  background: rgba(255, 255, 255, 0.2) !important; }
+  background: rgba(255, 255, 255, 0.7) !important; }
   .nav-scrolled .active {
     color: #0E0F34 !important; }
   .nav-scrolled .logo {
