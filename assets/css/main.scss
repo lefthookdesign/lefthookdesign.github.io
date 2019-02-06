@@ -575,7 +575,7 @@ opacity: 1; /* Firefox */
     @include rise;
     img {
         @include transition;
-        @include shadow-dark;}
+        @include shadow;}
 }
 
 .card {
