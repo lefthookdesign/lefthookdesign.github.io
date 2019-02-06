@@ -367,7 +367,7 @@ a:hover {
 .nav-scrolled{    
     @include transition;
     @include shadow;
-    background: rgba($white-color, .1) !important;
+    background: rgba($white-color, .2) !important;
     .active {
         color: $dark-color !important;
     }
@@ -484,13 +484,19 @@ opacity: 1; /* Firefox */
     margin-left: auto;
     margin-right: auto;
     color: $pink-color !important;
-    box-shadow: none;
+    -webkit-box-shadow: 0;
+     -moz-box-shadow: 0;
+      -ms-box-shadow: 0;
+          box-shadow: 0;
 }
 .button-white:hover{
-    @include shadow-dark;
     transform: translateY(-2px) !important;
     @include transition;
     color:  $pink-color !important;
+    -webkit-box-shadow: $shadow-light;
+     -moz-box-shadow: $shadow-light;
+      -ms-box-shadow: $shadow-light;
+          box-shadow: $shadow-light;
 }
 
 /*button dark*/
