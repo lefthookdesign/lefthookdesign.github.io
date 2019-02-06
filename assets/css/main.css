@@ -3113,7 +3113,8 @@ input, textarea {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  color: #FF4080 !important; }
+  color: #FF4080 !important;
+  box-shadow: none; }
 
 .button-white:hover {
   -webkit-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);

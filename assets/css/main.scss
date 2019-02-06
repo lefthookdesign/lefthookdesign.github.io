@@ -484,6 +484,7 @@ opacity: 1; /* Firefox */
     margin-left: auto;
     margin-right: auto;
     color: $pink-color !important;
+    box-shadow: none;
 }
 .button-white:hover{
     @include shadow-dark;
