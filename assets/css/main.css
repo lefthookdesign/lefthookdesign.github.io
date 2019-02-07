@@ -3659,8 +3659,7 @@ i.material-icons {
 
 @media only screen and (max-width: 470px) {
   h1 {
-    font-size: 2.8em !important;
-    font-weight: 200; }
+    font-size: 2.8em !important; }
 
   .mobile-top-padding {
     padding-top: 60px; }
