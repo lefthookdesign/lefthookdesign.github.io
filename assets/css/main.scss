@@ -3,10 +3,6 @@ $fonts: Montserrat, Open Sans, Helvetica, Arial, sans-serif;
 $radius: 25px;
 $button-radius: 50px;
 
-$no-shadow: 0px 0px 0px rgba(110,146,247,0);
-$shadow: 0px 5px 10px rgba(110,146,247,.1);
-$shadow-light: 0px 4px 5px rgba(110,146,247, .1);
-$shadow-dark: 0px 5px 10px rgba(22,22,65,.2);
 $xs: 5px;
 $sm: 10px;
 $md: 20px;
@@ -24,6 +20,10 @@ $dark-color: #0E0F34;
 $grey-color: #A6A3B7;
 $white-color: #fff;
 $pink-color: #FF4080;
+$no-shadow: 0px 0px 0px rgba($primary-color,0);
+$shadow: 0px 5px 10px rgba($primary-color,.2);
+$shadow-light: 0px 4px 5px rgba($primary-color, .1);
+$shadow-dark: 0px 10px 20px rgba($primary-color,.3);
 
 *, ::before, ::after { padding: 0; margin: 0; box-sizing: border-box;}
 
