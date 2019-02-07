@@ -502,19 +502,13 @@ opacity: 1; /* Firefox */
     margin-left: auto;
     margin-right: auto;
     color: $secondary-color !important;
-    -webkit-box-shadow: $shadow-light;
-     -moz-box-shadow: $shadow-light;
-      -ms-box-shadow: $shadow-light;
-          box-shadow: $shadow-light;
+    @include shadow-light;
 }
 .button-white:hover{
     transform: translateY(-2px) !important;
     @include transition;
     color:  $secondary-color !important;
-    -webkit-box-shadow: $shadow;
-     -moz-box-shadow: $shadow-dark;
-      -ms-box-shadow: $shadow-dark;
-          box-shadow: $shadow-dark;
+    @include shadow;
 }
 
 /*button dark*/
