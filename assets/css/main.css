@@ -3134,10 +3134,10 @@ input, textarea {
   margin-left: auto;
   margin-right: auto;
   color: #6B96FF !important;
-  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1); }
+  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07); }
 
 .button-white:hover {
   transform: translateY(-2px) !important;
@@ -3175,10 +3175,10 @@ input, textarea {
   color: #fff !important; }
 
 .button-secondary:hover {
-  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
+  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 
@@ -3190,10 +3190,10 @@ input, textarea {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
+  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
   background: -webkit-linear-gradient(left top, #fff, #fff);
   background: -o-linear-gradient(right bottom, #FDFAFD, #fff);
   background: -moz-linear-gradient(right bottom, #fff, #fff);
@@ -3387,10 +3387,10 @@ i.material-icons {
   box-shadow: 0px 8px 20px rgba(30, 24, 72, 0.1); }
 
 .shadow-light {
-  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1); }
+  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07); }
 
 .shadow-dark {
   -webkit-box-shadow: 0px 16px 30px rgba(30, 24, 72, 0.2);
@@ -3611,10 +3611,10 @@ i.material-icons {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1);
-  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.1); }
+  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
+  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07); }
 
 /* sizes + transformations */
 .sm-max-width {
