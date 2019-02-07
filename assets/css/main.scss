@@ -492,19 +492,19 @@ opacity: 1; /* Firefox */
     @include transition;
     color:  $secondary-color !important;
     -webkit-box-shadow: $shadow;
-     -moz-box-shadow: $shadow;
-      -ms-box-shadow: $shadow;
-          box-shadow: $shadow;
+     -moz-box-shadow: $shadow-dark;
+      -ms-box-shadow: $shadow-dark;
+          box-shadow: $shadow-dark;
 }
 
 /*button dark*/
 .button-secondary {
     @include slow-transition;
     @include button-radius;
-    background: -webkit-linear-gradient(left top, $pink-color, $primary-accent);
-    background: -o-linear-gradient(right bottom, $pink-color, $primary-accent); 
-    background: -moz-linear-gradient(right bottom, $pink-color, $primary-accent);
-    background: linear-gradient(to right bottom, $pink-color, $primary-accent);
+    background: -webkit-linear-gradient(left top, $secondary-color, $dark-color);
+    background: -o-linear-gradient(right bottom, $secondary-color, $dark-color); 
+    background: -moz-linear-gradient(right bottom, $secondary-color, $dark-color);
+    background: linear-gradient(to right bottom, $secondary-color, $dark-color);
     padding: 8px 20px !important;
     position:relative;
     top:0;
@@ -521,10 +521,7 @@ opacity: 1; /* Firefox */
 .button-secondary:hover{
     @include shadow-light;
     @include slow-transition;
-    background: -webkit-linear-gradient(left top, #517AFF, #517AFF);
-    background: -o-linear-gradient(right bottom, #517AFF, #517AFF); 
-    background: -moz-linear-gradient(right bottom, #517AFF, #517AFF);
-    background: linear-gradient(to right bottom, #517AFF, #517AFF);}
+}
 
 /*button */
 .button {
@@ -547,7 +544,7 @@ opacity: 1; /* Firefox */
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    color: $pink-color !important;
+    color: $secondary-color !important;
     text-align: center !important;
 }
 .button:hover{

@@ -3125,9 +3125,9 @@ input, textarea {
   transition: all .5s ease-in-out;
   color: #6B96FF !important;
   -webkit-box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
-  -moz-box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
-  -ms-box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
-  box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1); }
+  -moz-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
+  -ms-box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2);
+  box-shadow: 0px 5px 10px rgba(22, 22, 65, 0.2); }
 
 /*button dark*/
 .button-secondary {
@@ -3137,10 +3137,10 @@ input, textarea {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   border-radius: 50px;
-  background: -webkit-linear-gradient(left top, #FF4080, #202746);
-  background: -o-linear-gradient(right bottom, #FF4080, #202746);
-  background: -moz-linear-gradient(right bottom, #FF4080, #202746);
-  background: linear-gradient(to right bottom, #FF4080, #202746);
+  background: -webkit-linear-gradient(left top, #6B96FF, #0E0F34);
+  background: -o-linear-gradient(right bottom, #6B96FF, #0E0F34);
+  background: -moz-linear-gradient(right bottom, #6B96FF, #0E0F34);
+  background: linear-gradient(to right bottom, #6B96FF, #0E0F34);
   padding: 8px 20px !important;
   position: relative;
   top: 0;
@@ -3160,11 +3160,7 @@ input, textarea {
   -ms-box-shadow: 0px 4px 5px rgba(110, 146, 247, 0.1);
   box-shadow: 0px 4px 5px rgba(110, 146, 247, 0.1);
   -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  background: -webkit-linear-gradient(left top, #517AFF, #517AFF);
-  background: -o-linear-gradient(right bottom, #517AFF, #517AFF);
-  background: -moz-linear-gradient(right bottom, #517AFF, #517AFF);
-  background: linear-gradient(to right bottom, #517AFF, #517AFF); }
+  transition: all 1s ease-in-out; }
 
 /*button */
 .button {
@@ -3190,7 +3186,7 @@ input, textarea {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  color: #FF4080 !important;
+  color: #6B96FF !important;
   text-align: center !important; }
 
 .button:hover {
