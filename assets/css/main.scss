@@ -302,7 +302,7 @@ a:hover {
 
 /* nav bar */
 
-#nav, #nav-casestudies {
+#nav, #nav-mobile {
     transform: none;
     position: fixed;
     display: block;
@@ -317,10 +317,8 @@ a:hover {
         display: inline-block;
         font-size: .8em;
         padding: $xs $md;
-        opacity: .7;
+        opacity: 1;
         border-bottom: none;}
-    .link:hover{
-        opacity: 1;}
     .active{
         font-size: .9em !important;
         opacity: 1 !important;}
@@ -338,8 +336,8 @@ a:hover {
         background: $secondary-color;
         transition: width .3s ease;}
     .link:hover::after {
+        @include transition;
         width: 100%;
-        //transition: width .3s;
     }
 }
 .nav{
@@ -359,8 +357,10 @@ a:hover {
         color: $white-color !important;}
     .logo{
         @include transition;
-        width: 170px;
-    }
+        width: 170px;}
+    .logo-icon {
+        @include transition;
+        width: 40px;}
     .primary{
         @include transition;
         max-width: 100%;}
@@ -368,11 +368,11 @@ a:hover {
 .nav-scrolled{    
     @include transition;
     @include shadow;
-    background: rgba($white-color, .7) !important;
+    background: rgba($white-color, .8) !important;
     .active {
         color: $dark-color !important;
     }
-    .logo{
+    .logo, .logo-icon {
         @include transition;
         #logo-dark {
             display: block !important;
@@ -381,11 +381,6 @@ a:hover {
             display: none;
         }
     }
-    .link {
-        @include transition;
-        opacity: .5 !important;}
-    .link:hover{
-        opacity: 1 !important;}
     a{
         @include transition;
         color: $primary-accent !important;
@@ -399,6 +394,9 @@ a:hover {
     .button-secondary:hover{
         color: $white-color !important;
     }
+}
+#menu-list {
+    display: none;
 }
 
 #close {
@@ -625,11 +623,16 @@ opacity: 1; /* Firefox */
     @include transition;
     @include rise;
     display: block;
-    background: rgba(37,27,80,.8);
+    background: rgba($primary-color, 0.8);
 }
 .absolute{
-    display: block;
+    display: block !important;
     position: absolute;
+    z-index: 2;
+}
+.block {
+    display: block !important;
+    position: relative;
     z-index: 2;
 }
 .wave-width {
@@ -873,6 +876,12 @@ i.material-icons {
     @include oversized;}
 .oversized-right{
     @include oversized-right;}
+.hide-for-small {
+    display: block;
+}
+.show-for-small {
+    display: none !important;
+}
 
 @media only screen and (max-width: 470px) {
     h1 {
@@ -880,10 +889,23 @@ i.material-icons {
         font-weight: 200;}
     .mobile-top-padding {
         padding-top: 60px;}
+    .hide-for-small {
+        display: none !important;
+    }
+    .show-for-small {
+        display: block !important;
+    }
 }
 @media only screen and (max-width: 780px) {
     .nav .logo{
-        margin: auto;}
+        margin: auto;
+    }
+    .hide-for-small {
+        display: block;
+    }
+    .show-for-small {
+        display: none;
+    }
 }
 @media only screen and (max-width: 1024px) {
     h1 {
@@ -903,6 +925,7 @@ i.material-icons {
         font-size: 1.5em;
         line-height: 1.5em;
         padding: 5px 20px;}
+    
 }
 @media only screen and (min-width: 1880px) {
     .sm-max-width{

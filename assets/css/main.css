@@ -2930,7 +2930,7 @@ a:hover {
   color: #6B96FF !important; }
 
 /* nav bar */
-#nav, #nav-casestudies {
+#nav, #nav-mobile {
   transform: none;
   position: fixed;
   display: block;
@@ -2939,33 +2939,33 @@ a:hover {
   top: 0px;
   left: 0px;
   z-index: 100000; }
-  #nav .link, #nav-casestudies .link {
+  #nav .link, #nav-mobile .link {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     display: inline-block;
     font-size: .8em;
     padding: 5px 20px;
-    opacity: .7;
+    opacity: 1;
     border-bottom: none; }
-  #nav .link:hover, #nav-casestudies .link:hover {
-    opacity: 1; }
-  #nav .active, #nav-casestudies .active {
+  #nav .active, #nav-mobile .active {
     font-size: .9em !important;
     opacity: 1 !important; }
-  #nav .link.active::after, #nav-casestudies .link.active::after {
+  #nav .link.active::after, #nav-mobile .link.active::after {
     content: '';
     display: block;
     height: 3px;
     width: 100%;
     background: #6B96FF; }
-  #nav .link::after, #nav-casestudies .link::after {
+  #nav .link::after, #nav-mobile .link::after {
     content: '';
     display: block;
     width: 0;
     height: 3px;
     background: #6B96FF;
     transition: width .3s ease; }
-  #nav .link:hover::after, #nav-casestudies .link:hover::after {
+  #nav .link:hover::after, #nav-mobile .link:hover::after {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     width: 100%; }
 
 .nav {
@@ -2989,6 +2989,10 @@ a:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     width: 170px; }
+  .nav .logo-icon {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    width: 40px; }
   .nav .primary {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3001,22 +3005,16 @@ a:hover {
   -moz-box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
   -ms-box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
   box-shadow: 0px 5px 10px rgba(110, 146, 247, 0.1);
-  background: rgba(255, 255, 255, 0.7) !important; }
+  background: rgba(255, 255, 255, 0.8) !important; }
   .nav-scrolled .active {
     color: #0E0F34 !important; }
-  .nav-scrolled .logo {
+  .nav-scrolled .logo, .nav-scrolled .logo-icon {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
-    .nav-scrolled .logo #logo-dark {
+    .nav-scrolled .logo #logo-dark, .nav-scrolled .logo-icon #logo-dark {
       display: block !important; }
-    .nav-scrolled .logo #logo-white {
+    .nav-scrolled .logo #logo-white, .nav-scrolled .logo-icon #logo-white {
       display: none; }
-  .nav-scrolled .link {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    opacity: .5 !important; }
-  .nav-scrolled .link:hover {
-    opacity: 1 !important; }
   .nav-scrolled a {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3029,6 +3027,9 @@ a:hover {
     color: #fff !important; }
   .nav-scrolled .button-secondary:hover {
     color: #fff !important; }
+
+#menu-list {
+  display: none; }
 
 #close {
   position: fixed;
@@ -3299,11 +3300,16 @@ input, textarea {
   -webkit-transform: translateY(-6px);
   transform: translateY(-6px);
   display: block;
-  background: rgba(37, 27, 80, 0.8); }
+  background: rgba(30, 24, 72, 0.8); }
 
 .absolute {
-  display: block;
+  display: block !important;
   position: absolute;
+  z-index: 2; }
+
+.block {
+  display: block !important;
+  position: relative;
   z-index: 2; }
 
 .wave-width {
@@ -3650,16 +3656,34 @@ i.material-icons {
   -webkit-transform: rotate(10deg) scale(1.2);
   transform: rotate(10deg) scale(1.2); }
 
+.hide-for-small {
+  display: block; }
+
+.show-for-small {
+  display: none !important; }
+
 @media only screen and (max-width: 470px) {
   h1 {
     font-size: 2.8em !important;
     font-weight: 200; }
 
   .mobile-top-padding {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+
+  .hide-for-small {
+    display: none !important; }
+
+  .show-for-small {
+    display: block !important; } }
 @media only screen and (max-width: 780px) {
   .nav .logo {
-    margin: auto; } }
+    margin: auto; }
+
+  .hide-for-small {
+    display: block; }
+
+  .show-for-small {
+    display: none; } }
 @media only screen and (max-width: 1024px) {
   h1 {
     font-size: 3.8em;

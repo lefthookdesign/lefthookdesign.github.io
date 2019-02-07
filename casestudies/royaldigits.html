@@ -32,7 +32,8 @@
 
 <div id="landing-hero" class="full-width md-hero bg-image fade-in one" style="background-image: url(/assets/casestudies/royaldigits/bg-engaged.jpg)"> 
     <div class="row full-width center-xs dark-transparent-gradient">
-        <div id="nav-casestudies" class="nav"></div>
+        <div id="nav" class="nav hide-for-small nav-scrolled"></div>
+        <div id="nav-mobile" class="nav show-for-small nav-scrolled"></div>
         <div class="row full-width full-height middle-xs center-xs">
             <div class="col-xs-12 col-sm-8">
                 <h1 class="sm-padding  white-color">Branding</h1>
@@ -122,8 +123,15 @@
 <div id="footer"></div>
 </div>  
 <script>
-    $("#nav-casestudies").load("/closet/header-casestudies.html");
+    $("#nav").load("/closet/header.html");
+    $("#nav-mobile").load("closet/header-mobile.html");
     $("#footer").load("/closet/footer.html");
+</script>
+<script>
+    function menuList() {
+      var element = document.getElementById("menu-list");
+      element.classList.toggle("block");
+    }
 </script>
 <script>    
 //navigation scroll function

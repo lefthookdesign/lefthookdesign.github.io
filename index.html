@@ -42,12 +42,12 @@
 </head>
 <body>
 
-<div id="nav" class="nav nav-scrolled"></div>
+<div id="nav" class="nav hide-for-small nav-scrolled"></div>
+<div id="nav-mobile" class="nav show-for-small nav-scrolled"></div>
 <div id="landing-hero" class="full-width white-bg lg-hero bg-image" style="background-image: url(assets/img/mobile-mockups.png);">
     <div class="full-width full-height" >
         <div class="row middle-xs center-xs end-sm full-height">
             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 lg-padding">
-                <!--<img class="full-width" style="max-width: 80px;" src="assets/img/logo/logo-icon-white.png" data-aos="zoom-out"/>-->
                 <h1 class="lg-bottom-padding" data-aos="zoom-out" data-aos-delay="200">Web, ui/ux, and print design.</h1>
                 <a class="" href="work.html"><div class="button-white center-align" data-aos="zoom-out">See the Case Studies</div></a>
             </div>
@@ -61,7 +61,7 @@
 </div>
 <div class="primary-gradient lg-section white-color" style="margin-top: -1px;">
     <div class="project row sm-section max-width center-xs start-md middle">
-        <div class="col-xs-6 col-sm-3 col-md-3 md-padding" data-aos="zoom-in" data-aos-once="true">
+        <div class="col-xs-6 col-sm-3 col-md-3 center-xs md-padding" data-aos="zoom-in" data-aos-once="true">
             <div class="card center-align" style="max-width: 200px;">
                 <a href="casestudies/tablerockdairy.html">
                 <img class="full-width border-radius" src="assets/casestudies/tablerockdairy/featured-tile.png"/>
@@ -70,7 +70,7 @@
             </div>
             <h3 class="sm-padding md-top-padding button-text white-color">Packaging</h3>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-3 md-padding" data-aos="zoom-in" data-aos-once="true" data-aos-delay="100">
+        <div class="col-xs-6 col-sm-3 col-md-3 center-xs md-padding" data-aos="zoom-in" data-aos-once="true" data-aos-delay="100">
             <div class="card center-align" style="max-width: 200px;">
                 <a href="casestudies/scottylabs.html">
                 <img class="full-width border-radius" src="assets/casestudies/scottylabs/featured-tile.png"/>
@@ -79,7 +79,7 @@
             </div>
             <h3 class="sm-padding md-top-padding button-text white-color">Logos</h3>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-3 md-padding" data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
+        <div class="col-xs-6 col-sm-3 col-md-3 center-xs md-padding" data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
             <div class="card center-align" style="max-width: 200px;">
                 <a href="casestudies/hillwedding.html">
                 <img class="full-width border-radius" src="assets/casestudies/wedding-hill/featured-tile.png"/>
@@ -88,7 +88,7 @@
             </div>
             <h3 class="sm-padding md-top-padding button-text white-color">Weddings</h3>
         </div>
-        <div class="col-xs-6 col-sm-3 col-md-3 md-padding" data-aos="zoom-in" data-aos-once="true" data-aos-delay="200">
+        <div class="col-xs-6 col-sm-3 col-md-3 center-xs md-padding" data-aos="zoom-in" data-aos-once="true" data-aos-delay="200">
             <div class="card center-align" style="max-width: 200px;">
                 <a href="casestudies/royaldigits.html">
                 <img class="full-width border-radius" src="assets/casestudies/royaldigits/featured-tile.png"/>
@@ -106,7 +106,7 @@
 <div class="white-bg" style="margin-top: -1px;">
 <div class="" style="background-image: url(assets/img/bg-1.svg); background-repeat: no-repeat; background-position: right 200px; background-size: 60%;">
     <div class="row lg-section md-max-width middle-xs">
-        <div class="col-xs-12 col-sm-6 sm-padding center-xs start-sm" data-aos="fade-up">
+        <div class="col-xs-12 col-sm-6 sm-padding center-xs start-sm first-xs last-sm" data-aos="fade-up">
             <h2 class="sm-bottom-padding">Quality Designs</h2>
             <p class="sm-top-padding">Address real needs to boost crediblity with users, increase brand recognition, and visualize goals.</p>
             <div class="md-top-padding">
@@ -152,17 +152,25 @@
 </div>
 <script>
     $("#nav").load("closet/header.html");
+    $("#nav-mobile").load("closet/header-mobile.html");
     $("#footer").load("closet/footer.html");
+    
 </script>
 <script>
 //navigation scroll function
- // $(window).scroll(function() {
- //   if ($(window).scrollTop() >= $('#landing-hero').outerHeight() - 200) {
- //     $("#nav").addClass("nav-scrolled");
- //   } else {
- //     $("#nav").removeClass("nav-scrolled");
- //   }
- // });
+//  $(window).scroll(function() {
+//    if ($(window).scrollTop() >= $('#landing-hero').outerHeight() - 200) {
+//      $("#nav").addClass("nav-scrolled");
+//    } else {
+//      $("#nav").removeClass("nav-scrolled");
+//    }
+//  });
+</script>
+<script>
+    function menuList() {
+      var element = document.getElementById("menu-list");
+      element.classList.toggle("block");
+    }
 </script>
 <script type="text/javascript" src="js/gradient.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
