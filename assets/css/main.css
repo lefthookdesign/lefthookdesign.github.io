@@ -3680,8 +3680,7 @@ i.material-icons {
     display: none; } }
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 3.8em;
-    font-weight: 400; }
+    font-size: 3.8em; }
 
   h2 {
     font-size: 2em;
