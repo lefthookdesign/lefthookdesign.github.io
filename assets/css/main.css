@@ -2967,6 +2967,26 @@ a:hover {
     transition: all .5s ease-in-out;
     width: 100%; }
 
+#nav-mobile {
+  transform: none;
+  position: fixed;
+  display: block;
+  height: auto;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100000; }
+  #nav-mobile .link {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    font-size: .8em;
+    padding: 5px 20px;
+    opacity: 1;
+    border-bottom: none; }
+  #nav-mobile .active {
+    color: #6B96FF; }
+
 .nav {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -2991,7 +3011,7 @@ a:hover {
   .nav .logo-icon {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    width: 40px; }
+    width: 34px; }
   .nav .primary {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;

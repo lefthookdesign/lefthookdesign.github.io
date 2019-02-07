@@ -339,6 +339,26 @@ a:hover {
         width: 100%;
     }
 }
+#nav-mobile {
+    transform: none;
+    position: fixed;
+    display: block;
+    height: auto;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100000;
+    
+    .link{
+        @include transition;
+        display: inline-block;
+        font-size: .8em;
+        padding: $xs $md;
+        opacity: 1;
+        border-bottom: none;}
+    .active{
+        color: $secondary-color;}
+}
 .nav{
     @include transition;
     width: 95%;
@@ -359,7 +379,7 @@ a:hover {
         width: 170px;}
     .logo-icon {
         @include transition;
-        width: 40px;}
+        width: 34px;}
     .primary{
         @include transition;
         max-width: 100%;}
