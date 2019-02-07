@@ -3719,6 +3719,9 @@ i.material-icons {
     line-height: 1.5em;
     padding: 5px 20px; } }
 @media only screen and (min-width: 1880px) {
+  h1 {
+    font-size: 4.2em; }
+
   .sm-max-width {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;

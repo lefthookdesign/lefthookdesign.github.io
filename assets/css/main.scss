@@ -944,6 +944,9 @@ i.material-icons {
     
 }
 @media only screen and (min-width: 1880px) {
+    h1 {
+        font-size: 4.2em;
+      }
     .sm-max-width{
         @include transition;
         width: 86%;
