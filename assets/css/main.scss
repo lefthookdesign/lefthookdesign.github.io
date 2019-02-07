@@ -545,9 +545,9 @@ opacity: 1; /* Firefox */
 
 /*button */
 .button {
-    @include slow-transition;
+    @include transition;
     @include button-radius;
-    //background: $pink-color;
+    @include shadow-light;
     background: -webkit-linear-gradient(left top, $white-color, $white-color);
     background: -o-linear-gradient(right bottom, $light-grey-color, $white-color); 
     background: -moz-linear-gradient(right bottom, $white-color, $white-color);
@@ -569,7 +569,7 @@ opacity: 1; /* Firefox */
 }
 .button:hover{
     @include shadow;
-    @include slow-transition;
+    @include transition;
     transform: translateY(-2px) !important;
     background: -webkit-linear-gradient(left top, $white-color, $white-color);
     background: -o-linear-gradient(right bottom, $white-color, $white-color); 
