@@ -3134,10 +3134,10 @@ input, textarea {
   margin-left: auto;
   margin-right: auto;
   color: #6B96FF !important;
-  -webkit-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
-  -moz-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
-  -ms-box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07);
-  box-shadow: 0px 4px 10px rgba(30, 24, 72, 0.07); }
+  -webkit-box-shadow: 0px 0px 0px rgba(30, 24, 72, 0);
+  -moz-box-shadow: 0px 0px 0px rgba(30, 24, 72, 0);
+  -ms-box-shadow: 0px 0px 0px rgba(30, 24, 72, 0);
+  box-shadow: 0px 0px 0px rgba(30, 24, 72, 0); }
 
 .button-white:hover {
   transform: translateY(-2px) !important;

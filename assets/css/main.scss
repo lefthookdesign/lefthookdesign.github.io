@@ -95,27 +95,38 @@ $shadow-dark: 0px 14px 25px rgba($primary-color,.2);
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
-          border-radius: $radius;}
+          border-radius: $radius;
+}
 @mixin button-radius {
   -webkit-border-radius: $button-radius;
      -moz-border-radius: $button-radius;
       -ms-border-radius: $button-radius;
-          border-radius: $button-radius;}
+          border-radius: $button-radius;
+}
 @mixin shadow {
   -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
       -ms-box-shadow: $shadow;
-          box-shadow: $shadow;}
+          box-shadow: $shadow;
+}
 @mixin shadow-light {
   -webkit-box-shadow: $shadow-light;
      -moz-box-shadow: $shadow-light;
       -ms-box-shadow: $shadow-light;
-          box-shadow: $shadow-light;}
+          box-shadow: $shadow-light;
+}
 @mixin shadow-dark {
   -webkit-box-shadow: $shadow-dark;
      -moz-box-shadow: $shadow-dark;
       -ms-box-shadow: $shadow-dark;
-          box-shadow: $shadow-dark;}
+          box-shadow: $shadow-dark;
+}
+@mixin no-shadow {
+  -webkit-box-shadow: $no-shadow;
+     -moz-box-shadow: $no-shadow;
+      -ms-box-shadow: $no-shadow;
+          box-shadow: $no-shadow;
+}
 @mixin circle {
     -webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -502,7 +513,7 @@ opacity: 1; /* Firefox */
     margin-left: auto;
     margin-right: auto;
     color: $secondary-color !important;
-    @include shadow-light;
+    @include no-shadow;
 }
 .button-white:hover{
     transform: translateY(-2px) !important;
