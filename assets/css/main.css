@@ -3046,7 +3046,7 @@ a:hover {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0);
   border-left-color: rgba(255, 255, 255, 0.2);
   border-width: 15px;
   margin-top: -15px; }
