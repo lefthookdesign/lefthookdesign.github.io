@@ -416,6 +416,11 @@ a:hover {
     position: relative;
     background: rgba($white-color, 0.2);
     padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
 }
 .breadcrumb:after {
 	left: 100%;
