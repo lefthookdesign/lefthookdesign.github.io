@@ -584,7 +584,7 @@ opacity: 1; /* Firefox */
     }
 
 /* items and misc styles */
-.featured-card {
+.card {
     @include transition;
     position: relative;
     max-width: 200px;
@@ -592,7 +592,7 @@ opacity: 1; /* Firefox */
         @include border-radius;
         @include transition;}
 }
-.featured-card:hover {
+.card:hover {
     @include transition;
     @include rise;
     img {
@@ -600,40 +600,6 @@ opacity: 1; /* Firefox */
         @include shadow;}
 }
 
-.card {
-    @include border-radius;
-    background: $white-color;
-    position: relative;
-}
-.project {
-    .card {
-        @include border-radius;
-        @include transition;
-        .tile {
-            @include transition;
-            @include border-radius;
-            opacity: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            background: rgba($dark-color, .5);
-            h3 {
-                color: $white-color;
-                padding-bottom: $sm;}
-            h4 {
-                color: $secondary-accent;}
-        }
-    }
-    .card:hover {
-        @include transition;
-        @include shadow-dark;
-        @include rise;
-        .tile {
-            @include transition;
-            opacity: 1;
-        }
-    }
-}
 .project-title {
     @include transition;
     display: none;
