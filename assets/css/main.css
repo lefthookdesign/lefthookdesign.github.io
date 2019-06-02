@@ -3030,7 +3030,12 @@ a:hover {
 .breadcrumb {
   position: relative;
   background: rgba(255, 255, 255, 0.2);
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .05em; }
 
 .breadcrumb:after {
   left: 100%;
@@ -3242,9 +3247,9 @@ input, textarea {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   position: relative;
-  -ms-transform: translateY(-6px);
-  -webkit-transform: translateY(-6px);
-  transform: translateY(-6px); }
+  -ms-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px); }
   .card:hover img {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3266,9 +3271,9 @@ input, textarea {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   position: relative;
-  -ms-transform: translateY(-6px);
-  -webkit-transform: translateY(-6px);
-  transform: translateY(-6px);
+  -ms-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
   display: block;
   background: rgba(30, 24, 72, 0.8); }
 
@@ -3291,9 +3296,9 @@ input, textarea {
 
 .rise:hover {
   position: relative;
-  -ms-transform: translateY(-6px);
-  -webkit-transform: translateY(-6px);
-  transform: translateY(-6px);
+  -ms-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out; }
 
