@@ -3031,7 +3031,7 @@ a:hover {
   color: #1e1848 !important;
   position: relative;
   background: white;
-  padding: 10px 3px 9px 10px;
+  padding: 10px 0px 9px 10px;
   border-radius: 4px 0px 0px 4px;
   cursor: pointer;
   font-weight: 800;
@@ -3055,7 +3055,7 @@ a:hover {
 
 .breadcrumb-last {
   background: none;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 26px 10px 26px;
   text-transform: uppercase; }
 
 #menu-list {
