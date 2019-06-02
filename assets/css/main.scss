@@ -20,10 +20,10 @@ $dark-color: #0E0F34;
 $grey-color: #bdbacd;
 $white-color: #fff;
 $pink-color: #FF4080;
-$no-shadow: 0px 0px 0px rgba($primary-color,0);
-$shadow: 0px 4px 10px rgba($primary-color,.12);
-$shadow-light: 0px 4px 10px rgba($primary-color, .07);
-$shadow-dark: 0px 14px 25px rgba($primary-color,.2);
+$no-shadow: none;
+$shadow: 0px 4px 10px rgba($dark-color,.12);
+$shadow-light: 0px 4px 10px rgba($dark-color, .07);
+$shadow-dark: 0px 14px 25px rgba($dark-color,.2);
 
 *, ::before, ::after { padding: 0; margin: 0; box-sizing: border-box;}
 
