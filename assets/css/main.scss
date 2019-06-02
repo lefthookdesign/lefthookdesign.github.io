@@ -436,16 +436,15 @@ a:hover {
         border-width: 15px;
         margin-top: -15px;
     }
-    .active {
+    
+}
+.breadcrumb-last {
         background: none;
         padding: 10px 3px 10px 20px;
         :after {
             border: none !important;
         }
-    }
 }
-.breadcrumb
-
 #menu-list {
     display: none;
 }

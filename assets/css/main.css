@@ -3050,13 +3050,13 @@ a:hover {
     border-left-color: rgba(255, 255, 255, 0.2);
     border-width: 15px;
     margin-top: -15px; }
-  .breadcrumb .active {
-    background: none;
-    padding: 10px 3px 10px 20px; }
-    .breadcrumb .active :after {
-      border: none !important; }
 
-.breadcrumb
+.breadcrumb-last {
+  background: none;
+  padding: 10px 3px 10px 20px; }
+  .breadcrumb-last :after {
+    border: none !important; }
+
 #menu-list {
   display: none; }
 
