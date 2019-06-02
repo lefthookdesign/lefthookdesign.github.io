@@ -3028,8 +3028,9 @@ a:hover {
     color: #fff !important; }
 
 .breadcrumb {
+  color: #1e1848;
   position: relative;
-  background: rgba(255, 255, 255, 0.2);
+  background: white;
   padding: 10px 3px 10px 10px;
   border-radius: 2px 0px 0px 2px;
   cursor: pointer;
@@ -3047,13 +3048,14 @@ a:hover {
     position: absolute;
     pointer-events: none;
     border-color: rgba(255, 255, 255, 0);
-    border-left-color: rgba(255, 255, 255, 0.2);
+    border-left-color: white;
     border-width: 15px;
     margin-top: -15px; }
 
 .breadcrumb-last {
   background: none;
-  padding: 10px 3px 10px 20px; }
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase; }
 
 #menu-list {
   display: none; }

@@ -413,8 +413,9 @@ a:hover {
     }
 }
 .breadcrumb {
+    color: $primary-color;
     position: relative;
-    background: rgba($white-color, 0.2);
+    background: rgba($white-color, 1);
     padding: 10px 3px 10px 10px;
     border-radius: 2px 0px 0px 2px;
     cursor: pointer;
@@ -432,14 +433,15 @@ a:hover {
         position: absolute;
         pointer-events: none;
         border-color: rgba($white-color, 0);
-        border-left-color: rgba($white-color, 0.2);
+        border-left-color: rgba($white-color, 1);
         border-width: 15px;
         margin-top: -15px;
     }   
 }
 .breadcrumb-last {
-        background: none;
-        padding: 10px 3px 10px 20px;
+    background: none;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
 }
 #menu-list {
     display: none;
