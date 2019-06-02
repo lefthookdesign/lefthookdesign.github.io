@@ -2849,7 +2849,7 @@ body {
 
 /* text and headers */
 h1, h2, h3, h4 {
-  color: #202746;
+  color: #1e1848;
   margin: 0;
   width: 100%; }
 
@@ -2859,15 +2859,14 @@ h1 {
 
 h2 {
   font-size: 2.7em;
-  font-weight: 400;
-  color: #1e1848; }
+  font-weight: 600; }
 
 h3 {
   font-size: 1.414em;
   font-weight: 800; }
 
 h4 {
-  font-size: 1.414em;
+  font-size: 1.25em;
   line-height: 1.4em;
   font-weight: 400; }
 
