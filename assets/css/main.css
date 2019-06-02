@@ -3000,11 +3000,11 @@ a:hover {
 .nav-scrolled {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  -webkit-box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.12);
-  -moz-box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.12);
-  -ms-box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.12);
-  box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.12);
-  background: rgba(255, 255, 255, 0.8) !important; }
+  -webkit-box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.07);
+  -moz-box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.07);
+  -ms-box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.07);
+  box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.07);
+  background: rgba(255, 255, 255, 0.87) !important; }
   .nav-scrolled .active {
     color: #0E0F34 !important; }
   .nav-scrolled .logo, .nav-scrolled .logo-icon {
