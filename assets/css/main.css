@@ -32,10 +32,10 @@
   background: #E8E4F7; }
 
 .light-grey-color {
-  color: #FDFAFD; }
+  color: #F3F6FB; }
 
 .light-grey-bg {
-  background: #FDFAFD; }
+  background: #F3F6FB; }
 
 .grey-color {
   color: #bdbacd; }
@@ -3199,7 +3199,7 @@ input, textarea {
   -ms-box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.07);
   box-shadow: 0px 4px 10px rgba(14, 15, 52, 0.07);
   background: -webkit-linear-gradient(left top, #fff, #fff);
-  background: -o-linear-gradient(right bottom, #FDFAFD, #fff);
+  background: -o-linear-gradient(right bottom, #F3F6FB, #fff);
   background: -moz-linear-gradient(right bottom, #fff, #fff);
   background: linear-gradient(to right bottom, #fff, #fff);
   padding: 15px 30px;
