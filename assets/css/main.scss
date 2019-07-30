@@ -241,7 +241,6 @@ body {
 
 /* text and headers */
 h1, h2, h3, h4 {
-  color: $primary-color;
   margin: 0;
   width: 100%; 
 }
@@ -250,7 +249,7 @@ h1 {
   line-height: 1.2em !important;
   }
 h2 {
-    font-size: 2.7em;
+    font-size: 2.87em;
     font-weight: 600;
 }
 h3 {
@@ -258,12 +257,12 @@ h3 {
   font-weight: 800;
 }
 h4 {
-    font-size: 1.25em;
+    font-size: 1.1em;
     line-height: 1.4em;
-    font-weight: 400;
+    font-weight: 600;
 }
 h5 {
-    font-size: 1em;
+    font-size: .65em;
     font-weight: 400;
 }
 p {
@@ -374,7 +373,7 @@ a:hover {
         color: $white-color !important;}
     .logo{
         @include transition;
-        width: 170px;}
+        width: 160px;}
     .logo-icon {
         @include transition;
         width: 34px;}
@@ -386,6 +385,35 @@ a:hover {
     @include transition;
     @include shadow-light;
     background: rgba($white-color, .87) !important;
+    .active {
+        color: $dark-color !important;
+    }
+    .logo, .logo-icon {
+        @include transition;
+        #logo-dark {
+            display: block !important;
+        }
+        #logo-white {
+            display: none;
+        }
+    }
+    a{
+        @include transition;
+        color: $primary-accent !important;
+        }
+    a:hover {
+        @include transition;
+        color: $primary-color !important;}
+    .button-secondary{
+        color: $white-color !important;
+    }
+    .button-secondary:hover{
+        color: $white-color !important;
+    }
+}
+.nav-home{    
+    @include transition;
+    background: rgba($white-color, .8) !important;
     .active {
         color: $dark-color !important;
     }
@@ -694,7 +722,7 @@ i.material-icons {
     margin: auto;
     }
 .md-hero{
-    height: 80vh;
+    height: 90vh;
     margin: auto;
     }
 .lg-hero{
@@ -924,12 +952,14 @@ i.material-icons {
       font-weight: 800;
       text-transform: uppercase;}
     h4 {
-      font-size: 1.14em;
-      font-weight: 600;}
+      font-size: 1.1em;
+      font-weight: 600;
+    }
     input, textarea {
         font-size: 1.5em;
         line-height: 1.5em;
-        padding: 5px 20px;}
+        padding: 5px 20px;
+    }
     
 }
 @media only screen and (min-width: 1880px) {

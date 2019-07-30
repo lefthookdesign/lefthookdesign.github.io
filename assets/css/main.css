@@ -2849,7 +2849,6 @@ body {
 
 /* text and headers */
 h1, h2, h3, h4 {
-  color: #1e1848;
   margin: 0;
   width: 100%; }
 
@@ -2858,7 +2857,7 @@ h1 {
   line-height: 1.2em !important; }
 
 h2 {
-  font-size: 2.7em;
+  font-size: 2.87em;
   font-weight: 600; }
 
 h3 {
@@ -2866,12 +2865,12 @@ h3 {
   font-weight: 800; }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.1em;
   line-height: 1.4em;
-  font-weight: 400; }
+  font-weight: 600; }
 
 h5 {
-  font-size: 1em;
+  font-size: .65em;
   font-weight: 400; }
 
 p {
@@ -2987,7 +2986,7 @@ a:hover {
   .nav .logo {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    width: 170px; }
+    width: 160px; }
   .nav .logo-icon {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3025,6 +3024,32 @@ a:hover {
   .nav-scrolled .button-secondary {
     color: #fff !important; }
   .nav-scrolled .button-secondary:hover {
+    color: #fff !important; }
+
+.nav-home {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background: rgba(255, 255, 255, 0.8) !important; }
+  .nav-home .active {
+    color: #0E0F34 !important; }
+  .nav-home .logo, .nav-home .logo-icon {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    .nav-home .logo #logo-dark, .nav-home .logo-icon #logo-dark {
+      display: block !important; }
+    .nav-home .logo #logo-white, .nav-home .logo-icon #logo-white {
+      display: none; }
+  .nav-home a {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #202746 !important; }
+  .nav-home a:hover {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #1e1848 !important; }
+  .nav-home .button-secondary {
+    color: #fff !important; }
+  .nav-home .button-secondary:hover {
     color: #fff !important; }
 
 .breadcrumb {
@@ -3382,7 +3407,7 @@ i.material-icons {
   margin: auto; }
 
 .md-hero {
-  height: 80vh;
+  height: 90vh;
   margin: auto; }
 
 .lg-hero {
@@ -3678,7 +3703,7 @@ i.material-icons {
     text-transform: uppercase; }
 
   h4 {
-    font-size: 1.14em;
+    font-size: 1.1em;
     font-weight: 600; }
 
   input, textarea {
