@@ -1,0 +1,57 @@
+<doctype html>
+<head>
+    <title>I Want To Believe | Left Hook Design LLC</title>
+    <!-- main -->
+    <meta name="keywords" content="design, HTML, web design, logo design, user experience, code">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon@32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon@16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e205d">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- links & scripts -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script type="text/javascript"src="js/gradient.js"></script>
+    <script type="text/javascript"src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+    
+<div id="landing-hero" class="light-grey-bg full-width">
+    <div id="nav" class="nav nav-scrolled"></div>
+    <div class="max-width sm-padding primary-color">
+        <div class="row primary-color full-width full-height center-xs middle-xs" style="background-image: url(assets/img/ufo-middle.svg); background-repeat: no-repeat; background-position: center; background-size: 50%;">
+            <div class="col-xs-12 col-sm-4 sm-padding">
+                <h1 class="sm-padding"><b>404</b></h1>
+                <h4 class="sm-padding">The page you're looking for doesn't seem to exist.</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+    
+<script>
+    $("#nav").load("closet/header.html");
+    $("#footer").load("closet/footer.html");
+</script>
+
+<script>
+//add active class to current link
+$(function(){
+    var current = location.pathname;
+    $('#nav a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
+})
+</script>
+        
+</body>
+</doctype>
