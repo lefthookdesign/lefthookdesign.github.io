@@ -1,13 +1,27 @@
-<nav class="max-width">
-    <div class="row">
-        <div class="col-xs-12 col-sm-2 logo sm-padding vertical-align center-xs start-sm">
-            <a href="/index.html"><img id="logo-white" class="logo full-width" src="../assets/img/logo/logo-full-white.png"/></a>
-            <a href="/index.html"><img id="logo-dark" style="display: none;" class="logo full-width" src="../assets/img/logo/logo-full-dark.png"/></a>
+<nav class="header-bar">
+    <nav class="row left-text middle">
+        <a class="sm-padding sm-right-padding inline-block" href="/index.html"><img id="logo-white" class="logo full-width vertical-align" src="../assets/img/logo/logo-icon-dark.png"/></a>
+        
+        <div id="menu-icon" class="sm-right-padding" onclick="menuList()">
+            <a><i class="material-icons primary-color">menu</i></a>
         </div>
-        <div class="col-xs-12 col-sm-10 primary sm-padding center-align center-xs start-sm">
-            <a href="/work.html" class="link">Work</a>
-            <a href="/about.html" class="link">About</a>
-            <a href="/contact.html" class="link">Contact</a>
+        
+        <!--<a href="/work.html" class="link">Work</a>
+        <a href="/about.html" class="link">About</a>
+        <a href="/contact.html" class="link">Contact</a>-->
+    </nav>
+</nav>
+<div id="menu-list" class="row">
+    <div class="col-xs-12 end-xs xs-padding">
+        <div id="close" class="" onclick="closeMenu()">
+            <i class="material-icons">clear</i>
         </div>
     </div>
-</nav>
+    <div class="col-xs-12 start-xs md-left-padding md-right-padding sm-top-padding sm-bottom-padding">
+        <div class="xs-padding"><a onclick="()" href="/services.html" class="link">Services</a></div>
+        <div class="xs-padding"><a onclick="()" href="/work.html" class="link">Work</a></div>
+        <div class="xs-padding"><a onclick="()" href="/about.html" class="link">About</a></div>
+        <div class="xs-padding"><a onclick="()" href="/process.html" class="link">Process</a></div>
+        <div class="xs-padding"><a onclick="()" href="/contact.html" class="link">Contact</a></div>
+    </div>
+</div>

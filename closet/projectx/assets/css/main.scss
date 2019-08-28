@@ -1,52 +1,85 @@
 $fonts: Montserrat, Open Sans, Helvetica, Arial, sans-serif;
 
 $radius: 25px;
-$button-radius: 50px;
+$button-radius: 5px;
 
-$xs: 5px;
-$sm: 10px;
-$md: 20px;
-$lg: 50px;
-$xl: 100px;
+$xs: 7px;
+$sm: 15px;
+$md: 30px;
+$lg: 70px;
+$xl: 120px;
 
 
 $primary-color: #1e1848;
 $primary-accent: #202746;
 $secondary-color: #6B96FF;
-$teal-color:#0FCFD7;
-$secondary-accent: #E8E4F7; 
+$accent-color:#FF4080;
 $light-grey-color: #faf8fa;
-$dark-color: #0E0F34;
 $grey-color: #bdbacd;
+$dark-grey-color: #8D8B99;
 $white-color: #fff;
-$pink-color: #FF4080;
+$black-color: #0E0F34;
 $no-shadow: none;
-$shadow: 0px 4px 10px rgba($dark-color,.12);
-$shadow-light: 0px 4px 10px rgba($dark-color, .07);
-$shadow-dark: 0px 14px 25px rgba($dark-color,.2);
+$shadow-light: 0px 2px 5px rgba($black-color, 0.07);
+$shadow: 0px 4px 10px rgba($black-color, 0.12);
+$shadow-dark: 0px 20px 25px rgba($black-color,0.4);
 
 *, ::before, ::after { padding: 0; margin: 0; box-sizing: border-box;}
 
-.primary-color{color:$primary-color;}
-.primary-bg{background: $primary-color;}
-.primary-accent-color{color:$primary-accent;}
-.primary-accent-bg{background: $primary-accent;}
-.secondary-color{color:$secondary-color;}
-.secondary-bg{background: $secondary-color;}
-.secondary-accent-color{color:$secondary-accent;}
-.secondary-accent-bg{background: $secondary-accent;}
-.light-grey-color{color:$light-grey-color;}
-.light-grey-bg{background:$light-grey-color;}
-.grey-color{color:$grey-color;}
-.grey-bg{background:$grey-color;}
-.teal-color{color:$teal-color;}
-.teal-bg{background:$teal-color;}
-.dark-color{color:$dark-color;}
-.dark-bg{background:$dark-color;}
-.white-color{color:$white-color !important;}
-.white-bg{background:$white-color;}
-.pink-color{color:$pink-color;}
-.pink-bg{background:$pink-color;}
+.primary-color{
+    color:$primary-color;
+}
+.primary-bg{
+    background: $primary-color;
+}
+.primary-accent-color{
+    color: $primary-accent;
+}
+.primary-accent-bg{
+    background: $primary-accent;
+}
+.secondary-color{
+    color:$secondary-color;
+}
+.secondary-bg{
+    background: $secondary-color;
+}
+.accent-color{
+    color:$accent-color;
+}
+.accent-bg{
+    background:$accent-color;}
+.light-grey-color{
+    color:$light-grey-color;
+}
+.light-grey-bg{
+    background:$light-grey-color;
+}
+.grey-color{
+    color:$grey-color;
+}
+.grey-bg{
+    background:$grey-color;
+}
+.dark-grey-color{
+    color:$dark-grey-color;
+}
+.dark-grey-bg{
+    background:$dark-grey-color;
+}
+.black-color{
+    color:$black-color;
+}
+.black-bg{
+    background:$black-color;
+}
+.white-color{
+    color:$white-color !important;
+}
+.white-bg{
+    background:$white-color;
+}
+
 
 /* fonts */
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
@@ -62,36 +95,30 @@ $shadow-dark: 0px 14px 25px rgba($dark-color,.2);
 
 /* mixins */
 @mixin primary-gradient {
-    background: -webkit-linear-gradient(0deg, $dark-color, $primary-color);
-    background: -o-linear-gradient(0deg, $dark-color, $primary-color); 
-    background: -moz-linear-gradient(0deg, $dark-color, $primary-color);
-    background: linear-gradient(0deg, $dark-color, $primary-color);}
-@mixin primary-white-gradient {
-    background: -webkit-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));
-    background: -o-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5)); 
-    background: -moz-linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));
-    background: linear-gradient(165deg, rgba($white-color, .9), rgba($secondary-accent,0.5));}
-@mixin dark-transparent-gradient {
-    background: -webkit-linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4));
-    background: -o-linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4)); 
-    background: -moz-linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4));
-    background: linear-gradient(165deg, rgba($dark-color, 0.5), rgba($dark-color,0.4));}
+    background: -webkit-linear-gradient(0deg, $black-color, $primary-color);
+    background: -o-linear-gradient(0deg, $black-color, $primary-color); 
+    background: -moz-linear-gradient(0deg, $black-color, $primary-color);
+    background: linear-gradient(0deg, $black-color, $primary-color);}
+@mixin white-gradient {
+    background: -webkit-linear-gradient(0deg, rgba($white-color, .9), rgba($light-grey-color,0.3));
+    background: -o-linear-gradient(0deg, rgba($white-color, .9), rgba($light-grey-color,0.3)); 
+    background: -moz-linear-gradient(0deg, rgba($white-color, .9), rgba($light-grey-color,0.3));
+    background: linear-gradient(0deg, rgba($white-color, .9), rgba($light-grey-color,0.3));
+}
+@mixin dark-gradient {
+    background: -webkit-linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7));
+    background: -o-linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7)); 
+    background: -moz-linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7));
+    background: linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7));
+}
 @mixin secondary-gradient {
-    background: -webkit-linear-gradient(left top, $primary-color, $secondary-color);
-    background: -o-linear-gradient(right bottom, $primary-color, $secondary-color); 
-    background: -moz-linear-gradient(right bottom, $primary-color, $secondary-color);
-    background: linear-gradient(to right bottom, $primary-color, $secondary-color);}
-@mixin teal-gradient {
-    background: -webkit-linear-gradient(left top, #5ecae7, $teal-color);
-    background: -o-linear-gradient(right bottom, #5ecae7, $teal-color); 
-    background: -moz-linear-gradient(right bottom, #5ecae7, $teal-color);
-    background: linear-gradient(to right bottom, #5ecae7, $teal-color);}
-@mixin bright-gradient {
-    background: -webkit-linear-gradient(left top, $secondary-color, $pink-color);
-    background: -o-linear-gradient(right bottom, $secondary-color, $pink-color); 
-    background: -moz-linear-gradient(right bottom, $secondary-color, $pink-color);
-    background: linear-gradient(to right bottom, $secondary-color, $pink-color);}
-@mixin border-radius {
+    background: -webkit-linear-gradient(0deg, rgba($black-color, 0.55), rgba($black-color,0.3));
+    background: -o-linear-gradient(0deg, rgba($black-color, 0.55), rgba($black-color,0.3)); 
+    background: -moz-linear-gradient(0deg, rgba($black-color, 0.55), rgba($black-color,0.3));
+    background: linear-gradient(0deg, rgba($black-color, 0.55), rgba($black-color,0.3));
+}
+
+@mixin radius {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
@@ -131,57 +158,44 @@ $shadow-dark: 0px 14px 25px rgba($dark-color,.2);
     -webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
-	border-radius: 50%;}
+	border-radius: 50%;
+}
+
 @mixin transition {
     -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;}
+    transition: all .5s ease-in-out;
+}
 @mixin slow-transition {
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;}
-@mixin fast-transition {
-    -webkit-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;}
-@mixin scale-zero {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);}
-@mixin scale-full {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);}
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
 @mixin delay {
     -webkit-transition-delay: 2s;
-    transition-delay: 2s;}
-@mixin undersized {
-    -webkit-transform: scale(0.8) translate(-30%, -30%);
-    -ms-transform: scale(0.8) translate(-30%, -30%);
-    transform: scale(0.8) translate(-30%, -30%);}
+    transition-delay: 2s;
+}
+
 @mixin oversized {
     -webkit-transform: scale(1.25);
     -ms-transform: scale(1.25);
-    transform: scale(1.25);}
-@mixin oversized-right {
-    -ms-transform: rotate(10deg) scale(1.2); 
-    -webkit-transform: rotate(10deg) scale(1.2); 
-    transform: rotate(10deg) scale(1.2);}
-@mixin oversized-left {
-    -ms-transform: rotate(-10deg) scale(1.2); 
-    -webkit-transform: rotate(-10deg) scale(1.2); 
-    transform: rotate(-10deg) scale(1.2);}
+    transform: scale(1.25);
+}
 @mixin rise {
     position:relative;
     -ms-transform: translateY(-4px);
     -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);}
+    transform: translateY(-4px);
+}
 @mixin opacity{
-    opacity: .4;}
+    opacity: .4;
+}
 
 body {
     font: 100% $fonts;
     font-weight: 400;
     font-size: 1em;
     line-height: 1.15;
-    color: $primary-color;
+    color: $black-color;
     margin:0;
 	padding:0;
     min-height: 100%;
@@ -199,17 +213,19 @@ body {
 
 .footer{
     @include primary-gradient;
-    color: $secondary-accent !important;
+    color: $grey-color !important;
     position: relative;
     z-index: 1;
     a{
-       color: $pink-color;}
+       color: $secondary-color;}
     img{
-    @include opacity;
-    @include transition;}
+        @include opacity;
+        @include transition;
+    }
     img:hover{
-    opacity: 1;
-    @include transition;}
+        opacity: 1;
+        @include transition;
+    }
 }
 
 
@@ -218,31 +234,33 @@ body {
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    z-index: 0;}
-.header-image{
+    z-index: 0;
+}
+.parallax-bg-image{
     @include transition;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;}
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 .primary-gradient{
-    @include primary-gradient;}
-.primary-white-gradient{
-    @include primary-white-gradient;}
-.dark-transparent-gradient{
-    @include dark-transparent-gradient;}
+    @include primary-gradient;
+}
+.white-gradient{
+    @include white-gradient;
+}
+.dark-gradient{
+    @include dark-gradient;
+}
 .secondary-gradient{
-    @include secondary-gradient;}
-.teal-gradient{
-    @include teal-gradient;}
-.bright-gradient{
-    @include bright-gradient;}
+    @include secondary-gradient;
+}
 
 
 /* text and headers */
 h1, h2, h3, h4 {
-  margin: 0;
-  width: 100%; 
+  margin: 0; 
 }
 h1 {
   font-size: 3.8em;
@@ -254,86 +272,125 @@ h2 {
 }
 h3 {
   font-size: 1.414em/*1.999em*/;
-  font-weight: 800;
+    line-height: 1.4em;
+  font-weight: 400;
 }
 h4 {
     font-size: 1.1em;
     line-height: 1.4em;
-    font-weight: 600;
+    font-weight: 400;
 }
 h5 {
     font-size: .65em;
     font-weight: 400;
 }
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     padding: 10px 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: $primary-color;
+    color: $black-color;
     opacity: .7;
 }
-.text-behind {
-    position: relative;
-    margin-top: -20px;
-    margin-left: 14px;
-    z-index: -1;
-    color: $secondary-accent !important;
-}
+
 .sm-text {
   font-size: 0.707em !important;}
-.lg-text {
-    font-size: 3em;
+
+.centered {
+    text-align: center;
+    align-content: center;
 }
-.xl-text {
-    font-size: 6em !important;}
-.centered-text {
-    text-align: center;}
-.right-text{
-    text-align: right;}
+.right{
+    text-align: right;
+}
 .left-text{
-    text-align: left;}
+    text-align: left;
+}
 .uppercase{
-    text-transform: uppercase;}
+    text-transform: uppercase;
+}
 .bold {
     font-weight: 600;
 }
 a {
     @include transition;
-    color: $primary-color;
+    color: $secondary-color;
     font-weight: 600;
     font-size: inherit;
     text-decoration: none;
-    cursor: pointer;}
+    cursor: pointer;
+    i {
+        @include transition;
+        position: relative;
+        left: 0px;
+    }
+}
 a:hover {
-    @include slow-transition;
-    color: $secondary-color !important;}
-
+    @include transition;
+    color: $secondary-color !important;
+    i {
+        @include transition;
+        left: 5px;
+    }
+}
+i.large {
+    font-size: 40px;
+}
 
 
 /* navigation */
-
-#nav, #nav-mobile {
+#nav {
     transform: none;
     position: fixed;
     display: block;
     height: auto;
-    width: 100%;
     top: 0px;
     left: 0px;
     z-index: 100000;
-    
+    //width: 100%;
+}
+
+.nav{
+    @include transition;
+    text-align: center;
+    background:'';
+    padding: $sm;
+    margin: auto !important;
+    width: 140px;
+    i:hover {
+        @include transition;
+        color: $accent-color;
+        left:0;
+    }
+    a{
+        @include transition;
+        color: $light-grey-color;
+        font-weight: 600;
+        }
+    a:hover {
+        @include transition;
+        color: $white-color !important;
+    }
+    .logo{
+        @include transition;
+        width: 34px;
+    }
+    .primary{
+        @include transition;
+        max-width: 100%;
+    }
     .link{
         @include transition;
         display: inline-block;
-        font-size: .8em;
-        padding: $xs $md;
+        font-size: 1.4em;
+        letter-spacing: 0.06em;
+        padding: $xs $sm;
         opacity: 1;
         border-bottom: none;
     }
     .active{
-        color: $secondary-color;
+        color: $black-color;
         opacity: 1 !important;
     }
     .link.active::after {
@@ -355,97 +412,57 @@ a:hover {
         @include transition;
         width: 100%;
     }
-}
-.nav{
-    @include transition;
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    background:'';
-    a{
+    .header-bar {
         @include transition;
+        @include shadow-light;
+        @include button-radius;
+        background: rgba($white-color, .93) !important;
+        width: auto;
+    }
+}
+.scrolled{    
+    @include transition;
+    padding: 0 !important;
+    width: 100%;
+    .header-bar {
+        border-radius: 0;
+    }
+}
+#menu-list {
+    @include transition;
+    @include shadow-dark;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba($primary-color, 0.97);
+    width: 22%;
+    max-width: 500px;
+    min-width: 200px;
+    height: 100%;
+}
+#close {
+    z-index: 100;
+    padding: $xs;
+    cursor: pointer;
+    i {
+        @include transition;
+        @include opacity;
         color: $white-color;
-        font-weight: 800;
-        text-transform: uppercase;
-        }
-    a:hover {
-        @include transition;
-        color: $white-color !important;}
-    .logo{
-        @include transition;
-        width: 160px;}
-    .logo-icon {
-        @include transition;
-        width: 34px;}
-    .primary{
-        @include transition;
-        max-width: 100%;}
-}
-.nav-scrolled{    
-    @include transition;
-    @include shadow-light;
-    background: rgba($white-color, .87) !important;
-    .active {
-        color: $dark-color !important;
     }
-    .logo, .logo-icon {
+    i:hover {
         @include transition;
-        #logo-dark {
-            display: block !important;
-        }
-        #logo-white {
-            display: none;
-        }
-    }
-    a{
-        @include transition;
-        color: $primary-accent !important;
-        }
-    a:hover {
-        @include transition;
-        color: $primary-color !important;}
-    .button-secondary{
-        color: $white-color !important;
-    }
-    .button-secondary:hover{
-        color: $white-color !important;
+        opacity: 1;
     }
 }
-.nav-home{    
-    @include transition;
-    background: rgba($white-color, .8) !important;
-    .active {
-        color: $dark-color !important;
-    }
-    .logo, .logo-icon {
-        @include transition;
-        #logo-dark {
-            display: block !important;
-        }
-        #logo-white {
-            display: none;
-        }
-    }
-    a{
-        @include transition;
-        color: $primary-accent !important;
-        }
-    a:hover {
-        @include transition;
-        color: $primary-color !important;}
-    .button-secondary{
-        color: $white-color !important;
-    }
-    .button-secondary:hover{
-        color: $white-color !important;
-    }
-}
+
+
 .breadcrumb {
     color: $primary-color !important;
     position: relative;
     background: rgba($white-color, 1);
     padding: 10px 0px 9px 10px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: $button-radius 0px 0px $button-radius;
     cursor: pointer;
     font-weight: 800;
     font-size: .9em;
@@ -471,15 +488,6 @@ a:hover {
     padding: 10px 26px 10px 26px;
     text-transform: uppercase;
 }
-#menu-list {
-    display: none;
-}
-
-#close {
-    position: fixed;
-    z-index: 100;
-    padding: $md;
-}
 
 /* inputs and buttons */
 input, textarea {
@@ -503,12 +511,10 @@ opacity: 1; /* Firefox */
 }
 :focus {
     outline: -webkit-focus-ring-color auto;
-    outline-color: $pink-color;
+    outline-color: $accent-color;
     outline-offset: -2px;
     box-sizing: border-box;
 }
-
-
 
 
 
@@ -519,14 +525,14 @@ opacity: 1; /* Firefox */
     position:relative;
     top:0;
     cursor: pointer;
-    font-weight: 800;
-    font-size: .9em;
+    font-weight: 600;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: .05em;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    color: $pink-color;
+    color: $accent-color;
     
     i {
         @include transition;
@@ -535,8 +541,7 @@ opacity: 1; /* Firefox */
 }
 .button-text:hover{  
     @include transition;
-    transform: translateY(-2px) !important;
-    color: #f05343;
+    color: $accent-color;
     i {
         @include transition;
         margin-left: 4px;}
@@ -551,47 +556,47 @@ opacity: 1; /* Firefox */
     position:relative;
     top:0;
     cursor: pointer;
-    font-weight: 700;
-    font-size: .8em;
+    font-weight: 600;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .05em;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    color: $secondary-color !important;
+    color: $accent-color !important;
     @include no-shadow;
 }
 .button-white:hover{
     transform: translateY(-2px) !important;
     @include transition;
-    color:  $secondary-color !important;
+    color:  $primary-color !important;
     @include shadow;
 }
 
 /*button dark*/
 .button-secondary {
-    @include slow-transition;
+    @include transition;
     @include button-radius;
-    background: -webkit-linear-gradient(left top, $secondary-color, $dark-color);
-    background: -o-linear-gradient(right bottom, $secondary-color, $dark-color); 
-    background: -moz-linear-gradient(right bottom, $secondary-color, $dark-color);
-    background: linear-gradient(to right bottom, $secondary-color, $dark-color);
-    padding: 8px 20px !important;
+    background: rgba($secondary-color, 0.2);
+    padding: 10px 20px !important;
     position:relative;
     top:0;
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 600;
     font-size: .8em;
     text-transform: uppercase;
     letter-spacing: .05em;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    color: $white-color !important;
+    color: $white-color;
 }
 .button-secondary:hover{
-    @include shadow-light;
-    @include slow-transition;
+    @include shadow;
+    @include transition;
+    transform: translateY(-2px);
+    background: $primary-color;
+    color: $accent-color;
 }
 
 /*button */
@@ -608,7 +613,7 @@ opacity: 1; /* Firefox */
     border: none;
     top:0;
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 600;
     font-size: .8em;
     text-transform: uppercase;
     letter-spacing: .05em;
@@ -630,18 +635,32 @@ opacity: 1; /* Firefox */
 /* items and misc styles */
 .card {
     @include transition;
+    @include button-radius;
     position: relative;
-    max-width: 200px;
-    img {
-        @include border-radius;
-        @include transition;}
+    background: $white-color;
+    .bg-image {
+        @include button-radius;
+    }
+}
+.overlay {
+    @include transition;
+    @include dark-gradient;
+    @include button-radius;
+    position: absolute;
+    //align-content: flex-end;
+    text-align: start;
+    width: 100%;
+    height: 100%;
 }
 .card:hover {
     @include transition;
+    @include shadow-dark;
     @include rise;
-    img {
-        @include transition;
-        @include shadow;}
+}
+
+.overlay:hover {
+    @include transition;
+    @include secondary-gradient;
 }
 
 .project-title {
@@ -678,10 +697,6 @@ opacity: 1; /* Firefox */
     @include transition;}
 i.sm-icon {
     font-size: 22px !important;}
-i.material-icons {
-    display: inline-block !important;
-    position: relative;
-}
 .lighter{
     @include opacity;}
 .bottom-border {
@@ -707,8 +722,12 @@ i.material-icons {
     @include shadow-dark;}
 .opacity{
     @include opacity;}
-.border-radius {
-    @include border-radius;}
+.radius {
+    @include radius;
+}
+.button-radius {
+    @include button-radius;
+}
 
 /* heros */
 .xs-hero{
@@ -868,7 +887,7 @@ i.material-icons {
     width: 200px;
     height: 200px;}
 .lightwidget img  {
-    @include border-radius;
+    @include radius;
     @include shadow-light;
 }
 
@@ -903,12 +922,8 @@ i.material-icons {
 	width: 100%;}
 .full-height{
     height:100%;}
-.undersized{
-    @include undersized;}
 .oversized{
     @include oversized;}
-.oversized-right{
-    @include oversized-right;}
 .hide-for-small {
     display: block;
 }
