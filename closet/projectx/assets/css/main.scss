@@ -267,7 +267,7 @@ h1 {
   line-height: 1.2em !important;
   }
 h2 {
-    font-size: 2.87em;
+    font-size: 2.27em;
     font-weight: 600;
 }
 h3 {
@@ -656,6 +656,23 @@ opacity: 1; /* Firefox */
     @include transition;
     @include shadow-dark;
     @include rise;
+}
+.card-static {
+    @include transition;
+    @include button-radius;
+    @include shadow;
+    position: relative;
+    background: $white-color;
+}
+#timeline{
+    img {
+        position: relative;
+        top: 0px;
+        right: 55px;
+    }
+    h5 {
+        margin-top: -15px;
+    }
 }
 
 .overlay:hover {
