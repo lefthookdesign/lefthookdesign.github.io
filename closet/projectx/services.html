@@ -42,16 +42,13 @@
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
-<body class="white-bg">
-<div id="nav" class="nav full-width center-align hide-for-small"></div>
-<div class=" full-width">
-    <div id="hero" class=" full-width">
-        <div id="nav-mobile" class="nav center-align show-for-small"></div>
-        <div class="row max-width middle-xs full-height">
-            <div class="col-xs-12 col-sm-8 md-padding" data-aos="zoom-in" data-aos-delay="50">
-                <h1 class="lg-top-padding">Our Services</h1>
-                <!--<a class="" href="work.html"><div class="button-white center-align">See the Case Studies</div></a>-->
-            </div>
+<body class="white-bg">   
+<div id="nav" class="nav scrolled full-width center-align hide-for-small"></div>
+<div id="nav-mobile" class="nav scrolled center-align show-for-small"></div>
+<div class=" full-width">  
+    <div class="row max-width lg-section no-bottom-padding middle-xs full-height">
+        <div class="col-xs-12">
+            <h1 class="sm-padding">Our Services</h1>
         </div>
     </div>
 </div>
@@ -208,7 +205,7 @@
     $("#nav-mobile").load("closet/header-mobile.html");
     $("#footer").load("closet/footer.html"); 
 </script>
-<script>
+<!--<script>
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
       $("#nav").addClass("scrolled");
@@ -216,7 +213,7 @@
       $("#nav").removeClass("scrolled");
     }
   });
-</script>
+</script>-->
 <script>
     function menuList() {
       var element = document.getElementById("menu-list");
@@ -228,7 +225,6 @@
       element.classList.toggle("block");
     }
 </script>
-<script type="text/javascript" src="assets/js/gradient.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
