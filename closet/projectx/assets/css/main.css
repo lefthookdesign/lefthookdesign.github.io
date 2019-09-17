@@ -2606,8 +2606,15 @@ body {
   z-index: 0; }
 
 .bg-image-right {
-  background-size: 380px;
+  background-size: cover;
   background-position: right 50px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  z-index: 0; }
+
+.bg-image-left {
+  background-size: cover;
+  background-position: left top;
   background-attachment: scroll;
   background-repeat: no-repeat;
   z-index: 0; }
@@ -2726,9 +2733,43 @@ a:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     opacity: 1; }
+  a:hover h3 {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 1 !important; }
+
+.marker img {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  content: url("../img/heart-secondary.svg"); }
+.marker .tooltip {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  visibility: hidden;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 7px 15px; }
+
+.marker:hover img {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  content: url("../img/heart-accent.svg"); }
+.marker:hover .tooltip {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  visibility: visible; }
 
 i.large {
   font-size: 40px; }
+
+i.extra-large {
+  font-size: 65px; }
 
 /* navigation */
 #nav {
@@ -2876,10 +2917,10 @@ i.large {
 .breadcrumb {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  color: #3F3392 !important;
+  color: #fff !important;
   position: relative;
-  background: white;
-  padding: 10px 0px 9px 10px;
+  background: #a0a8c7;
+  padding: 11px 5px 9px 15px;
   border-radius: 5px 0px 0px 5px;
   cursor: pointer;
   font-weight: 800;
@@ -2890,7 +2931,7 @@ i.large {
 .breadcrumb:hover {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  color: #FF4080 !important; }
+  color: #0E0F34 !important; }
 
 .breadcrumb::after {
   left: 100%;
@@ -2901,15 +2942,16 @@ i.large {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-color: rgba(255, 255, 255, 0);
-  border-left-color: white;
-  border-width: 15px;
-  margin-top: -15px; }
+  border-color: rgba(160, 168, 199, 0);
+  border-left-color: #a0a8c7;
+  border-width: 16.5px;
+  margin-top: -16px; }
 
 .breadcrumb-last {
   background: none;
   padding: 10px 26px 10px 26px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #A0A8C7; }
 
 /* inputs and buttons */
 input, textarea {
@@ -2979,7 +3021,7 @@ input, textarea {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   background: white;
-  padding: 15px 28px;
+  padding: 7px 15px;
   position: relative;
   top: 0;
   cursor: pointer;
@@ -3037,7 +3079,7 @@ input, textarea {
   transition: all .5s ease-in-out;
   transform: translateY(-2px);
   background: #3F3392;
-  color: #FF4080; }
+  color: #faf8fa; }
 
 /*button */
 .button {
@@ -3414,7 +3456,7 @@ i.sm-icon {
 
 .lip-bottom {
   position: relative;
-  top: 100px !important; }
+  top: 50px !important; }
 
 /* img sizes */
 .icon-20 {
