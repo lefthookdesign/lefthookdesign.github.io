@@ -2706,6 +2706,39 @@ p {
 .bold {
   font-weight: 600; }
 
+.light {
+  font-weight: 300; }
+
+/* animation */
+@-webkit-keyframes grow {
+  from {
+    display: none;
+    opacity: 0; }
+  to {
+    display: block;
+    opacity: 1; } }
+@-moz-keyframes grow {
+  from {
+    display: none;
+    opacity: 0; }
+  to {
+    display: block;
+    opacity: 1; } }
+@-o-keyframes grow {
+  from {
+    display: none;
+    opacity: 0; }
+  to {
+    display: block;
+    opacity: 1; } }
+@keyframes grow {
+  from {
+    display: none;
+    opacity: 0; }
+  to {
+    display: block;
+    opacity: 1; } }
+/* links */
 a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -2738,32 +2771,51 @@ a:hover {
     transition: all .5s ease-in-out;
     opacity: 1 !important; }
 
-.marker img {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  content: url("../img/heart-secondary.svg"); }
-.marker .tooltip {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  visibility: hidden;
-  background: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  padding: 7px 15px; }
+.marker {
+  width: 20px; }
+  .marker img {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/heart-secondary.svg"); }
+  .marker .tooltip {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -moz-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -ms-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    padding: 7px 15px; }
 
 .marker:hover img {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  content: url("../img/heart-accent.svg"); }
+  background-image: url("../img/heart-accent.svg"); }
 .marker:hover .tooltip {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  visibility: visible; }
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: grow;
+  -moz-animation-name: grow;
+  -o-animation-name: grow;
+  animation-name: grow;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  display: block; }
 
 i.large {
   font-size: 40px; }
@@ -2917,11 +2969,9 @@ i.extra-large {
 .breadcrumb {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  color: #fff !important;
+  color: #A0A8C7 !important;
   position: relative;
-  background: #a0a8c7;
-  padding: 11px 5px 9px 15px;
-  border-radius: 5px 0px 0px 5px;
+  padding: 7px;
   cursor: pointer;
   font-weight: 800;
   font-size: .9em;
@@ -2931,7 +2981,7 @@ i.extra-large {
 .breadcrumb:hover {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  color: #0E0F34 !important; }
+  color: #3F3392 !important; }
 
 .breadcrumb::after {
   left: 100%;
@@ -2944,14 +2994,21 @@ i.extra-large {
   pointer-events: none;
   border-color: rgba(160, 168, 199, 0);
   border-left-color: #a0a8c7;
-  border-width: 16.5px;
-  margin-top: -16px; }
+  border-width: 6.5px;
+  margin-top: -6px; }
 
 .breadcrumb-last {
-  background: none;
-  padding: 10px 26px 10px 26px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #A0A8C7;
+  position: relative;
+  padding: 7px 7px 7px 15px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: .9em;
   text-transform: uppercase;
-  color: #A0A8C7; }
+  letter-spacing: .05em;
+  background: none; }
 
 /* inputs and buttons */
 input, textarea {
@@ -3217,7 +3274,9 @@ input, textarea {
 
 .absolute {
   display: block !important;
-  position: absolute;
+  position: absolute; }
+
+.z-index {
   z-index: 2; }
 
 .block {
@@ -3580,22 +3639,16 @@ i.sm-icon {
     font-size: 2.8em !important; }
 
   .mobile-top-padding {
-    padding-top: 60px; }
+    padding-top: 60px; } }
+@media only screen and (max-width: 780px) {
+  .nav .logo {
+    margin: auto; }
 
   .hide-for-small {
     display: none !important; }
 
   .show-for-small {
     display: block !important; } }
-@media only screen and (max-width: 780px) {
-  .nav .logo {
-    margin: auto; }
-
-  .hide-for-small {
-    display: block; }
-
-  .show-for-small {
-    display: none; } }
 @media only screen and (max-width: 1024px) {
   h2 {
     font-size: 2em; }

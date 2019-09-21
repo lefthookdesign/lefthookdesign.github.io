@@ -337,6 +337,65 @@ p {
 .bold {
     font-weight: 600;
 }
+.light {
+    font-weight: 200;
+}
+
+/* animation */
+@mixin animate($name, $duration, $iteration, $direction) {
+	-webkit-animation-duration: $duration;
+	   -moz-animation-duration: $duration;
+	     -o-animation-duration: $duration;
+		    animation-duration: $duration;
+
+	-webkit-animation-iteration-count: $iteration;
+	   -moz-animation-iteration-count: $iteration;
+	     -o-animation-iteration-count: $iteration;
+	        animation-iteration-count: $iteration;
+
+	-webkit-animation-name: $name;
+	   -moz-animation-name: $name;
+	     -o-animation-name: $name;
+	        animation-name: $name;
+
+	-webkit-animation-direction: $direction;
+	   -moz-animation-direction: $direction;
+	     -o-animation-direction: $direction;
+		    animation-direction: $direction;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+@include keyframes(grow) {
+  from {
+    display: none;
+    //width: 0;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    //width: auto;
+    opacity: 1;
+  }
+}
+@mixin grow {
+  @include animate(grow, 0.5s, 1, normal);
+}
+
+
+/* links */
 a {
     @include transition;
     color: $secondary-color;
@@ -368,19 +427,21 @@ a:hover {
     }
 }
 .marker {
-    
+    width: 20px;
     img {
         @include transition;
-        cursor: pointer;
         width: 20px;
         height: 20px;
-        content: url('../img/heart-secondary.svg');
+        background-image: url('../img/heart-secondary.svg');
     }
     .tooltip {
-        @include transition;
-        visibility: hidden;
+        
+        display: none;
+        position: absolute;
+        top: 25px;
         background: $white-color;
         @include button-radius;
+        @include shadow-light;
         padding: $xs $sm;
     }
 }
@@ -388,13 +449,14 @@ a:hover {
     
     img {
         @include transition;
-        content: url('../img/heart-accent.svg');
+        background-image: url('../img/heart-accent.svg');
     }
     .tooltip {
-        @include transition;
-        visibility: visible;
+        @include grow;
+        display: block;
     }
 }
+
 
 i.large {
     font-size: 40px;
@@ -563,11 +625,9 @@ i.extra-large {
 
 .breadcrumb {
     @include transition;
-    color: $white-color !important;
+    color: $grey-color !important;
     position: relative;
-    background: rgba($grey-color, 1);
-    padding: 11px 5px 9px 15px;
-    border-radius: $button-radius 0px 0px $button-radius;
+    padding: $xs;
     cursor: pointer;
     font-weight: 800;
     font-size: .9em;
@@ -576,7 +636,7 @@ i.extra-large {
 }
 .breadcrumb:hover {
     @include transition;
-    color: $black-color !important;  
+    color: $primary-color !important;  
 }
 .breadcrumb::after {
     left: 100%;
@@ -589,14 +649,20 @@ i.extra-large {
     pointer-events: none;
     border-color: rgba($grey-color, 0);
     border-left-color: rgba($grey-color, 1);
-    border-width: 16.5px;
-    margin-top: -16px;
+    border-width: 6.5px;
+    margin-top: -6px;
 }
 .breadcrumb-last {
-    background: none;
-    padding: 10px 26px 10px 26px;
-    text-transform: uppercase;
+    @include transition;
     color: $grey-color;
+    position: relative;
+    padding: $xs $xs $xs $sm;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    background: none;
 }
 
 /* inputs and buttons */
@@ -817,6 +883,8 @@ opacity: 1; /* Firefox */
 .absolute{
     display: block !important;
     position: absolute;
+}
+.z-index {
     z-index: 2;
 }
 .block {
@@ -1089,22 +1157,22 @@ i.sm-icon {
     }
     .mobile-top-padding {
         padding-top: 60px;}
-    .hide-for-small {
-        display: none !important;
-    }
-    .show-for-small {
-        display: block !important;
-    }
+    //.hide-for-small {
+    //    display: none !important;
+    //}
+    //.show-for-small {
+    //    display: block !important;
+    //}
 }
 @media only screen and (max-width: 780px) {
     .nav .logo{
         margin: auto;
     }
     .hide-for-small {
-        display: block;
+        display: none !important;
     }
     .show-for-small {
-        display: none;
+        display: block !important;
     }
 }
 @media only screen and (max-width: 1024px) {

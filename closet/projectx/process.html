@@ -31,9 +31,10 @@
 
 </head>
 <body class="white-bg">
-<div id="nav" class="nav scrolled full-width center-align hide-for-small"></div>
+
+<div id="hero" class="bg-image" style="background-image: url(assets/img/bg-desk.jpg);"> 
+    <div id="nav" class="nav full-width center-align hide-for-small"></div>
 <div id="nav-mobile" class="nav center-align show-for-small"></div>
-<div class="bg-image" style="background-image: url(assets/img/bg-desk.jpg);">    
     <div class="row full-width secondary-gradient md-section">
         <div class="row max-width full-height middle-xs start-xs">
             <div class="col-xs-12 col-sm-6 col-lg-6 full-height md-padding" data-aos="fade-right">
@@ -65,7 +66,7 @@
                 <i class="material-icons inline grey-color center-align extra-large">looks_two</i>
             </div>
             <h2 class="sm-top-padding xs-left-padding sm-bottom-padding">Create</h2>
-            <h3 class="dark-grey-color xs-left-padding">We work on a few ideas and meet up regularly to review.</h3>
+            <h3 class="dark-grey-color xs-left-padding">We'll work on some concepts and meet up regularly to review.</h3>
         </div>
         
     </div>
@@ -129,9 +130,10 @@
     
 <script>
     $("#nav").load("closet/header.html");
+    $("#nav-mobile").load("closet/header-mobile.html");
     $("#footer").load("closet/footer.html"); 
 </script>
-<!--<script>
+<script>
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
       $("#nav").addClass("scrolled");
@@ -139,7 +141,7 @@
       $("#nav").removeClass("scrolled");
     }
   });
-</script>-->
+</script>
 <script>
     function menuList() {
       var element = document.getElementById("menu-list");
