@@ -192,6 +192,12 @@ $shadow-dark: 0px 20px 25px rgba($black-color,0.4);
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
 }
+@mixin rise-small {
+    position:relative;
+    -ms-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
 @mixin opacity{
     opacity: .5;
 }
@@ -260,11 +266,11 @@ body {
     z-index: 0;
 }
 .parallax-bg-image{
-    @include transition;
+    //@include transition;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
+    //background-attachment: fixed;
 }
 
 .primary-gradient{
@@ -667,29 +673,33 @@ i.extra-large {
 
 /* inputs and buttons */
 input, textarea {
-    background: $white-color;
-    color: $primary-color;
-    font-size: 2em;
-    font-weight: 100;
+    background: rgba($white-color, .27);
+    color: $white-color;
+    font-size: 24px;
+    font-weight: 200;
     line-height: 2em;
     border: none;
     padding: 5px 30px;
     width: 100%;
 }
-
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-color: $grey-color;
-opacity: 1; /* Firefox */
+    color: $light-grey-color;
+    opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $grey-color;
+    color: $light-grey-color;
 }
 :focus {
     outline: -webkit-focus-ring-color auto;
-    outline-color: $accent-color;
-    outline-offset: -2px;
+    outline-color: $light-grey-color;
+    outline-offset: -1px;
     box-sizing: border-box;
+}
+:-internal-autofill-selected {
+    background-color: rgba($white-color, .6) !important;
+    background-image: none !important;
+    color: $black-color !important;
 }
 
 
@@ -708,7 +718,7 @@ opacity: 1; /* Firefox */
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    color: $accent-color;
+    color: $primary-color;
     i {
         @include transition;
         position: relative;
@@ -717,11 +727,11 @@ opacity: 1; /* Firefox */
 }
 .button-text:hover{  
     @include transition;
-    color: $primary-color !important;
+    color: $accent-color !important;
     i {
         @include transition;
         margin-left: 4px;
-        color: $primary-color;
+        color: $accent-color;
     }
 }
 
@@ -799,13 +809,28 @@ opacity: 1; /* Firefox */
 }
 .button:hover{
     @include shadow-light;
+    @include rise-small;
     @include transition;
     background: $accent-color;
-    color: $light-grey-color !important;
+    color: $white-color !important;
 }
 
 /* items and misc styles */
-
+#viewmore.card{
+    h3 {
+        @include transition;
+        opacity: 1 !important;
+    }
+    i {
+        opacity: 1;
+    }
+}
+#viewmore.card:hover{
+    h3, i {
+        @include transition;
+        color: $white-color !important;
+    }
+}
 .card {
     @include transition;
     @include button-radius;
@@ -814,22 +839,27 @@ opacity: 1; /* Firefox */
     .bg-image {
         @include button-radius;
     }
-    h3 {
+    h3, h4 {
         @include transition;
-        opacity: 1;
+        opacity: 0
+    }
+    i {
+        @include transition;
+        opacity: 0;
     }
 }
 .card:hover {
     @include transition;
     @include shadow-dark;
     @include rise;
-    h3 {
+    h3, h4 {
         @include transition;
-        opacity: 0;
+        opacity: 1 !important;
     }
     i {
-        background: $secondary-color;
-        border-radius: 20px;
+        //background: $secondary-color;
+        //border-radius: 20px;
+        opacity: 1;
     }
 }
 
@@ -841,11 +871,11 @@ opacity: 1; /* Firefox */
     text-align: start;
     width: 100%;
     height: 100%;
-    background: rgba($secondary-color, 0.8);
+    background: rgba($secondary-color, 0.0);
 }
 .overlay:hover {
     @include transition;
-    background: rgba($secondary-color, 0.0);
+    background: rgba($secondary-color, 0.8);
 }
 .card-static {
     @include transition;
@@ -901,6 +931,11 @@ opacity: 1; /* Firefox */
 .rise:hover  {
     @include rise;
     @include transition;}
+.rise-small{
+    @include transition;}
+.rise-small:hover  {
+    @include rise-small;
+    @include transition;}
 i.sm-icon {
     font-size: 22px !important;}
 .lighter{
@@ -919,15 +954,21 @@ i.sm-icon {
     position: relative;
 }
 .circled {
-    @include circle;}
+    @include circle;
+}
 .shadow{
-    @include shadow;}
+    @include shadow;
+}
 .shadow-light{
-    @include shadow-light;}
+    @include shadow-light;
+}
 .shadow-dark{
-    @include shadow-dark;}
+    @include shadow-dark;
+}
 .opacity{
-    @include opacity;}
+    @include opacity;
+    @include transition;
+}
 .radius {
     @include radius;
 }
@@ -942,7 +983,7 @@ i.sm-icon {
     margin: auto;
     }
 .sm-hero{
-    height: 60vh;
+    height: 65vh;
     margin: auto;
     }
 .md-hero{

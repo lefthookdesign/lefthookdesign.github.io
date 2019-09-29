@@ -31,10 +31,10 @@
     
 <div id="nav" class="nav full-width center-align hide-for-small"></div>
 <div id="nav-mobile" class="nav show-for-small nav-scrolled"></div>
-<div class="light-grey-bg" style="min-height: 90vh;">
-    <div class="row md-section full-width full-height row lg-top-padding middle-xs">
-        <div class="col-xs-12 sm-max-width mobile-top-padding">
-            <h1 class="md-padding">Let's Talk</h1>
+<div class="row bg-image" style="min-height: 90vh; background-image: url(assets/img/bg-desk.jpg)">
+    <div class="row sm-section full-width full-height middle-xs lg-bottom-padding">
+        <div class="col-xs-12 sm-max-width mobile-top-padding lg-padding">
+            <h1 class="sm-padding white-color">Let's Talk</h1>
             <form action="https://formspree.io/hilary@lefthook.design" method="POST">
                 <div class="sm-padding">
                     <input type="text" name="name" placeholder="Name" required="">
@@ -45,19 +45,18 @@
                 <div class="sm-padding">
                     <textarea style="width: 100%; min-height: 200px;" name="message" placeholder="Write us a note" required="" maxlength="2000"></textarea>
                 </div>
-                <div class="sm-padding center-xs">
-                    <input type="submit" value="Send" class="button" style="max-width: 260px; min-height: 44px; padding: 15px 30px;">
+                <div class="sm-padding">
+                    <input type="submit" value="Send" class="button-white" style="max-width: 260px; min-height: 44px; padding: 15px 30px;">
                 </div>
             </form>
-            
         </div>
     </div>   
 </div>
-
 <div id="footer"></div>
 
 <script>
     $("#nav").load("closet/header.html");
+    $("#nav-mobile").load("closet/header-mobile.html");
     $("#footer").load("closet/footer.html"); 
 </script>
 <script>
