@@ -30,13 +30,21 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body class="white-bg">
-<div id="nav" class="nav scrolled full-width center-align hide-for-small"></div>
-<div id="nav-mobile" class="nav scrolled center-align show-for-small"></div>
+<div id="nav" class="nav full-width center-align hide-for-small"></div>
+<div id="nav-mobile" class="nav center-align show-for-small"></div>
+<div id="hero" class="sm-hero parallax-bg-image" style="background-image: url(assets/img/bg-naturepath.jpg);"> 
+    <div class="row full-width full-height">
+        <div class="row max-width start-xs">
+            <div class="col-xs-12 col-sm-6 col-lg-6 sm-padding" data-aos="fade-right" data-aos-once="true">
+                <h1 class="white-color">About Us</h1>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="max-width">
     <div class="row start-xs lg-section">
         <div class="col-xs-12 col-sm-8 lg-bottom-padding">
-            <h1 class="sm-padding">About Us</h1>
-            <h3 class="dark-grey-color sm-padding">We’re a group of Silicon Valley trained designers and creators based on the west coast with a “do it all” startup mindset. As creative problem solvers and audience empathizers, we're on a mission to help people make better brands and products for their users. Some people call this design thinking, but we call it common sense.</h3>
+            <h3 class="sm-padding">We’re a group of Silicon Valley trained designers and creators based on the west coast with a “do it all” startup mindset. As creative problem solvers and audience empathizers, we're on a mission to help people make better brands and products for their users. Some people call this design thinking, but we call it common sense.</h3>
         </div>
         <div class="hide-for-small col-sm-4 ">
             <div class="marker relative" style="left: 145px; top: 85px;">
@@ -63,7 +71,7 @@
                     <p class="sm-text no-padding">Monterey,&nbsp;CA</p>
                 </div>
             </div>
-            <img class="absolute" style="width: 360px; top: 50px; z-index: -1;" src="assets/img/bg-map.png">
+            <img class="absolute" style="width: 360px; top: auto; margin-top: -150px; z-index: -1;" src="assets/img/bg-map.png">
         </div>
         
         <div class="col-xs-4 col-sm-3">
@@ -78,26 +86,26 @@
     </div>
 </div>  
 
-<div class="row max-width center-xs xl-bottom-padding">
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-up" data-aos-once="true">
+<div class="row max-width center-xs xl-top-padding xl-bottom-padding">
+    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-once="true">
         <div class="icon-140 circled light-grey-bg md-padding center-align row">
             <img class="full-width center-align primary-color" src="assets/img/icons/clipboard-accent.svg"/>
         </div>
         <h4 class="md-top-padding dark-grey-color">Creative Strategies</h4>
     </div>
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-delay="0" data-aos-once="true">
         <div class="icon-140 circled light-grey-bg md-padding center-align row">
             <img class="full-width center-align primary-color" src="assets/img/icons/brain-accent.svg"/>
         </div>
         <h4 class="md-top-padding dark-grey-color">Problem Solvers</h4>
     </div>
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-delay="50" data-aos-once="true">
         <div class="icon-140 circled light-grey-bg md-padding center-align row">
             <img class="full-width center-align primary-color" src="assets/img/icons/mountain-accent.svg"/>
         </div>
         <h4 class="md-top-padding dark-grey-color">Goals Driven</h4>
     </div>
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-delay="0" data-aos-once="true">
         <div class="icon-140 circled light-grey-bg md-padding center-align row">
             <img class="full-width center-align primary-color" src="assets/img/icons/statistics-accent.svg"/>
         </div>
@@ -161,7 +169,7 @@
     $("#nav-mobile").load("closet/header-mobile.html");
     $("#footer").load("closet/footer.html"); 
 </script>
-<!--<script>
+<script>
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
       $("#nav").addClass("scrolled");
@@ -169,7 +177,7 @@
       $("#nav").removeClass("scrolled");
     }
   });
-</script>-->
+</script>
 <script>
     function menuList() {
       var element = document.getElementById("menu-list");
@@ -180,6 +188,21 @@
       var element = document.getElementById("menu-list");
       element.classList.toggle("block");
     }
+</script>
+<script>
+    var velocity = -.5;
+
+    function update(){ 
+    var pos = $(window).scrollTop(); 
+    $('.parallax-bg-image').each(function() { 
+        var $element = $(this);
+        // subtract some from the height b/c of the padding
+        var height = $element.height()- 80;
+        $(this).css('backgroundPosition', '0%' + Math.round((height - pos) * velocity) + 'px'); 
+       }); 
+       };
+
+     $(window).bind('scroll', update);
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

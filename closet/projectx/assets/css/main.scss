@@ -1,28 +1,13 @@
-$fonts: Montserrat, Open Sans, Helvetica, Arial, sans-serif;
+/* fonts */
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,800);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-$radius: 25px;
-$button-radius: 5px;
+/* import grid */
+@import "flexboxgrid";
+@import "nav-dropdown-style";
+@import "variables";
 
-$xs: 7px;
-$sm: 15px;
-$md: 30px;
-$lg: 70px;
-$xl: 120px;
-
-
-$primary-color: #3F3392;
-$primary-accent: #1e1848;
-$secondary-color: #6B96FF;
-$accent-color:#FF4080;
-$light-grey-color: #faf8fa;
-$grey-color: #A0A8C7;
-$dark-grey-color: #767483;
-$white-color: #fff;
-$black-color: #0E0F34;
-$no-shadow: none;
-$shadow-light: 0px 2px 5px rgba($black-color, 0.1);
-$shadow: 0px 4px 8px rgba($black-color, 0.25);
-$shadow-dark: 0px 20px 25px rgba($black-color,0.4);
 
 *, ::before, ::after { padding: 0; margin: 0; box-sizing: border-box;}
 
@@ -89,15 +74,6 @@ $shadow-dark: 0px 20px 25px rgba($black-color,0.4);
 .white-bg{
     background:$white-color;
 }
-
-
-/* fonts */
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,800);
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-/* import grid */
-@import "flexboxgrid";
 
 /* mixins */
 @mixin primary-gradient {
@@ -473,6 +449,7 @@ i.extra-large {
 
 
 /* navigation */
+
 #nav {
     transform: none;
     position: fixed;
@@ -482,6 +459,58 @@ i.extra-large {
     left: 0px;
     z-index: 100000;
     //width: 100%;
+}
+.nav.dark {
+    #logo-dark {
+        display: block !important;
+    }
+    #logo-white {
+        display: none;
+    }
+    .primary{
+        @include transition;
+        max-width: 100%;
+    }
+    .link{
+        @include transition;
+        display: inline-block;
+        font-size: 0.9em;
+        letter-spacing: 0.06em;
+        padding: $sm;
+        opacity: 1;
+        border-bottom: none;
+        color: $white-color;
+    }
+    .active{
+        color: $accent-color;
+        opacity: 1 !important;
+    }
+    
+    .link:hover::after {
+        @include transition;
+        width: 100%;
+    }
+    a{
+        @include transition;
+        color: $light-grey-color;
+        font-weight: 600;
+        #text {
+            padding-bottom: 4px;
+        }
+        }
+    a:hover {
+        @include transition;
+        color: $accent-color;
+    }
+    .header-bar {
+        background: rgba($black-color, .98) !important;
+    }
+    .button {
+        background: $secondary-color;
+    }
+    .button:hover {
+        background: $accent-color;
+    }
 }
 .nav{
     @include transition;
@@ -495,6 +524,10 @@ i.extra-large {
         color: $accent-color;
         left:0;
     }
+    //#logo-dark {
+    //}
+    //#logo-white {
+    //}
     .logo{
         @include transition;
         width: 34px;
@@ -514,7 +547,7 @@ i.extra-large {
         color: $primary-color;
     }
     .active{
-        color: $black-color;
+        color: $accent-color;
         opacity: 1 !important;
     }
     //.link.active::after {
@@ -556,6 +589,7 @@ i.extra-large {
         //width: 98%;
     }
 }
+
 #nav-mobile {
     position: fixed;
     z-index: 100;
@@ -676,7 +710,7 @@ input, textarea {
     background: rgba($white-color, .27);
     color: $white-color;
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2em;
     border: none;
     padding: 5px 30px;
@@ -839,6 +873,9 @@ input, textarea {
     .bg-image {
         @include button-radius;
     }
+    h3 {
+        font-weight: 600;
+    }
     h3, h4 {
         @include transition;
         opacity: 0
@@ -875,7 +912,7 @@ input, textarea {
 }
 .overlay:hover {
     @include transition;
-    background: rgba($secondary-color, 0.8);
+    background: rgba($secondary-color, 0.98);
 }
 .card-static {
     @include transition;

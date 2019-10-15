@@ -32,7 +32,7 @@
 </head>
 <body class="white-bg">
 
-<div id="hero" class="bg-image" style="background-image: url(assets/img/bg-collab.jpg);"> 
+<div id="hero" class="parallax-bg-image" style="background-image: url(assets/img/bg-collab.jpg);"> 
     <div id="nav" class="nav full-width center-align hide-for-small"></div>
 <div id="nav-mobile" class="nav center-align show-for-small"></div>
     <div class="row full-width md-section">
@@ -153,7 +153,21 @@
       element.classList.toggle("block");
     }
 </script>
-<script type="text/javascript" src="assets/js/gradient.js"></script>
+<script>
+    var velocity = -.5;
+
+    function update(){ 
+    var pos = $(window).scrollTop(); 
+    $('.parallax-bg-image').each(function() { 
+        var $element = $(this);
+        // subtract some from the height b/c of the padding
+        var height = $element.height()- 240;
+        $(this).css('backgroundPosition', '0%' + Math.round((height - pos) * velocity) + 'px'); 
+       }); 
+       };
+
+     $(window).bind('scroll', update);
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
