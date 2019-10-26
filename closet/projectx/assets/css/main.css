@@ -4017,12 +4017,24 @@ i.sm-icon {
   display: none !important; }
 
 @media only screen and (max-width: 470px) {
-  h1 {
-    font-size: 2.8em !important; }
+  .first-on-mobile {
+    order: -1; }
 
   .mobile-top-padding {
     padding-top: 60px; } }
 @media only screen and (max-width: 780px) {
+  h1 {
+    font-size: 2.8em; }
+
+  h2 {
+    font-size: 2em; }
+
+  h3 {
+    font-size: 1.2em; }
+
+  h4 {
+    font-size: 0.9em; }
+
   .nav .logo {
     margin: auto; }
 
@@ -4030,17 +4042,83 @@ i.sm-icon {
     display: none !important; }
 
   .show-for-small {
-    display: block !important; } }
+    display: block !important; }
+
+  .xs-padding {
+    padding: 3.5px; }
+
+  .xs-top-padding {
+    padding-top: 3.5px; }
+
+  .xs-right-padding {
+    padding-right: 3.5px; }
+
+  .xs-bottom-padding {
+    padding-bottom: 3.5px; }
+
+  .xs-left-padding {
+    padding-left: 3.5px; }
+
+  .sm-padding {
+    padding: 7.5px; }
+
+  .sm-top-padding {
+    padding-top: 7.5px; }
+
+  .sm-right-padding {
+    padding-right: 7.5px; }
+
+  .sm-bottom-padding {
+    padding-bottom: 7.5px; }
+
+  .sm-left-padding {
+    padding-left: 7.5px; }
+
+  .md-padding {
+    padding: 15px; }
+
+  .md-top-padding {
+    padding-top: 15px; }
+
+  .md-right-padding {
+    padding-right: 15px; }
+
+  .md-bottom-padding {
+    padding-bottom: 15px; }
+
+  .md-left-padding {
+    padding-left: 15px; }
+
+  .lg-padding {
+    padding: 35px; }
+
+  .lg-top-padding {
+    padding-top: 35px; }
+
+  .lg-right-padding {
+    padding-right: 35px; }
+
+  .lg-bottom-padding {
+    padding-bottom: 35px; }
+
+  .lg-left-padding {
+    padding-left: 35px; }
+
+  .xl-padding {
+    padding: 60px; }
+
+  .xl-top-padding {
+    padding-top: 60px; }
+
+  .xl-right-padding {
+    padding-right: 60px; }
+
+  .xl-bottom-padding {
+    padding-bottom: 60px; }
+
+  .xl-left-padding {
+    padding-left: 60px; } }
 @media only screen and (max-width: 1024px) {
-  h2 {
-    font-size: 2em; }
-
-  h3 {
-    font-size: 1.214em; }
-
-  h4 {
-    font-size: 1.1em; }
-
   input, textarea {
     font-size: 1.5em;
     line-height: 1.5em;

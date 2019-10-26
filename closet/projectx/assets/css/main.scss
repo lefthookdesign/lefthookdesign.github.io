@@ -1230,8 +1230,8 @@ i.sm-icon {
 }
 
 @media only screen and (max-width: 470px) {
-    h1 {
-        font-size: 2.8em !important;
+    .first-on-mobile {
+      order: -1;
     }
     .mobile-top-padding {
         padding-top: 60px;}
@@ -1243,6 +1243,18 @@ i.sm-icon {
     //}
 }
 @media only screen and (max-width: 780px) {
+    h1 {
+        font-size: 2.8em;
+    }
+    h2 {
+        font-size: 2em;
+        }
+    h3 {
+      font-size: 1.2em/*1.999em*/;
+      }
+    h4 {
+      font-size: 0.9em;
+    }
     .nav .logo{
         margin: auto;
     }
@@ -1252,18 +1264,64 @@ i.sm-icon {
     .show-for-small {
         display: block !important;
     }
+    .xs-padding{
+        padding: $xs / 2; }
+    .xs-top-padding{
+        padding-top: $xs / 2;}
+    .xs-right-padding{
+        padding-right: $xs / 2;}
+    .xs-bottom-padding{
+        padding-bottom: $xs / 2;}
+    .xs-left-padding{
+        padding-left: $xs / 2;}
+
+    .sm-padding{
+        padding: $sm / 2; }
+    .sm-top-padding{
+        padding-top: $sm / 2;}
+    .sm-right-padding{
+        padding-right: $sm / 2;}
+    .sm-bottom-padding{
+        padding-bottom: $sm / 2;}
+    .sm-left-padding{
+        padding-left: $sm / 2;}
+
+    .md-padding{
+        padding: $md / 2; }
+    .md-top-padding{
+        padding-top: $md / 2;}
+    .md-right-padding{
+        padding-right: $md / 2;}
+    .md-bottom-padding{
+        padding-bottom: $md / 2;}
+    .md-left-padding{
+        padding-left: $md / 2;}
+
+    .lg-padding{
+        padding: $lg / 2; }
+    .lg-top-padding{
+        padding-top: $lg / 2;}
+    .lg-right-padding{
+        padding-right: $lg / 2;}
+    .lg-bottom-padding{
+        padding-bottom: $lg / 2;}
+    .lg-left-padding{
+        padding-left: $lg / 2;}
+
+    .xl-padding{
+        padding: $xl / 2; }
+    .xl-top-padding{
+        padding-top: $xl / 2;}
+    .xl-right-padding{
+        padding-right: $xl / 2;}
+    .xl-bottom-padding{
+        padding-bottom: $xl / 2;}
+    .xl-left-padding{
+        padding-left: $xl / 2;}
 }
 @media only screen and (max-width: 1024px) {
 
-    h2 {
-        font-size: 2em;
-        }
-    h3 {
-      font-size: 1.214em/*1.999em*/;
-      }
-    h4 {
-      font-size: 1.1em;
-    }
+
     input, textarea {
         font-size: 1.5em;
         line-height: 1.5em;
