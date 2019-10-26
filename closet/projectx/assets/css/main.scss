@@ -78,24 +78,24 @@
 /* mixins */
 @mixin primary-gradient {
     background: -webkit-linear-gradient(0deg, $black-color, $primary-color);
-    background: -o-linear-gradient(0deg, $black-color, $primary-color); 
+    background: -o-linear-gradient(0deg, $black-color, $primary-color);
     background: -moz-linear-gradient(0deg, $black-color, $primary-color);
     background: linear-gradient(0deg, $black-color, $primary-color);}
 @mixin white-gradient {
     background: -webkit-linear-gradient(20deg, rgba($white-color, 0.25), rgba($white-color,0.55));
-    background: -o-linear-gradient(20deg, rgba($white-color, 0.25), rgba($white-color,0.55)); 
+    background: -o-linear-gradient(20deg, rgba($white-color, 0.25), rgba($white-color,0.55));
     background: -moz-linear-gradient(20deg, rgba($white-color, 0.25), rgba($white-color,0.55));
     background: linear-gradient(20deg, rgba($white-color, 0.25), rgba($white-color,0.55));
 }
 @mixin black-gradient {
     background: -webkit-linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7));
-    background: -o-linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7)); 
+    background: -o-linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7));
     background: -moz-linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7));
     background: linear-gradient(0deg, rgba($black-color, 0.9), rgba($black-color,0.7));
 }
 @mixin secondary-gradient {
     background: -webkit-linear-gradient(0deg, rgba($secondary-color, 0.85), rgba($secondary-color,0.64));
-    background: -o-linear-gradient(0deg, rgba($secondary-color, 0.85), rgba($secondary-color,0.64)); 
+    background: -o-linear-gradient(0deg, rgba($secondary-color, 0.85), rgba($secondary-color,0.64));
     background: -moz-linear-gradient(0deg, rgba($secondary-color, 0.85), rgba($secondary-color,0.64));
     background: linear-gradient(0deg, rgba($secondary-color, 0.85), rgba($secondary-color,0.64));
 }
@@ -265,15 +265,15 @@ body {
 
 /* text and headers */
 h1, h2, h3, h4 {
-  margin: 0; 
+  margin: 0;
 }
 h1 {
-    font-size: 3.65em;
+    font-size: 4.65em;
     line-height: 1.2em !important;
     font-weight: 600;
   }
 h2 {
-    font-size: 2.27em;
+    font-size: 2.57em;
     font-weight: 600;
 }
 h3 {
@@ -417,7 +417,7 @@ a:hover {
         background-image: url('../img/heart-secondary.svg');
     }
     .tooltip {
-        
+
         display: none;
         position: absolute;
         top: 25px;
@@ -428,7 +428,7 @@ a:hover {
     }
 }
 .marker:hover {
-    
+
     img {
         @include transition;
         background-image: url('../img/heart-accent.svg');
@@ -485,7 +485,7 @@ i.extra-large {
         color: $accent-color;
         opacity: 1 !important;
     }
-    
+
     .link:hover::after {
         @include transition;
         width: 100%;
@@ -593,7 +593,7 @@ i.extra-large {
 #nav-mobile {
     position: fixed;
     z-index: 100;
-    
+
     .link{
         @include transition;
         display: inline-block;
@@ -615,7 +615,7 @@ i.extra-large {
         min-width: 300px;
     }
 }
-.scrolled{    
+.scrolled{
     @include transition;
     padding: 0 !important;
     width: 100%;
@@ -658,7 +658,7 @@ i.extra-large {
 #slick-nav {
     i:hover {
         @include transition;
-        opacity: 1 !important;  
+        opacity: 1 !important;
     }
 }
 
@@ -672,11 +672,11 @@ i.extra-large {
     font-weight: 800;
     font-size: .9em;
     text-transform: uppercase;
-    letter-spacing: .05em;   
+    letter-spacing: .05em;
 }
 .breadcrumb:hover {
     @include transition;
-    color: $primary-color !important;  
+    color: $primary-color !important;
 }
 .breadcrumb::after {
     left: 100%;
@@ -759,7 +759,7 @@ input, textarea {
         top: 5px;
         }
 }
-.button-text:hover{  
+.button-text:hover{
     @include transition;
     color: $accent-color !important;
     i {
@@ -1254,7 +1254,7 @@ i.sm-icon {
     }
 }
 @media only screen and (max-width: 1024px) {
-    
+
     h2 {
         font-size: 2em;
         }
@@ -1269,7 +1269,7 @@ i.sm-icon {
         line-height: 1.5em;
         padding: 5px 20px;
     }
-    
+
 }
 @media only screen and (min-width: 1880px) {
     h1 {
