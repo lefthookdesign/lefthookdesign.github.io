@@ -3081,7 +3081,7 @@ a:hover {
     transition: all .5s ease-in-out;
     width: 20px;
     height: 20px;
-    background-image: url("../img/heart-secondary.svg"); }
+    background-image: url("../img/heart-accent.svg"); }
   .marker .tooltip {
     display: none;
     position: absolute;
@@ -3100,7 +3100,7 @@ a:hover {
 .marker:hover img {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  background-image: url("../img/heart-accent.svg"); }
+  background-image: url("../img/heart-secondary.svg"); }
 .marker:hover .tooltip {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
