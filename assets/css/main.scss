@@ -698,6 +698,31 @@ i.extra-large {
     border-width: 6.5px;
     margin-top: -6px;
 }
+.breadcrumb-first {
+    @include transition;
+    color: $grey-color !important;
+    position: relative;
+    padding: $xs;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+.breadcrumb-first::before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba($grey-color, 0);
+    border-left-color: rgba($grey-color, 1);
+    border-width: 6.5px;
+    margin-top: -6px;
+}
 .breadcrumb-last {
     @include transition;
     color: $grey-color;

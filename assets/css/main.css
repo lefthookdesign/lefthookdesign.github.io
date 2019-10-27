@@ -3345,6 +3345,32 @@ i.extra-large {
   border-width: 6.5px;
   margin-top: -6px; }
 
+.breadcrumb-first {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #A0A8C7 !important;
+  position: relative;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .05em; }
+
+.breadcrumb-first::before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(160, 168, 199, 0);
+  border-left-color: #a0a8c7;
+  border-width: 6.5px;
+  margin-top: -6px; }
+
 .breadcrumb-last {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
