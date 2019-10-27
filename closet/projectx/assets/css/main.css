@@ -4029,6 +4029,9 @@ i.sm-icon {
   .mobile-top-padding {
     padding-top: 60px; } }
 @media only screen and (max-width: 780px) {
+  .xl-text {
+    font-size: 80px; }
+
   h1 {
     font-size: 2.8em; }
 
