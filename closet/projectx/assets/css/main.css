@@ -2971,7 +2971,8 @@ h3 {
 h4 {
   font-size: 1.1em;
   line-height: 1.4em;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 5px 0; }
 
 h5 {
   font-size: .65em;
