@@ -669,7 +669,7 @@ i.extra-large {
 }
 
 
-.breadcrumb {
+.breadcrumb, .breadcrumb-first {
     @include transition;
     color: $grey-color !important;
     position: relative;
@@ -680,7 +680,7 @@ i.extra-large {
     text-transform: uppercase;
     letter-spacing: .05em;
 }
-.breadcrumb:hover {
+.breadcrumb:hover, .breadcrumb-first:hover {
     @include transition;
     color: $primary-color !important;
 }
@@ -697,17 +697,6 @@ i.extra-large {
     border-left-color: rgba($grey-color, 1);
     border-width: 6.5px;
     margin-top: -6px;
-}
-.breadcrumb-first {
-    @include transition;
-    color: $grey-color !important;
-    position: relative;
-    padding: $xs;
-    cursor: pointer;
-    font-weight: 800;
-    font-size: .9em;
-    text-transform: uppercase;
-    letter-spacing: .05em;
 }
 .breadcrumb-first::before {
     left: 100%;
