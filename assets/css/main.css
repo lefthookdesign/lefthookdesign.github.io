@@ -3262,7 +3262,7 @@ i.extra-large {
     color: #fff !important; }
   #nav-mobile #menu-list {
     position: absolute;
-    height: 500px;
+    min-height: 100vh;
     width: 25%;
     min-width: 300px; }
 
