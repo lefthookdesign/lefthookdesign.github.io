@@ -2955,7 +2955,7 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 h1 {
-  font-size: 4.65em;
+  font-size: 4.85em;
   line-height: 1.2em !important;
   font-weight: 600; }
 
@@ -3195,7 +3195,8 @@ i.extra-large {
   .nav .logo {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    width: 34px; }
+    width: 34px;
+    margin-right: 15px; }
   .nav .primary {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
