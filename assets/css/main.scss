@@ -600,6 +600,12 @@ i.extra-large {
   @include transition;
   padding: 0 !important;
   width: 100%;
+  #logo-dark, #menu-dark {
+    display: block !important;
+  }
+  #logo-white, #menu-white {
+    display: none;
+  }
   .header-bar {
       background: rgba($black-color, .98) !important;
   }
@@ -618,6 +624,12 @@ i.extra-large {
     @include transition;
     padding: 0 !important;
     width: 100%;
+    #logo-dark, #menu-dark {
+        display: none;
+    }
+    #logo-white, #menu-white {
+        display: block !important;
+    }
     .header-bar {
         border-radius: 0;
         background: rgba($white-color, .93) !important;

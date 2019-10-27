@@ -3248,6 +3248,10 @@ i.extra-large {
   transition: all .5s ease-in-out;
   padding: 0 !important;
   width: 100%; }
+  .scrolled .dark #logo-dark, .scrolled .dark #menu-dark {
+    display: block !important; }
+  .scrolled .dark #logo-white, .scrolled .dark #menu-white {
+    display: none; }
   .scrolled .dark .header-bar {
     background: rgba(14, 15, 52, 0.98) !important; }
   .scrolled .dark .link {
@@ -3266,6 +3270,10 @@ i.extra-large {
   transition: all .5s ease-in-out;
   padding: 0 !important;
   width: 100%; }
+  .scrolled #logo-dark, .scrolled #menu-dark {
+    display: none; }
+  .scrolled #logo-white, .scrolled #menu-white {
+    display: block !important; }
   .scrolled .header-bar {
     border-radius: 0;
     background: rgba(255, 255, 255, 0.93) !important; }
