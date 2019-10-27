@@ -622,6 +622,9 @@ i.extra-large {
       border-bottom: none;
       color: $white-color;
   }
+  .button {
+    background: $white-color;
+  }
 }
 .scrolled{
     @include transition;
@@ -646,6 +649,9 @@ i.extra-large {
         opacity: 1;
         border-bottom: none;
         color: $primary-color;
+    }
+    .button {
+      background: $primary-accent;
     }
 }
 #nav-mobile {

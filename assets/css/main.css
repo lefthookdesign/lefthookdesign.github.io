@@ -3266,6 +3266,8 @@ i.extra-large {
     opacity: 1;
     border-bottom: none;
     color: #fff; }
+  .scrolled .dark .button {
+    background: #fff; }
 
 .scrolled {
   -webkit-transition: all .5s ease-in-out;
@@ -3289,6 +3291,8 @@ i.extra-large {
     opacity: 1;
     border-bottom: none;
     color: #3F3392; }
+  .scrolled .button {
+    background: #1e1848; }
 
 #nav-mobile {
   position: fixed;
