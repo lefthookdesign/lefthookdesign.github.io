@@ -29,8 +29,8 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body class="black-bg">
-<div id="nav" class="nav dark full-width center-align hide-for-small"></div>
-<div id="nav-mobile" class="nav dark center-align show-for-small"></div>
+<div id="nav" class="nav dark scrolled full-width center-align hide-for-small"></div>
+<div id="nav-mobile" class="nav dark scrolled center-align show-for-small"></div>
 <div class="row max-width sm-text end-xs white-color relative" style="top: 80;">
     <a class="no-margin breadcrumb-first" href="ui-musicplayer.html">&nbsp;</a><a class="no-margin breadcrumb">Smart Home</a><a class="no-margin breadcrumb-last" href="ui-tsa-concept.html">&nbsp;</a>
 </div>
@@ -64,15 +64,6 @@
       var element = document.getElementById("menu-list");
       element.classList.toggle("block");
     }
-</script>
-<script>
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
-      $("#nav").addClass("scrolled");
-    } else {
-      $("#nav").removeClass("scrolled");
-    }
-  });
 </script>
 <script>
 //add active class to current link
