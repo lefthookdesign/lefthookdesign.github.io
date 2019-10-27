@@ -466,12 +466,13 @@ i.extra-large {
     //width: 100%;
 }
 .nav.dark {
-    #logo-dark {
+    #logo-dark, #menu-dark {
         display: block !important;
     }
-    #logo-white {
+    #logo-white, #menu-white {
         display: none;
     }
+
     .primary{
         @include transition;
         max-width: 100%;
