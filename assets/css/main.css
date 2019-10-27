@@ -3259,7 +3259,7 @@ i.extra-large {
     padding: 15px;
     opacity: 1;
     border-bottom: none;
-    color: #3F3392; }
+    color: #fff; }
 
 .scrolled {
   -webkit-transition: all .5s ease-in-out;
@@ -3278,7 +3278,7 @@ i.extra-large {
     padding: 15px;
     opacity: 1;
     border-bottom: none;
-    color: #fff; }
+    color: #3F3392; }
 
 #nav-mobile {
   position: fixed;
