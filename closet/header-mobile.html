@@ -1,18 +1,22 @@
 <div class="header-bar sm-padding">
     <nav class="row left-text middle">
-        <div>
-            <a class="sm-right-padding inline-block" href="/index.html"><img id="logo-white" class="logo full-width vertical-align" src="/assets/img/logo/logo-icon-dark.png"/></a>
-            <a class="sm-right-padding inline-block" href="/index.html"><img id="logo-dark"  class="logo full-width vertical-align" src="/assets/img/logo/logo-icon-white.png" style="display: none;" /></a>
+        <div id="logo-white">
+          <a class="sm-right-padding inline-block" href="/index.html"><img class="logo full-width vertical-align" src="/assets/img/logo/logo-icon-dark.png"/></a>
         </div>
-
-        <div id="menu-icon" class="" onclick="menuList()">
+        <div id="logo-dark" style="display: none;">
+          <a class="sm-right-padding inline-block" href="/index.html"><img class="logo full-width vertical-align" src="/assets/img/logo/logo-icon-white.png"/></a>
+        </div>
+        <div id="menu-white" class="" onclick="menuList()">
           <i id="menu-white" class="material-icons primary-color">menu</i>
           <i id="menu-dark" class="material-icons white-color" style="display: none;">menu</i>
+        </div>
+        <div id="menu-dark" class="" onclick="menuList()" style="display: none;">
+          <i class="material-icons white-color">menu</i>
         </div>
     </nav>
 </div>
 <div id="menu-list" class="row full-height">
-    <div class="col-xs-12 end-xs xs-padding">
+    <div class="col-xs-12 start-xs xs-padding">
         <div id="close" class="" onclick="closeMenu()">
             <i class="material-icons">clear</i>
         </div>
