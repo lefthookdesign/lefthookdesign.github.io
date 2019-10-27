@@ -509,7 +509,7 @@ i.extra-large {
         color: $accent-color;
     }
     .header-bar {
-        background: rgba($black-color, .98) !important;
+        background: rgba($black-color, 0) !important;
     }
     .button {
         background: $secondary-color;
@@ -592,11 +592,47 @@ i.extra-large {
         @include transition;
         @include shadow-light;
         @include button-radius;
-        background: rgba($white-color, .93) !important;
+        background: rgba($white-color, 0) !important;
         //width: 98%;
     }
 }
-
+.scrolled .dark{
+  @include transition;
+  padding: 0 !important;
+  width: 100%;
+  .header-bar {
+      background: rgba($black-color, .98) !important;
+  }
+  .link{
+      @include transition;
+      display: inline-block;
+      font-size: 0.9em;
+      letter-spacing: 0.06em;
+      padding: $sm;
+      opacity: 1;
+      border-bottom: none;
+      color: $primary-color;
+  }
+}
+.scrolled{
+    @include transition;
+    padding: 0 !important;
+    width: 100%;
+    .header-bar {
+        border-radius: 0;
+        background: rgba($white-color, .93) !important;
+    }
+    .link{
+        @include transition;
+        display: inline-block;
+        font-size: 0.9em;
+        letter-spacing: 0.06em;
+        padding: $sm;
+        opacity: 1;
+        border-bottom: none;
+        color: $white-color;
+    }
+}
 #nav-mobile {
     position: fixed;
     z-index: 100;
@@ -620,14 +656,6 @@ i.extra-large {
         min-height: 100vh;
         width: 25%;
         min-width: 300px;
-    }
-}
-.scrolled{
-    @include transition;
-    padding: 0 !important;
-    width: 100%;
-    .header-bar {
-        border-radius: 0;
     }
 }
 #menu-list {

@@ -3174,7 +3174,7 @@ i.extra-large {
   transition: all .5s ease-in-out;
   color: #FF4080; }
 .nav.dark .header-bar {
-  background: rgba(14, 15, 52, 0.98) !important; }
+  background: rgba(14, 15, 52, 0) !important; }
 .nav.dark .button {
   background: #6B96FF; }
 .nav.dark .button:hover {
@@ -3241,7 +3241,44 @@ i.extra-large {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0) !important; }
+
+.scrolled .dark {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  padding: 0 !important;
+  width: 100%; }
+  .scrolled .dark .header-bar {
+    background: rgba(14, 15, 52, 0.98) !important; }
+  .scrolled .dark .link {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 0.06em;
+    padding: 15px;
+    opacity: 1;
+    border-bottom: none;
+    color: #3F3392; }
+
+.scrolled {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  padding: 0 !important;
+  width: 100%; }
+  .scrolled .header-bar {
+    border-radius: 0;
     background: rgba(255, 255, 255, 0.93) !important; }
+  .scrolled .link {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 0.06em;
+    padding: 15px;
+    opacity: 1;
+    border-bottom: none;
+    color: #fff; }
 
 #nav-mobile {
   position: fixed;
@@ -3265,14 +3302,6 @@ i.extra-large {
     min-height: 100vh;
     width: 25%;
     min-width: 300px; }
-
-.scrolled {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  padding: 0 !important;
-  width: 100%; }
-  .scrolled .header-bar {
-    border-radius: 0; }
 
 #menu-list {
   -webkit-transition: all .5s ease-in-out;
