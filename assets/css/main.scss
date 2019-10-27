@@ -677,7 +677,6 @@ i.extra-large {
     cursor: pointer;
     font-weight: 800;
     font-size: .9em;
-    text-transform: uppercase;
     letter-spacing: .05em;
 }
 .breadcrumb:hover, .breadcrumb-first:hover {
@@ -693,8 +692,8 @@ i.extra-large {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-color: rgba($grey-color, 0);
-    border-left-color: rgba($grey-color, 1);
+    border-color: rgba($secondary-color, 0);
+    border-left-color: rgba($secondary-color, 1);
     border-width: 6.5px;
     margin-top: -6px;
 }
@@ -706,12 +705,11 @@ i.extra-large {
     cursor: pointer;
     font-weight: 800;
     font-size: .9em;
-    text-transform: uppercase;
     letter-spacing: .05em;
     background: none;
 }
 .breadcrumb-first::before {
-    left: 100%;
+    left: 89%;
     top: 50%;
     border: solid transparent;
     content: " ";
@@ -719,8 +717,8 @@ i.extra-large {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-color: rgba($grey-color, 0);
-    border-left-color: rgba($grey-color, 1);
+    border-color: rgba($secondary-color, 0);
+    border-right-color: rgba($secondary-color, 1);
     border-width: 6.5px;
     margin-top: -6px;
 }
@@ -732,7 +730,6 @@ i.extra-large {
     cursor: pointer;
     font-weight: 800;
     font-size: .9em;
-    text-transform: uppercase;
     letter-spacing: .05em;
     background: none;
 }
