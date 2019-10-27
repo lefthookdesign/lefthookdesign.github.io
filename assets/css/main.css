@@ -3357,7 +3357,7 @@ i.extra-large {
   background: none; }
 
 .breadcrumb-first::before {
-  left: 89%;
+  right: 0%;
   top: 50%;
   border: solid transparent;
   content: " ";
