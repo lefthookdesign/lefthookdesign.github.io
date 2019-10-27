@@ -595,6 +595,9 @@ i.extra-large {
         background: rgba($white-color, 0) !important;
         //width: 98%;
     }
+    .button {
+      background: $secondary-color;
+    }
 }
 .scrolled .dark{
   @include transition;

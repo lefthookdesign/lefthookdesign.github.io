@@ -3242,6 +3242,8 @@ i.extra-large {
     -ms-border-radius: 5px;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0) !important; }
+  .nav .button {
+    background: #6B96FF; }
 
 .scrolled .dark {
   -webkit-transition: all .5s ease-in-out;
