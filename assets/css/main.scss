@@ -480,6 +480,8 @@ i.extra-large {
   }
   .header-bar {
       background: rgba($black-color, .98) !important;
+      @include shadow-light;
+      @include transition;
   }
   .link{
       @include transition;
@@ -508,6 +510,8 @@ i.extra-large {
     .header-bar {
         border-radius: 0;
         background: rgba($white-color, .93) !important;
+        @include shadow-light;
+        @include transition;
     }
     .link{
         @include transition;
@@ -653,7 +657,6 @@ i.extra-large {
     }
     .header-bar {
         @include transition;
-        @include shadow-light;
         @include button-radius;
         background: rgba($white-color, 0);
         //width: 98%;

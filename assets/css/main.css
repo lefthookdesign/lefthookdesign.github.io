@@ -3150,7 +3150,13 @@ i.extra-large {
   .scrolled.dark #logo-white, .scrolled.dark #menu-white {
     display: none !important; }
   .scrolled.dark .header-bar {
-    background: rgba(14, 15, 52, 0.98) !important; }
+    background: rgba(14, 15, 52, 0.98) !important;
+    -webkit-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -moz-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -ms-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
   .scrolled.dark .link {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3175,7 +3181,13 @@ i.extra-large {
     display: block !important; }
   .scrolled .header-bar {
     border-radius: 0;
-    background: rgba(255, 255, 255, 0.93) !important; }
+    background: rgba(255, 255, 255, 0.93) !important;
+    -webkit-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -moz-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -ms-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
   .scrolled .link {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3289,10 +3301,6 @@ i.extra-large {
   .nav .header-bar {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    -webkit-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
-    -moz-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
-    -ms-box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
-    box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
