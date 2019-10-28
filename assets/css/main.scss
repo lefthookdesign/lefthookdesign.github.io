@@ -1315,11 +1315,7 @@ i.sm-icon {
 }
 
 @media only screen and (max-width: 470px) {
-    .first-on-mobile {
-      order: -1;
-    }
-    .mobile-top-padding {
-        padding-top: 60px;}
+
     //.hide-for-small {
     //    display: none !important;
     //}
@@ -1328,6 +1324,11 @@ i.sm-icon {
     //}
 }
 @media only screen and (max-width: 780px) {
+  .first-on-mobile {
+    order: -1;
+  }
+  .mobile-top-padding {
+      padding-top: 60px;}
   .xl-text {
     font-size: 80px;
   }
