@@ -599,7 +599,7 @@ i.extra-large {
       background: $secondary-color;
     }
 }
-.scrolled .dark{
+.scrolled.dark{
   @include transition;
   padding: 0 !important;
   width: 100%;
