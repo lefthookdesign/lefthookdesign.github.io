@@ -4204,7 +4204,8 @@ i.sm-icon {
     padding: 5px 20px; } }
 @media only screen and (min-width: 1880px) {
   h1 {
-    font-size: 6em; }
+    font-size: 6em;
+    font-weight: 700; }
 
   .sm-max-width {
     -webkit-transition: all .5s ease-in-out;
