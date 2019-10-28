@@ -519,10 +519,10 @@ i.extra-large {
 }
 .nav{
     #logo-dark, #menu-dark {
-        display: none;
+      display: block !important;
     }
     #logo-white, #menu-white {
-      display: block !important;
+      display: none;
     }
     @include transition;
     text-align: center;
