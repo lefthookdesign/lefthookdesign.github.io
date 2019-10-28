@@ -3277,7 +3277,7 @@ i.extra-large {
   .scrolled #logo-dark, .scrolled #menu-dark {
     display: none; }
   .scrolled #logo-white, .scrolled #menu-white {
-    display: block !important; }
+    display: block; }
   .scrolled .header-bar {
     border-radius: 0;
     background: rgba(255, 255, 255, 0.93) !important; }
