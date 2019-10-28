@@ -472,7 +472,6 @@ i.extra-large {
     #logo-white, #menu-white {
         display: none;
     }
-
     .primary{
         @include transition;
         max-width: 100%;
@@ -519,6 +518,12 @@ i.extra-large {
     }
 }
 .nav{
+    #logo-dark, #menu-dark {
+        display: none;
+    }
+    #logo-white, #menu-white {
+      display: block !important;
+    }
     @include transition;
     text-align: center;
     background:'';

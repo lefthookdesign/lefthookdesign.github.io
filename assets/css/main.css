@@ -3188,6 +3188,10 @@ i.extra-large {
   padding: 15px;
   margin: auto !important;
   width: 140px; }
+  .nav #logo-dark, .nav #menu-dark {
+    display: none; }
+  .nav #logo-white, .nav #menu-white {
+    display: block !important; }
   .nav i:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
