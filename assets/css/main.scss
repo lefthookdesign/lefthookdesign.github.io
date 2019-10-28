@@ -514,7 +514,7 @@ i.extra-large {
         padding: $sm;
         opacity: 1;
         border-bottom: none;
-        color: $primary-color;
+        color: $primary-color !important;
     }
     .button {
       background: $primary-accent;

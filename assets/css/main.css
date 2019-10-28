@@ -3182,7 +3182,7 @@ i.extra-large {
     padding: 15px;
     opacity: 1;
     border-bottom: none;
-    color: #3F3392; }
+    color: #3F3392 !important; }
   .scrolled .button {
     background: #1e1848; }
 
