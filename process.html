@@ -134,9 +134,9 @@
 <script>
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
-      $("#nav").addClass("scrolled");
+      $("#nav, #nav-mobile").addClass("scrolled");
     } else {
-      $("#nav").removeClass("scrolled");
+      $("#nav, #nav-mobile").removeClass("scrolled");
     }
   });
 </script>

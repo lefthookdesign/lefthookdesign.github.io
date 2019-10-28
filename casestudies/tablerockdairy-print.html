@@ -84,6 +84,15 @@
     $("#footer").load("/closet/footer.html");
 </script>
 <script>
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
+      $("#nav, #nav-mobile").addClass("scrolled");
+    } else {
+      $("#nav, #nav-mobile").removeClass("scrolled");
+    }
+  });
+</script>
+<script>
     function menuList() {
       var element = document.getElementById("menu-list");
       element.classList.toggle("block");

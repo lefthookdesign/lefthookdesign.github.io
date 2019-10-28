@@ -88,7 +88,15 @@
       element.classList.toggle("block");
     }
 </script>
-
+<script>
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
+      $("#nav, #nav-mobile").addClass("scrolled");
+    } else {
+      $("#nav, #nav-mobile").removeClass("scrolled");
+    }
+  });
+</script>
 <script>
 //add active class to current link
 $(function(){
