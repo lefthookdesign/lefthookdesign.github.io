@@ -3137,6 +3137,9 @@ i.extra-large {
   left: 0px;
   z-index: 100000; }
 
+#menu-list.link {
+  color: #fff !important; }
+
 .scrolled.dark {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;

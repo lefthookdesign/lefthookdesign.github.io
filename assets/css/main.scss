@@ -465,6 +465,9 @@ i.extra-large {
     z-index: 100000;
     //width: 100%;
 }
+#menu-list.link{
+    color: $white-color !important;
+}
 .scrolled.dark{
   @include transition;
   padding: 0 !important;
