@@ -3141,29 +3141,6 @@ i.extra-large {
   display: block !important; }
 .nav.dark #logo-white, .nav.dark #menu-white {
   display: none; }
-.nav.dark .scrolled {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  padding: 0 !important;
-  width: 100%; }
-  .nav.dark .scrolled #logo-dark, .nav.dark .scrolled #menu-dark {
-    display: block !important; }
-  .nav.dark .scrolled #logo-white, .nav.dark .scrolled #menu-white {
-    display: none; }
-  .nav.dark .scrolled .header-bar {
-    background: rgba(14, 15, 52, 0.98) !important; }
-  .nav.dark .scrolled .link {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    display: inline-block;
-    font-size: 0.9em;
-    letter-spacing: 0.06em;
-    padding: 15px;
-    opacity: 1;
-    border-bottom: none;
-    color: #fff; }
-  .nav.dark .scrolled .button {
-    background: #fff; }
 .nav.dark .primary {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -3267,30 +3244,55 @@ i.extra-large {
     background: rgba(255, 255, 255, 0); }
   .nav .button {
     background: #6B96FF; }
-  .nav .scrolled {
+
+.scrolled.dark {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  padding: 0 !important;
+  width: 100%; }
+  .scrolled.dark #logo-dark, .scrolled.dark #menu-dark {
+    display: block !important; }
+  .scrolled.dark #logo-white, .scrolled.dark #menu-white {
+    display: none; }
+  .scrolled.dark .header-bar {
+    background: rgba(14, 15, 52, 0.98) !important; }
+  .scrolled.dark .link {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    padding: 0 !important;
-    width: 100%; }
-    .nav .scrolled #logo-dark, .nav .scrolled #menu-dark {
-      display: none; }
-    .nav .scrolled #logo-white, .nav .scrolled #menu-white {
-      display: block !important; }
-    .nav .scrolled .header-bar {
-      border-radius: 0;
-      background: rgba(255, 255, 255, 0.93) !important; }
-    .nav .scrolled .link {
-      -webkit-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-      display: inline-block;
-      font-size: 0.9em;
-      letter-spacing: 0.06em;
-      padding: 15px;
-      opacity: 1;
-      border-bottom: none;
-      color: #3F3392; }
-    .nav .scrolled .button {
-      background: #1e1848; }
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 0.06em;
+    padding: 15px;
+    opacity: 1;
+    border-bottom: none;
+    color: #fff; }
+  .scrolled.dark .button {
+    background: #fff; }
+
+.scrolled {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  padding: 0 !important;
+  width: 100%; }
+  .scrolled #logo-dark, .scrolled #menu-dark {
+    display: none; }
+  .scrolled #logo-white, .scrolled #menu-white {
+    display: block !important; }
+  .scrolled .header-bar {
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.93) !important; }
+  .scrolled .link {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 0.06em;
+    padding: 15px;
+    opacity: 1;
+    border-bottom: none;
+    color: #3F3392; }
+  .scrolled .button {
+    background: #1e1848; }
 
 #nav-mobile {
   position: fixed;

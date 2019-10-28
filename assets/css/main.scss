@@ -472,33 +472,7 @@ i.extra-large {
     #logo-white, #menu-white {
         display: none;
     }
-    .scrolled{
-      @include transition;
-      padding: 0 !important;
-      width: 100%;
-      #logo-dark, #menu-dark {
-        display: block !important;
-      }
-      #logo-white, #menu-white {
-        display: none;
-      }
-      .header-bar {
-          background: rgba($black-color, .98) !important;
-      }
-      .link{
-          @include transition;
-          display: inline-block;
-          font-size: 0.9em;
-          letter-spacing: 0.06em;
-          padding: $sm;
-          opacity: 1;
-          border-bottom: none;
-          color: $white-color;
-      }
-      .button {
-        background: $white-color;
-      }
-    }
+
     .primary{
         @include transition;
         max-width: 100%;
@@ -624,37 +598,62 @@ i.extra-large {
     .button {
       background: $secondary-color;
     }
-    .scrolled{
+}
+.scrolled.dark{
+  @include transition;
+  padding: 0 !important;
+  width: 100%;
+  #logo-dark, #menu-dark {
+    display: block !important;
+  }
+  #logo-white, #menu-white {
+    display: none;
+  }
+  .header-bar {
+      background: rgba($black-color, .98) !important;
+  }
+  .link{
+      @include transition;
+      display: inline-block;
+      font-size: 0.9em;
+      letter-spacing: 0.06em;
+      padding: $sm;
+      opacity: 1;
+      border-bottom: none;
+      color: $white-color;
+  }
+  .button {
+    background: $white-color;
+  }
+}
+.scrolled{
+    @include transition;
+    padding: 0 !important;
+    width: 100%;
+    #logo-dark, #menu-dark {
+        display: none;
+    }
+    #logo-white, #menu-white {
+        display: block !important;
+    }
+    .header-bar {
+        border-radius: 0;
+        background: rgba($white-color, .93) !important;
+    }
+    .link{
         @include transition;
-        padding: 0 !important;
-        width: 100%;
-        #logo-dark, #menu-dark {
-            display: none;
-        }
-        #logo-white, #menu-white {
-            display: block !important;
-        }
-        .header-bar {
-            border-radius: 0;
-            background: rgba($white-color, .93) !important;
-        }
-        .link{
-            @include transition;
-            display: inline-block;
-            font-size: 0.9em;
-            letter-spacing: 0.06em;
-            padding: $sm;
-            opacity: 1;
-            border-bottom: none;
-            color: $primary-color;
-        }
-        .button {
-          background: $primary-accent;
-        }
+        display: inline-block;
+        font-size: 0.9em;
+        letter-spacing: 0.06em;
+        padding: $sm;
+        opacity: 1;
+        border-bottom: none;
+        color: $primary-color;
+    }
+    .button {
+      background: $primary-accent;
     }
 }
-
-
 #nav-mobile {
     position: fixed;
     z-index: 100;
