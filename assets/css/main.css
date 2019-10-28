@@ -3138,7 +3138,7 @@ i.extra-large {
   z-index: 100000; }
 
 .nav.dark #logo-dark, .nav.dark #menu-dark {
-  display: block !important; }
+  display: block; }
 .nav.dark #logo-white, .nav.dark #menu-white {
   display: none; }
 .nav.dark .primary {
@@ -3189,7 +3189,7 @@ i.extra-large {
   margin: auto !important;
   width: 140px; }
   .nav #logo-dark, .nav #menu-dark {
-    display: block !important; }
+    display: block; }
   .nav #logo-white, .nav #menu-white {
     display: none; }
   .nav i:hover {
@@ -3281,7 +3281,7 @@ i.extra-large {
   .scrolled #logo-dark, .scrolled #menu-dark {
     display: none; }
   .scrolled #logo-white, .scrolled #menu-white {
-    display: block; }
+    display: block !important; }
   .scrolled .header-bar {
     border-radius: 0;
     background: rgba(255, 255, 255, 0.93) !important; }

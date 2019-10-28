@@ -467,7 +467,7 @@ i.extra-large {
 }
 .nav.dark {
     #logo-dark, #menu-dark {
-        display: block !important;
+        display: block;
     }
     #logo-white, #menu-white {
         display: none;
@@ -519,7 +519,7 @@ i.extra-large {
 }
 .nav{
     #logo-dark, #menu-dark {
-      display: block !important;
+      display: block;
     }
     #logo-white, #menu-white {
       display: none;
@@ -639,7 +639,7 @@ i.extra-large {
         display: none;
     }
     #logo-white, #menu-white {
-        display: block;
+        display: block !important;
     }
     .header-bar {
         border-radius: 0;
