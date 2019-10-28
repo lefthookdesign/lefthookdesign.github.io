@@ -535,7 +535,7 @@ i.extra-large {
         color: $accent-color;
     }
     .header-bar {
-        background: rgba($black-color, 0) !important;
+        background: rgba($black-color, 0);
     }
     .button {
         background: $secondary-color;
@@ -618,7 +618,7 @@ i.extra-large {
         @include transition;
         @include shadow-light;
         @include button-radius;
-        background: rgba($white-color, 0) !important;
+        background: rgba($white-color, 0);
         //width: 98%;
     }
     .button {
