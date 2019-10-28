@@ -454,7 +454,38 @@ i.extra-large {
 
 
 /* navigation */
+#nav-mobile {
+    position: fixed;
+    z-index: 100;
 
+    .link{
+        @include transition;
+        display: inline-block;
+        font-size: 1.4em;
+        letter-spacing: 0.06em;
+        padding: $xs $sm;
+        opacity: 1;
+        border-bottom: none;
+        color: $white-color !important;
+    }
+    a:hover {
+        @include transition;
+        color: $white-color !important;
+    }
+    #menu-list {
+        position: absolute;
+        min-height: 100vh;
+        width: 25%;
+        min-width: 300px;
+        max-width: 500px;
+        @include transition;
+        @include shadow-dark;
+        display: none;
+        top: 0;
+        left: 0;
+        background: rgba($primary-accent, 0.97);
+    }
+}
 #nav {
     transform: none;
     position: fixed;
@@ -464,9 +495,6 @@ i.extra-large {
     left: 0px;
     z-index: 100000;
     //width: 100%;
-}
-#menu-list.link{
-    color: $white-color !important;
 }
 .scrolled.dark{
   @include transition;
@@ -664,45 +692,6 @@ i.extra-large {
     .button {
       background: $secondary-color;
     }
-}
-
-#nav-mobile {
-    position: fixed;
-    z-index: 100;
-
-    .link{
-        @include transition;
-        display: inline-block;
-        font-size: 1.4em;
-        letter-spacing: 0.06em;
-        padding: $xs $sm;
-        opacity: 1;
-        border-bottom: none;
-        color: $white-color;
-    }
-    a:hover {
-        @include transition;
-        color: $white-color !important;
-    }
-    #menu-list {
-        position: absolute;
-        min-height: 100vh;
-        width: 25%;
-        min-width: 300px;
-    }
-}
-#menu-list {
-    @include transition;
-    @include shadow-dark;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba($primary-color, 0.97);
-    width: 22%;
-    max-width: 500px;
-    min-width: 200px;
-    height: 100%;
 }
 #close {
     z-index: 100;
