@@ -3338,7 +3338,8 @@ i.extra-large {
     border-radius: 5px;
     background: rgba(255, 255, 255, 0); }
   .nav .button {
-    background: #6B96FF; }
+    background: #6B96FF;
+    color: #fff; }
 
 #close {
   z-index: 100;
@@ -3833,6 +3834,7 @@ i.sm-icon {
 
 .sm-hero {
   height: 65vh;
+  max-height: 500px;
   margin: auto; }
 
 .md-hero {

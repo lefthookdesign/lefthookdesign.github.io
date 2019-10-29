@@ -691,6 +691,7 @@ i.extra-large {
     }
     .button {
       background: $secondary-color;
+      color: $white-color;
     }
 }
 #close {
@@ -1101,6 +1102,7 @@ i.sm-icon {
     }
 .sm-hero{
     height: 65vh;
+    max-height: 500px;
     margin: auto;
     }
 .md-hero{
