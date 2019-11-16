@@ -8,44 +8,79 @@
 
 
 <url>
-  <loc>http://lefthook.design/</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
+  <loc>https://lefthook.design/</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://lefthook.design/work.html</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
+  <loc>https://lefthook.design/services.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://lefthook.design/casestudies/tablerockdairy.html</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>http://lefthook.design/casestudies/scottylabs.html</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>http://lefthook.design/casestudies/hillwedding.html</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>http://lefthook.design/casestudies/royaldigits.html</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>http://lefthook.design/about.html</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
+  <loc>https://lefthook.design/casestudies/tablerockdairy-logo.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://lefthook.design/contact.html</loc>
-  <lastmod>2018-11-30T07:46:26+00:00</lastmod>
+  <loc>https://lefthook.design/casestudies/royaldigits-print.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/wedding-hill.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/scottylabs-logo.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/tablerockdairy-packaging.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/tablerockdairy-print.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/work.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/about.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/contact.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/royaldigits-logo.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/ui-tsa-concept.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/ui-musicplayer.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lefthook.design/casestudies/ui-smarthome.html</loc>
+  <lastmod>2019-10-29T23:24:23+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
