@@ -681,7 +681,7 @@ i.extra-large {
         }
     a:hover {
         @include transition;
-        color: $accent-color;
+        color: $accent-color !important;
     }
     .header-bar {
         @include transition;

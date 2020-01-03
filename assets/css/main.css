@@ -3728,7 +3728,7 @@ i.extra-large {
 .nav a:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #FF4080;
+  color: #FF4080 !important;
 }
 .nav .header-bar {
   -webkit-transition: all 0.5s ease-in-out;
