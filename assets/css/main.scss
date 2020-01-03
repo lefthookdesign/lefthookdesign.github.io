@@ -540,6 +540,7 @@ i.extra-large {
         background: rgba($white-color, .93) !important;
         @include shadow-light;
         @include transition;
+        padding: 8px 0;
     }
     .link{
         @include transition;
@@ -687,7 +688,6 @@ i.extra-large {
         @include transition;
         @include button-radius;
         background: rgba($white-color, 0);
-        //width: 98%;
     }
     .button {
       background: $accent-color;

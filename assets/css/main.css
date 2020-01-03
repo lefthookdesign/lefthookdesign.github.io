@@ -3593,6 +3593,7 @@ i.extra-large {
   box-shadow: 0px 2px 5px rgba(14, 15, 52, 0.1);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  padding: 8px 0;
 }
 .scrolled .link {
   -webkit-transition: all 0.5s ease-in-out;
