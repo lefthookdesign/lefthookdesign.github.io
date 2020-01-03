@@ -536,7 +536,7 @@ i.extra-large {
         display: block !important;
     }
     .header-bar {
-        border-radius: 0;
+        border-radius: 0px !important;
         background: rgba($white-color, .93) !important;
         @include shadow-light;
         @include transition;
