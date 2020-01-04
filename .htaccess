@@ -9,3 +9,7 @@
 \f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 \strokec2 ErrorDocument 404 /404.html\
 }
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
