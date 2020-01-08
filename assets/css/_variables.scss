@@ -1,4 +1,4 @@
-// fonts 
+// fonts
 $fonts: Montserrat, Open Sans, Helvetica, Arial, sans-serif;
 
 // radius
@@ -24,7 +24,6 @@ $dark-grey-color: #767483;
 $white-color: #fff;
 $black-color: #0E0F34;
 $no-shadow: none;
-$shadow-light: 0px 2px 5px rgba($black-color, 0.1);
-$shadow: 0px 4px 8px rgba($black-color, 0.25);
-$shadow-dark: 0px 20px 25px rgba($black-color,0.4);
-
+$shadow-light: 0px 2px 5px rgba($primary-accent, 0.05);
+$shadow: 0px 4px 15px rgba($primary-accent, 0.15);
+$shadow-dark: 0px 20px 45px rgba($primary-accent,0.3);

@@ -968,7 +968,7 @@ input, textarea {
 }
 .card:hover {
     @include transition;
-    @include shadow-dark;
+    @include shadow;
     @include rise;
     h3, h4 {
         @include transition;
