@@ -219,7 +219,13 @@ body {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-
+#hero.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
 .bg-image {
     background-size: cover;
     background-position: center;
@@ -495,117 +501,9 @@ i.extra-large {
     left: 0px;
     z-index: 100000;
     //width: 100%;
-}
-.scrolled.dark{
-  @include transition;
-  padding: 0 !important;
-  width: 100%;
-  #logo-dark, #menu-dark {
-    display: block !important;
-  }
-  #logo-white, #menu-white {
-    display: none !important;
-  }
-  .header-bar {
-      background: rgba($black-color, .98) !important;
-      @include shadow-light;
-      @include transition;
-  }
-  .link{
-      @include transition;
-      display: inline-block;
-      font-size: 0.9em;
-      letter-spacing: 0.06em;
-      padding: $sm;
-      opacity: 1;
-      border-bottom: none;
-      color: $white-color;
-  }
-  .button {
-    background: $white-color;
-  }
-}
-.scrolled{
-    @include transition;
-    padding: 0 !important;
-    width: 100%;
-    #logo-dark, #menu-dark {
-        display: none !important;
-    }
-    #logo-white, #menu-white {
-        display: block !important;
-    }
-    .header-bar {
-        border-radius: 0px !important;
-        background: rgba($white-color, .96) !important;
-        @include shadow-light;
-        @include transition;
-        padding: 8px 0;
-    }
-    .link{
-        @include transition;
-        display: inline-block;
-        font-size: 0.9em;
-        letter-spacing: 0.06em;
-        padding: $sm;
-        opacity: 1;
-        border-bottom: none;
-        color: $primary-color !important;
-    }
-    .button {
-      background: $primary-accent;
-    }
-}
-.nav.dark {
-    #logo-dark, #menu-dark {
-        display: block;
-    }
-    #logo-white, #menu-white {
-        display: none;
-    }
-    .primary{
-        @include transition;
-        max-width: 100%;
-    }
-    .link{
-        @include transition;
-        display: inline-block;
-        font-size: 0.9em;
-        letter-spacing: 0.06em;
-        padding: $sm;
-        opacity: 1;
-        border-bottom: none;
-        color: $primary-color;
-    }
-    .active{
-        color: $accent-color;
-        opacity: 1 !important;
-    }
-
-    .link:hover::after {
-        @include transition;
-        width: 100%;
-    }
-    a{
-        @include transition;
-        color: $light-grey-color;
-        font-weight: 600;
-        #text {
-            padding-bottom: 4px;
-        }
-        }
     a:hover {
         @include transition;
-        color: $accent-color;
-    }
-    .header-bar {
-        background: rgba($black-color, 0);
-    }
-    .button {
-        background: $secondary-color;
-    }
-    .button:hover {
-        background: $accent-color;
+        color: $primary-accent;
     }
 }
 .nav{
@@ -682,7 +580,7 @@ i.extra-large {
         }
     a:hover {
         @include transition;
-        color: $accent-color !important;
+        color: $primary-accent !important;
     }
     .header-bar {
         @include transition;
@@ -698,6 +596,122 @@ i.extra-large {
         color: $white-color !important;
         @include shadow;
     }
+}
+.nav.dark {
+    #logo-dark, #menu-dark {
+        display: block;
+    }
+    #logo-white, #menu-white {
+        display: none;
+    }
+    .primary{
+        @include transition;
+        max-width: 100%;
+    }
+    .link{
+        @include transition;
+        display: inline-block;
+        font-size: 0.9em;
+        letter-spacing: 0.06em;
+        padding: $sm;
+        opacity: 1;
+        border-bottom: none;
+        color: $primary-color;
+    }
+    .active{
+        color: $accent-color;
+        opacity: 1 !important;
+    }
+
+    .link:hover::after {
+        @include transition;
+        width: 100%;
+    }
+    a{
+        @include transition;
+        color: $light-grey-color;
+        font-weight: 600;
+        #text {
+            padding-bottom: 4px;
+        }
+        }
+    a:hover {
+        @include transition;
+        color: $accent-color;
+    }
+    .header-bar {
+        background: rgba($black-color, 0);
+    }
+    .button {
+        background: $secondary-color;
+    }
+    .button:hover {
+        background: $accent-color;
+    }
+}
+.nav.scrolled{
+    @include transition;
+    padding: 0 !important;
+    width: 100%;
+    #logo-dark, #menu-dark {
+        display: none !important;
+    }
+    #logo-white, #menu-white {
+        display: block !important;
+    }
+    .header-bar {
+        border-radius: 0px !important;
+        background: rgba($white-color, .96) !important;
+        @include shadow-light;
+        @include transition;
+        padding: 8px 0;
+    }
+    .link{
+        @include transition;
+        display: inline-block;
+        font-size: 0.9em;
+        letter-spacing: 0.06em;
+        padding: $sm;
+        opacity: 1;
+        border-bottom: none;
+        color: $primary-color !important;
+    }
+    .button {
+      background: $primary-accent;
+    }
+    a:hover {
+        @include transition;
+        color: $accent-color !important;
+    }
+}
+.nav.scrolled.dark{
+  @include transition;
+  padding: 0 !important;
+  width: 100%;
+  #logo-dark, #menu-dark {
+    display: block !important;
+  }
+  #logo-white, #menu-white {
+    display: none !important;
+  }
+  .header-bar {
+      background: rgba($black-color, .98) !important;
+      @include shadow-light;
+      @include transition;
+  }
+  .link{
+      @include transition;
+      display: inline-block;
+      font-size: 0.9em;
+      letter-spacing: 0.06em;
+      padding: $sm;
+      opacity: 1;
+      border-bottom: none;
+      color: $white-color;
+  }
+  .button {
+    background: $white-color;
+  }
 }
 #close {
     z-index: 100;
