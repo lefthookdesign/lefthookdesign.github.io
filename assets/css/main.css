@@ -4071,7 +4071,7 @@ input, textarea {
 .card h3 {
   font-weight: 600;
 }
-.card h3, .card h4 {
+.card h2, .card h3, .card h4 {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   opacity: 0;
@@ -4094,7 +4094,7 @@ input, textarea {
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
 }
-.card:hover h3, .card:hover h4 {
+.card:hover h2, .card:hover h3, .card:hover h4 {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   opacity: 1 !important;
