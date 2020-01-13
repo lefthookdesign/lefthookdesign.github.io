@@ -537,7 +537,7 @@ i.extra-large {
     }
     .header-bar {
         border-radius: 0px !important;
-        background: rgba($white-color, .93) !important;
+        background: rgba($white-color, .96) !important;
         @include shadow-light;
         @include transition;
         padding: 8px 0;
@@ -692,6 +692,11 @@ i.extra-large {
     .button {
       background: $accent-color;
       color: $white-color;
+    }
+    .button:hover {
+        background: $accent-color;
+        color: $white-color !important;
+        @include shadow;
     }
 }
 #close {
