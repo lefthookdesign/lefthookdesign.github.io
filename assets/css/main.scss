@@ -511,10 +511,6 @@ i.extra-large {
     left: 0px;
     z-index: 100000;
     //width: 100%;
-    a:hover {
-        @include transition;
-        color: $primary-accent;
-    }
 }
 .nav{
     #logo-dark, #menu-dark {
@@ -581,16 +577,12 @@ i.extra-large {
         width: 100%;
     }
     a{
-        @include transition;
-        color: $light-grey-color;
-        font-weight: 600;
-        #text {
-            padding-bottom: 4px;
-        }
-        }
-    a:hover {
-        @include transition;
-        color: $primary-accent !important;
+      @include transition;
+      color: $light-grey-color;
+      font-weight: 600;
+      #text {
+          padding-bottom: 4px;
+      }
     }
     .header-bar {
         @include transition;
@@ -685,12 +677,12 @@ i.extra-large {
         border-bottom: none;
         color: $primary-color !important;
     }
-    .button {
-      background: $primary-accent;
-    }
-    a:hover {
+    .link:hover {
         @include transition;
         color: $accent-color !important;
+    }
+    .button:hover {
+      background: $primary-color;
     }
 }
 .nav.scrolled.dark{

@@ -3554,11 +3554,6 @@ i.extra-large {
   left: 0px;
   z-index: 100000;
 }
-#nav a:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: #1e1848;
-}
 
 .nav {
   -webkit-transition: all 0.5s ease-in-out;
@@ -3620,11 +3615,6 @@ i.extra-large {
 }
 .nav a #text {
   padding-bottom: 4px;
-}
-.nav a:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: #1e1848 !important;
 }
 .nav .header-bar {
   -webkit-transition: all 0.5s ease-in-out;
@@ -3736,13 +3726,13 @@ i.extra-large {
   border-bottom: none;
   color: #3F3392 !important;
 }
-.nav.scrolled .button {
-  background: #1e1848;
-}
-.nav.scrolled a:hover {
+.nav.scrolled .link:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   color: #FF4080 !important;
+}
+.nav.scrolled .button:hover {
+  background: #3F3392;
 }
 
 .nav.scrolled.dark {
