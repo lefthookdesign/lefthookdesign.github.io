@@ -83,41 +83,36 @@
         <div class="col-xs col-sm-4">
 
         </div>
+        <div class="col-xs-4 col-sm-3 sm-padding xl-top-padding" data-aos="fade-in" data-aos-once="true">
+            <div class="icon-140 circled light-grey-bg md-padding row">
+                <img class="full-width center-align primary-color" src="assets/img/icons/clipboard-accent.svg"/>
+            </div>
+            <h4 class="md-top-padding dark-grey-color">Creative Strategies</h4>
+        </div>
+        <div class="col-xs-4 col-sm-3 sm-padding xl-top-padding" data-aos="fade-in" data-aos-delay="0" data-aos-once="true">
+            <div class="icon-140 circled light-grey-bg md-padding row">
+                <img class="full-width center-align primary-color" src="assets/img/icons/brain-accent.svg"/>
+            </div>
+            <h4 class="md-top-padding dark-grey-color">Problem Solvers</h4>
+        </div>
+        <div class="col-xs-4 col-sm-3 sm-padding xl-top-padding" data-aos="fade-in" data-aos-delay="50" data-aos-once="true">
+            <div class="icon-140 circled light-grey-bg md-padding row">
+                <img class="full-width center-align primary-color" src="assets/img/icons/mountain-accent.svg"/>
+            </div>
+            <h4 class="md-top-padding dark-grey-color">Goals Driven</h4>
+        </div>
+        <div class="col-xs col-sm-3">
+
+        </div>
     </div>
 </div>
 
-<div class="row max-width center-xs xl-top-padding xl-bottom-padding">
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-once="true">
-        <div class="icon-140 circled light-grey-bg md-padding center-align row">
-            <img class="full-width center-align primary-color" src="assets/img/icons/clipboard-secondary.svg"/>
-        </div>
-        <h4 class="md-top-padding dark-grey-color">Creative Strategies</h4>
-    </div>
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-delay="0" data-aos-once="true">
-        <div class="icon-140 circled light-grey-bg md-padding center-align row">
-            <img class="full-width center-align primary-color" src="assets/img/icons/brain-secondary.svg"/>
-        </div>
-        <h4 class="md-top-padding dark-grey-color">Problem Solvers</h4>
-    </div>
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-delay="50" data-aos-once="true">
-        <div class="icon-140 circled light-grey-bg md-padding center-align row">
-            <img class="full-width center-align primary-color" src="assets/img/icons/mountain-secondary.svg"/>
-        </div>
-        <h4 class="md-top-padding dark-grey-color">Goals Driven</h4>
-    </div>
-    <div class="col-xs-6 col-sm-3 sm-padding" data-aos="fade-in" data-aos-delay="0" data-aos-once="true">
-        <div class="icon-140 circled light-grey-bg md-padding center-align row">
-            <img class="full-width center-align primary-color" src="assets/img/icons/statistics-secondary.svg"/>
-        </div>
-        <h4 class="md-top-padding dark-grey-color">Data Based</h4>
-    </div>
-</div>
 <div class="row max-width center-xs start-sm middle xl-bottom-padding">
     <div class="col-xs-12 col-sm-7 md-padding">
         <h3 class="dark-grey-color">When we're not working you can find us playing on the West Coast (probably with our dog). We have friends and family from San Diego to Seattle, but home is just outside Portland, Oregon - in the beautiful Pacific Northwest.</h3>
     </div>
     <div class="col-xs-12 col-sm-5 md-padding">
-        <img class="full-width center-xs" style="max-width: 300px;" src="assets/img/people-nature-walk.png">
+        <img class="full-width center-xs" src="assets/img/people-nature-walk.png">
     </div>
 </div>
 <div class="lg-section light-grey-bg">
@@ -175,6 +170,14 @@
       $("#nav, #nav-mobile").addClass("scrolled");
     } else {
       $("#nav, #nav-mobile").removeClass("scrolled");
+    }
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("about") > -1) {
+      //alert("your url contains about");
+      $('a#about').addClass('active');
     }
   });
 </script>

@@ -31,15 +31,16 @@
 
 </head>
 <body class="white-bg">
-
-<div id="hero" class="bg-image" style="background-image: url(assets/img/bg-collab.jpg);">
-  <div id="nav" class="nav full-width center-align hide-for-small"></div>
-  <div id="nav-mobile" class="nav full-width center-align show-for-small"></div>
-    <div class="row full-width md-section start-xs">
-        <div class="col-xs-12" data-aos="fade-right" data-aos-once="true">
-            <h1 class="md-padding white-color">Our Process</h1>
-        </div>
+<div id="nav" class="nav full-width center-align hide-for-small"></div>
+<div id="nav-mobile" class="nav full-width center-align show-for-small"></div>
+<div id="hero" class="sm-hero bg-image" style="background-image: url(assets/img/bg-collab.jpg);">
+  <div class="row full-width full-height">
+    <div class="row max-width start-xs">
+      <div class="col-xs-12 md-padding" data-aos="fade-right" data-aos-once="true">
+          <h1 class="white-color">Our Process</h1>
+      </div>
     </div>
+  </div>
 </div>
 <div class="lg-section">
   <div class="xl-bottom-padding">
@@ -121,7 +122,6 @@
         </div>
     </div>
 </div>
-
 <div id="footer"></div>
 
 <script>
@@ -138,6 +138,14 @@
     }
   });
 </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("process") > -1) {
+      //alert("your url contains process");
+      $('a#process').addClass('active');
+    }
+  });
+</script>
 <script>
     function menuList() {
       var element = document.getElementById("menu-list");
@@ -149,26 +157,11 @@
       element.classList.toggle("block");
     }
 </script>
-<script>
-    var velocity = -.5;
-
-    function update(){
-    var pos = $(window).scrollTop();
-    $('.parallax-bg-image').each(function() {
-        var $element = $(this);
-        // subtract some from the height b/c of the padding
-        var height = $element.height()- 0;
-        $(this).css('backgroundPosition', '0%' + Math.round((height - pos) * velocity) + 'px');
-       });
-       };
-
-     $(window).bind('scroll', update);
-</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
     delay: 0,
-    duration: 1000,
+    duration: 1200,
     easing: 'ease-in',
   });
 </script>

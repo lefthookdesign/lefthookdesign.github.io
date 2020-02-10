@@ -48,9 +48,8 @@
 <div id="hero" class="sm-hero bg-image" style="background-image: url(assets/img/bg-process.jpg);">
     <div class="row full-width full-height">
         <div class="row max-width start-xs">
-            <div class="col-xs-12 col-sm-7 col-lg-6 md-padding" data-aos="fade-right" data-aos-once="true">
+            <div class="col-xs-12 col-sm-9 col-lg-8 md-padding" data-aos="fade-right" data-aos-once="true">
                 <h1 class="white-color">Services</h1>
-                <h3 class="white-color md-top-padding">We do more than make things look pretty, we build connections between companies and customers.</h3>
             </div>
         </div>
     </div>
@@ -132,8 +131,8 @@
 
 <div class="row max-width middle-sm lg-bottom-padding">
     <div class="col-xs-12 col-sm-7 md-padding">
-        <h2>Design is how things&nbsp;work.</h2>
-        <h3 class="dark-grey-color xs-top-padding">We're actually creative planners and problem solvers creating meaningful and relevant connections between businesses and customers.</h3>
+        <h2>How Things Work</h2>
+        <h3 class="dark-grey-color xs-top-padding">We're creative planners and problem solvers building meaningful connections between businesses and customers.</h3>
     </div>
     <div class="col-xs-12 col-sm-5 md-padding first-on-mobile">
         <img class="full-width" src="assets/img/people-pencil.png">
@@ -200,6 +199,14 @@
     }
   });
 </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("services") > -1) {
+      //alert("your url contains services");
+      $('a#services').addClass('active');
+    }
+  });
+</script>
 <script>
     function menuList() {
       var element = document.getElementById("menu-list");
@@ -210,21 +217,6 @@
       var element = document.getElementById("menu-list");
       element.classList.toggle("block");
     }
-</script>
-<script>
-    var velocity = -.5;
-
-    function update(){
-    var pos = $(window).scrollTop();
-    $('.parallax-bg-image').each(function() {
-        var $element = $(this);
-        // subtract some from the height b/c of the padding
-        var height = $element.height()- 0;
-        $(this).css('backgroundPosition', '0%' + Math.round((height - pos) * velocity) + 'px');
-       });
-       };
-
-     $(window).bind('scroll', update);
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

@@ -238,32 +238,16 @@
   });
 </script>
 <script>
-var velocity = -.5;
+  function menuList() {
+    var element = document.getElementById("menu-list");
+    element.classList.toggle("block");
+  }
 
-function update(){
-var pos = $(window).scrollTop();
-$('.parallax-bg-image').each(function() {
-    var $element = $(this);
-    // subtract some from the height b/c of the padding
-    var height = $element.height()- 0;
-    $(this).css('backgroundPosition', '0%' + Math.round((height - pos) * velocity) + 'px');
-   });
-   };
-
- $(window).bind('scroll', update);
+  function closeMenu() {
+    var element = document.getElementById("menu-list");
+    element.classList.toggle("block");
+  }
 </script>
-<script>
-    function menuList() {
-      var element = document.getElementById("menu-list");
-      element.classList.toggle("block");
-    }
-
-    function closeMenu() {
-      var element = document.getElementById("menu-list");
-      element.classList.toggle("block");
-    }
-</script>
-<script type="text/javascript" src="assets/js/gradient.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
