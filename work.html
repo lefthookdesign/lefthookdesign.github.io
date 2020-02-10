@@ -263,15 +263,14 @@
   });
 </script>
 <script>
-    function menuList() {
-      var element = document.getElementById("menu-list");
-      element.classList.toggle("block");
-    }
-
-    function closeMenu() {
-      var element = document.getElementById("menu-list");
-      element.classList.toggle("block");
-    }
+  function menuList() {
+    var element = document.getElementById("menu-list");
+    element.classList.toggle("show-menu");
+  }
+  function closeMenu() {
+    var element = document.getElementById("menu-list");
+    element.classList.toggle("show-menu");
+  }
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
