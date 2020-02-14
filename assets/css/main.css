@@ -4783,6 +4783,14 @@ i.sm-icon {
     padding-top: 180px;
     padding-bottom: 180px;
   }
+
+  #hero.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
 }
 @media only screen and (max-width: 1024px) {
   input, textarea {
