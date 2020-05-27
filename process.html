@@ -1,4 +1,5 @@
-<doctype html>
+<!DOCTYPE html>
+<html>
 <head>
     <title>Our Process | Left Hook Design | How we like to get things done. </title>
     <!-- main -->
@@ -123,46 +124,20 @@
     </div>
 </div>
 <div id="footer"></div>
-
-<script>
-    $("#nav").load("closet/header.html");
-    $("#nav-mobile").load("closet/header-mobile.html");
-    $("#footer").load("closet/footer.html");
-</script>
-<script>
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
-      $("#nav, #nav-mobile").addClass("scrolled");
-    } else {
-      $("#nav, #nav-mobile").removeClass("scrolled");
-    }
-  });
-</script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (window.location.href.indexOf("process") > -1) {
-      //alert("your url contains process");
-      $('a#process').addClass('active');
-    }
-  });
-</script>
-<script>
-  function menuList() {
-    var element = document.getElementById("menu-list");
-    element.classList.toggle("show-menu");
-  }
-  function closeMenu() {
-    var element = document.getElementById("menu-list");
-    element.classList.toggle("show-menu");
-  }
-</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/assets/js/main.js"></script>
 <script>
+$(document).ready(function() {
+  // Setup Page Contents
+  initPage();
+
   AOS.init({
     delay: 0,
-    duration: 1200,
+    duration: 1000,
     easing: 'ease-in',
   });
+
+});
 </script>
 </body>
-</doctype>
+</html>

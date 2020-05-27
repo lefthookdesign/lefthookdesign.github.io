@@ -450,7 +450,6 @@ a:hover {
     }
 }
 
-
 i.large {
     font-size: 40px;
 }
@@ -501,103 +500,125 @@ i.extra-large {
       z-index: 2;
     }
 }
+.work-slider{
+  @include transition;
+  position: relative;
+  top: -600px;
+  opacity: 0;
+}
+.work-slider-container{
+  background: rgba($white-color, .96);
+  @include shadow-light;
+  border-radius: 3px;
+}
+.slide-group::-webkit-scrollbar {
+  display: none;
+}
+a#work:hover {
+  .work-slider{
+    @include transition;
+    top: 10px;
+    opacity: 1 !important;
+  }
+}
 
 #nav {
-    transform: none;
-    position: fixed;
-    display: block;
-    height: auto;
-    top: 0px;
-    left: 0px;
-    z-index: 100000;
-    //width: 100%;
+  transform: none;
+  position: fixed;
+  display: block;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  z-index: 100000;
+  //width: 100%;
 }
 .nav{
-    #logo-dark, #menu-dark {
-      display: block;
-    }
-    #logo-white, #menu-white {
-      display: none;
-    }
-    @include transition;
-    text-align: center;
-    background:'';
-    padding: $sm;
-    margin: auto !important;
-    width: 140px;
-    i:hover {
-        @include transition;
-        color: $accent-color;
-        left:0;
-    }
-    //#logo-dark {
-    //}
-    //#logo-white {
-    //}
-    .logo{
-        @include transition;
-        width: 34px;
-        margin-right: 15px;
-    }
-    .primary{
-        @include transition;
-        max-width: 100%;
-    }
-    .link{
-        @include transition;
-        display: inline-block;
-        font-size: 0.9em;
-        letter-spacing: 0.06em;
-        padding: $sm;
-        opacity: 1;
-        border-bottom: none;
-        color: $white-color;
-    }
-    .active{
-        font-weight: 700;
-        opacity: 1 !important;
-    }
-    //.link.active::after {
-    //    content: '';
-    //    display: block;
-    //    height: 3px;
-    //    width: 100%;
-    //    background: $primary-color;
-    //}
-    //.link::after {
-    //    content: '';
-    //    display: block;
-    //    width: 0;
-    //    height: 3px;
-    //    background: $primary-color;
-    //    transition: width .3s ease;
-    //}
-    .link:hover::after {
-        @include transition;
-        width: 100%;
-    }
-    a{
+  @include transition;
+  text-align: center;
+  background:'';
+  padding: $sm;
+  margin: auto !important;
+  width: 140px;
+  i:hover {
       @include transition;
-      color: $light-grey-color;
-      font-weight: 600;
-      #text {
-          padding-bottom: 4px;
-      }
-    }
-    .header-bar {
-        @include transition;
-        @include button-radius;
-        background: rgba($white-color, 0);
-    }
-    .button {
-      background: $accent-color;
+      color: $accent-color;
+      left:0;
+  }
+  #logo-dark, #menu-dark {
+    display: block;
+  }
+  #logo-white, #menu-white {
+    display: none;
+  }
+  .logo{
+      @include transition;
+      width: 34px;
+      margin-right: 15px;
+  }
+  .primary{
+      @include transition;
+      max-width: 100%;
+  }
+  .link:hover{
+    @include transition;
+    opacity: 1 !important;
+  }
+  .link{
+      @include transition;
+      display: inline-block;
+      font-size: 0.9em;
+      letter-spacing: 0.06em;
+      padding: $sm;
+      opacity: .5;
+      border-bottom: none;
       color: $white-color;
+  }
+
+  .active{
+      font-weight: 700;
+      opacity: 1 !important;
+  }
+  //.link.active::after {
+  //    content: '';
+  //    display: block;
+  //    height: 3px;
+  //    width: 100%;
+  //    background: $primary-color;
+  //}
+  //.link::after {
+  //    content: '';
+  //    display: block;
+  //    width: 0;
+  //    height: 3px;
+  //    background: $primary-color;
+  //    transition: width .3s ease;
+  //}
+  .link:hover::after {
+      @include transition;
+      width: 100%;
+  }
+  a{
+    @include transition;
+    color: $light-grey-color;
+    font-weight: 600;
+    #text {
+        padding-bottom: 4px;
     }
-    .button:hover {
-        background: $accent-color;
-        color: $white-color !important;
-        @include shadow;
-    }
+  }
+  .header-bar {
+      @include transition;
+      @include button-radius;
+      background: rgba($white-color, 0);
+  }
+  .button {
+    background: $accent-color;
+    color: $white-color;
+  }
+  .button:hover {
+      background: $accent-color;
+      color: $white-color !important;
+      @include shadow;
+  }
 }
 .nav.dark {
     #logo-dark, #menu-dark {
@@ -728,6 +749,7 @@ i.extra-large {
         opacity: 1;
     }
 }
+
 
 /* slick slider styling*/
 .pp, .nn {

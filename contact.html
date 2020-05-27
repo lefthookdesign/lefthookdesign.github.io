@@ -1,4 +1,5 @@
-<doctype html>
+<!DOCTYPE html>
+<html>
 <head>
     <title>Contact Us | Left Hook Design</title>
     <!-- main -->
@@ -53,39 +54,20 @@
     </div>
 </div>
 <div id="footer"></div>
-
-<script>
-    $("#nav").load("closet/header.html");
-    $("#nav-mobile").load("closet/header-mobile.html");
-    $("#footer").load("closet/footer.html");
-</script>
-<script>
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
-      $("#nav, #nav-mobile").addClass("scrolled");
-    } else {
-      $("#nav, #nav-mobile").removeClass("scrolled");
-    }
-  });
-</script>
-<script>
-  function menuList() {
-    var element = document.getElementById("menu-list");
-    element.classList.toggle("show-menu");
-  }
-  function closeMenu() {
-    var element = document.getElementById("menu-list");
-    element.classList.toggle("show-menu");
-  }
-</script>
-<script type="text/javascript" src="assets/js/gradient.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/assets/js/main.js"></script>
 <script>
+$(document).ready(function() {
+  // Setup Page Contents
+  initPage();
+
   AOS.init({
     delay: 0,
     duration: 1000,
     easing: 'ease-in',
   });
+
+});
 </script>
 </body>
-</doctype>
+</html>

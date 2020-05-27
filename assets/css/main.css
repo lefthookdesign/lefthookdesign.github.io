@@ -3545,6 +3545,34 @@ i.extra-large {
   z-index: 2;
 }
 
+.work-slider {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  top: -600px;
+  opacity: 0;
+}
+
+.work-slider-container {
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
+  -moz-box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
+  -ms-box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
+  box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
+  border-radius: 3px;
+}
+
+.slide-group::-webkit-scrollbar {
+  display: none;
+}
+
+a#work:hover .work-slider {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  top: 0;
+  opacity: 1 !important;
+}
+
 #nav {
   transform: none;
   position: fixed;
@@ -3564,17 +3592,17 @@ i.extra-large {
   margin: auto !important;
   width: 140px;
 }
-.nav #logo-dark, .nav #menu-dark {
-  display: block;
-}
-.nav #logo-white, .nav #menu-white {
-  display: none;
-}
 .nav i:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   color: #FF4080;
   left: 0;
+}
+.nav #logo-dark, .nav #menu-dark {
+  display: block;
+}
+.nav #logo-white, .nav #menu-white {
+  display: none;
 }
 .nav .logo {
   -webkit-transition: all 0.5s ease-in-out;
@@ -3587,6 +3615,11 @@ i.extra-large {
   transition: all 0.5s ease-in-out;
   max-width: 100%;
 }
+.nav .link:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 1 !important;
+}
 .nav .link {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -3594,7 +3627,7 @@ i.extra-large {
   font-size: 0.9em;
   letter-spacing: 0.06em;
   padding: 15px;
-  opacity: 1;
+  opacity: 0.5;
   border-bottom: none;
   color: #fff;
 }
