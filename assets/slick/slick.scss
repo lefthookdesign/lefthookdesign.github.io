@@ -14,6 +14,29 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+.slick-slider-flex {
+  position: relative;
+  display: flex;
+  flex: 1 100%;
+  box-sizing: border-box;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slide-flex {
+  display:flex;
+  flex: 1 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .slick-list {
     position: relative;
     overflow: hidden;

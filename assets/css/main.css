@@ -3569,6 +3569,11 @@ i.extra-large {
   border-radius: 3px;
 }
 
+.slide-group {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
 .slide-group::-webkit-scrollbar {
   display: none;
 }

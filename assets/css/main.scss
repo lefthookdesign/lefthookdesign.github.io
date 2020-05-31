@@ -511,11 +511,14 @@ i.extra-large {
   top: -600px;
   opacity: 0;
 }
-
 .work-slider-container{
   background: rgba($white-color, .96);
   @include shadow-light;
   border-radius: 3px;
+}
+.slide-group {
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 .slide-group::-webkit-scrollbar {
   display: none;

@@ -79,6 +79,10 @@ function initPage() {
   $("#nav").load("closet/header.html");
   $("#nav-mobile").load("closet/header-mobile.html");
   $("#footer").load("closet/footer.html");
+  $('#work').hover(
+    function(){ $("#work-slider").addClass('work-slider-active') },
+    function(){ $("#work-slider").removeClass('work-slider-active') }
+  );
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
       $("#nav, #nav-mobile").addClass("scrolled");
@@ -89,7 +93,7 @@ function initPage() {
   setTimeout(function(){
     projects.forEach(function(project) {
         $('#slide-group').append(
-          '<div class="slide col-sm-2 xs-padding">'+
+          '<div class="col-sm-2 xs-padding">'+
             '<a href="' + project.link + '" class="">'+
               '<div class="bg-image" style="background-image: url(' + project.thumbnail + ');">'+
                 '<img class="full-width" src="assets/img/square.png"/>'+
