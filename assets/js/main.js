@@ -99,11 +99,13 @@ function initPage() {
         );
     });
   },10)
-  //hide and show the work menu on hover
-  $("a#work").hover(function(){
-      $("#work-slider").toggleClass("work-slider-active");  //Toggle the active class to the area is hovered
-  });
 }
+//hide and show the work menu on hover
+$(document).ready(function(){
+  $("a#work").hover(function(){
+      $("#work-slider").classList.toggle("work-slider-active");  //Toggle the active class to the area is hovered
+  });
+});
 
 //mobile navigation menus
 function menuList() {
