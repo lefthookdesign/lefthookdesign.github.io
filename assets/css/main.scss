@@ -500,17 +500,18 @@ i.extra-large {
       z-index: 2;
     }
 }
+.work-slider-active{
+  @include transition;
+  top: 10px;
+  opacity: 1 !important;
+}
 .work-slider{
   @include transition;
   position: relative;
   top: -600px;
   opacity: 0;
 }
-.work-slider-active{
-  @include transition;
-  top: 10px;
-  opacity: 1 !important;
-}
+
 .work-slider-container{
   background: rgba($white-color, .96);
   @include shadow-light;
