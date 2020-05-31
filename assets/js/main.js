@@ -79,12 +79,6 @@ function initPage() {
   $("#nav").load("closet/header.html");
   $("#nav-mobile").load("closet/header-mobile.html");
   $("#footer").load("closet/footer.html");
-  //hide and show the work menu on hover
-  $(window).ready(function(){
-    $("a#work").hover(function(){
-      $("#work-slider").classList.toggle("work-slider-active");
-    }
-  });
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
       $("#nav, #nav-mobile").addClass("scrolled");
