@@ -506,6 +506,11 @@ i.extra-large {
   top: -600px;
   opacity: 0;
 }
+.work-slider-active{
+  @include transition;
+  top: 10px;
+  opacity: 1 !important;
+}
 .work-slider-container{
   background: rgba($white-color, .96);
   @include shadow-light;
@@ -514,13 +519,7 @@ i.extra-large {
 .slide-group::-webkit-scrollbar {
   display: none;
 }
-a#work:hover {
-  .work-slider{
-    @include transition;
-    top: 10px;
-    opacity: 1 !important;
-  }
-}
+
 
 #nav {
   transform: none;

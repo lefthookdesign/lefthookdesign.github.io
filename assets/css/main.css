@@ -3553,6 +3553,13 @@ i.extra-large {
   opacity: 0;
 }
 
+.work-slider-active {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  top: 10px;
+  opacity: 1 !important;
+}
+
 .work-slider-container {
   background: rgba(255, 255, 255, 0.96);
   -webkit-box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
@@ -3564,13 +3571,6 @@ i.extra-large {
 
 .slide-group::-webkit-scrollbar {
   display: none;
-}
-
-a#work:hover .work-slider {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  top: 0;
-  opacity: 1 !important;
 }
 
 #nav {
