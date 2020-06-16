@@ -3117,12 +3117,12 @@ Main site content
 }
 
 .light-grey-color {
-  color: #faf8fa;
-  fill: #faf8fa;
+  color: #fafafa;
+  fill: #fafafa;
 }
 
 .light-grey-bg {
-  background: #faf8fa;
+  background: #fafafa;
 }
 
 .grey-color {
@@ -3648,7 +3648,7 @@ i.extra-large {
 .nav a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #faf8fa;
+  color: #fafafa;
   font-weight: 600;
 }
 .nav a #text {
@@ -3710,7 +3710,7 @@ i.extra-large {
 .nav.dark a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #faf8fa;
+  color: #fafafa;
   font-weight: 600;
 }
 .nav.dark a #text {
@@ -3851,19 +3851,19 @@ input, textarea {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #faf8fa;
+  color: #fafafa;
   opacity: 1;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #faf8fa;
+  color: #fafafa;
 }
 
 :focus {
   outline: -webkit-focus-ring-color auto;
-  outline-color: #faf8fa;
+  outline-color: #fafafa;
   outline-offset: -1px;
   box-sizing: border-box;
 }
@@ -3977,7 +3977,7 @@ input, textarea {
   transition: all 0.5s ease-in-out;
   transform: translateY(-2px);
   background: #3F3392;
-  color: #faf8fa;
+  color: #fafafa;
 }
 
 .button {
