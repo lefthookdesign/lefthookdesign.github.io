@@ -3548,7 +3548,7 @@ i.extra-large {
 .work-slider-active {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  top: 10px;
+  top: 10px !important;
   opacity: 1 !important;
 }
 
@@ -3827,7 +3827,7 @@ i.extra-large {
 }
 
 /* slick slider styling*/
-.pp, .nn {
+.pp, .nn, .prev, .next {
   cursor: pointer;
 }
 

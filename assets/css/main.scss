@@ -502,7 +502,7 @@ i.extra-large {
 }
 .work-slider-active{
   @include transition;
-  top: 10px;
+  top: 10px !important;
   opacity: 1 !important;
 }
 .work-slider{
@@ -755,7 +755,7 @@ i.extra-large {
 
 
 /* slick slider styling*/
-.pp, .nn {
+.pp, .nn, .prev, .next {
     cursor: pointer;
 }
 #slick-nav {

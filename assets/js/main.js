@@ -104,7 +104,16 @@ function initPage() {
     });
   },10)
 }
-
+// slick slider for navigation
+$('#slide-group').slick({
+  autoplay: true,
+  infinite: true,
+  arrows: true,
+  prevArrow: ".prev",
+  nextArrow: ".next",
+  slidesToShow: 6,
+  slidesToScroll: 5,
+});
 
 //mobile navigation menus
 function menuList() {
