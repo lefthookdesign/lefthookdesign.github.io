@@ -3548,8 +3548,9 @@ i.extra-large {
 .work-slider-active {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  top: 10px !important;
+  top: 15px !important;
   opacity: 1 !important;
+  z-index: 1;
 }
 
 .work-slider {
@@ -3558,20 +3559,22 @@ i.extra-large {
   position: relative;
   top: -600px;
   opacity: 0;
+  z-index: -50px;
 }
 
-.work-slider-container {
+.work-dropdown {
+  position: fixed;
+}
+
+.slide-group {
+  flex-wrap: nowrap;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.96);
   -webkit-box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
   -moz-box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
   -ms-box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
   box-shadow: 0px 2px 5px rgba(30, 24, 72, 0.05);
   border-radius: 3px;
-}
-
-.slide-group {
-  flex-wrap: nowrap;
-  overflow: hidden;
 }
 
 .slide-group::-webkit-scrollbar {
@@ -4366,11 +4369,6 @@ i.sm-icon {
   padding-bottom: 70px;
 }
 
-.lg-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .xl-section {
   padding-top: 240px;
   padding-bottom: 240px;
@@ -4835,6 +4833,18 @@ i.sm-icon {
     font-size: 1.5em;
     line-height: 1.5em;
     padding: 5px 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .lg-section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .lg-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 @media only screen and (min-width: 1880px) {

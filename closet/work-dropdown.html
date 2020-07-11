@@ -1,15 +1,25 @@
-<<!DOCTYPE html>
 <div class="work-slider">
   <div class="work-slider-container max-width">
     <div id="slide-group" class="slide-group row middle">
-      //insert one "slide" for each html page in "work" folder
-      <!--<div class="slide col-sm-2 xs-padding">
-        <a href="'+link+'" class="" style="">
-          <div class="bg-image" style="background-image: url('+thumbnail+');">
-            <img class="full-width" src="assets/img/square.png"/>
-          </div>
-        </a>
-      </div>-->
+    </div>
+    <div id="slick-nav" class="row middle relative" style="justify-content: space-between; top: -120px;">
+      <div class="prev inline-block secondary-bg border-radius">
+        <i class="material-icons white-color xs-padding large opacity">navigate_before</i>
+      </div>
+      <div class="next inline-block secondary-bg border-radius">
+        <i class="material-icons white-color xs-padding large opacity">navigate_next</i>
+      </div>
     </div>
   </div>
 </div>
+
+// slick slider for navigation
+$('#slide-group').slick({
+  autoplay: true,
+  infinite: true,
+  arrows: true,
+  prevArrow: ".prev",
+  nextArrow: ".next",
+  slidesToShow: 6,
+  slidesToScroll: 5,
+});

@@ -1,6 +1,18 @@
 //list of all projects in "work" folder
   var projects = [
     {
+      "title": "Logo & Branding",
+      "subtitle":"Body Vitality",
+      "thumbnail": "/work/bodyvitality-logo/featured-tile.png",
+      "link": "/work/bodyvitality-logo.html"
+    },
+    {
+      "title": "Website",
+      "subtitle":"Body Vitality",
+      "thumbnail": "/work/bodyvitality-website/featured-tile.png",
+      "link": "/work/bodyvitality-website.html"
+    },
+    {
       "title": "Website",
       "subtitle":"Cascade Land Survey",
       "thumbnail": "/work/cascadelandsurvey-website/featured-tile.png",
@@ -43,7 +55,7 @@
       "link": "/work/royaldigits-print.html"
     },
     {
-      "title": "Branding",
+      "title": "Logo & Branding",
       "subtitle":"Royal Digits",
       "thumbnail": "/work/royaldigits-logo/featured-tile.png",
       "link": "/work/royaldigits-logo.html"
@@ -79,7 +91,7 @@ function initPage() {
   $("#nav").load("closet/header.html");
   $("#nav-mobile").load("closet/header-mobile.html");
   $("#footer").load("closet/footer.html");
-  
+
   $(window).scroll(function() {
     if ($(window).scrollTop() >= $('#hero').outerHeight() - 200) {
       $("#nav, #nav-mobile").addClass("scrolled");
@@ -90,7 +102,7 @@ function initPage() {
   setTimeout(function(){
     projects.forEach(function(project) {
         $('#slide-group').append(
-          '<div class="col-sm-2 xs-padding">'+
+          '<div class="col-sm-2 xs-padding slick-slide">'+
             '<a href="' + project.link + '" class="">'+
               '<div class="bg-image" style="background-image: url(' + project.thumbnail + ');">'+
                 '<img class="full-width" src="assets/img/square.png"/>'+
@@ -100,17 +112,13 @@ function initPage() {
         );
     });
   },10)
+
+  //toggle work slider
+  $('a#work').hover(function() {
+     $( 'work-slider' ).toggleClass('work-slider-active');
+  });
 }
-// slick slider for navigation
-$('#slide-group').slick({
-  autoplay: true,
-  infinite: true,
-  arrows: true,
-  prevArrow: ".prev",
-  nextArrow: ".next",
-  slidesToShow: 6,
-  slidesToScroll: 5,
-});
+
 
 //mobile navigation menus
 function menuList() {
@@ -122,12 +130,3 @@ function closeMenu() {
   var element = document.getElementById("menu-list");
   element.classList.toggle("show-menu");
 }
-
-//toggle work slider
-
-$('a#work').mouseover(function() {
-   $( '.work-slider' ).toggleClass('work-slider-active');
-});
-$('a#work').mouseout(function() {
-  $( '.work-slider' ).toggleClass('work-slider-active');
-});

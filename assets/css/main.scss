@@ -502,23 +502,30 @@ i.extra-large {
 }
 .work-slider-active{
   @include transition;
-  top: 10px !important;
+  top: 15px !important;
   opacity: 1 !important;
+  z-index: 1;
 }
 .work-slider{
   @include transition;
   position: relative;
   top: -600px;
   opacity: 0;
+  z-index: -50px;
 }
+.work-dropdown {
+ position: fixed;
+}
+
 .work-slider-container{
-  background: rgba($white-color, .96);
-  @include shadow-light;
-  border-radius: 3px;
+
 }
 .slide-group {
   flex-wrap: nowrap;
   overflow: hidden;
+  background: rgba($white-color, .96);
+  @include shadow-light;
+  border-radius: 3px;
 }
 .slide-group::-webkit-scrollbar {
   display: none;
@@ -1124,9 +1131,6 @@ i.sm-icon {
 .md-section{
   padding-top: $lg;
   padding-bottom: $lg;}
-.lg-section{
-  padding-top: $xl;
-  padding-bottom: $xl;}
 .xl-section {
     padding-top: $xl * 2;
     padding-bottom: $xl * 2;
@@ -1441,6 +1445,20 @@ i.sm-icon {
         padding: 5px 20px;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+  .lg-section{
+    padding-top: $md !important;
+    padding-bottom: $md !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .lg-section{
+    padding-top: $lg;
+    padding-bottom: $lg;
+  }
+}
+
 @media only screen and (min-width: 1880px) {
     h1 {
         font-size: 6em;
