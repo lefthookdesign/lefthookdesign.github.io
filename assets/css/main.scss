@@ -200,7 +200,7 @@ body {
 }
 
 .footer{
-    @include primary-gradient;
+    background: $primary-accent;
     color: $grey-color !important;
     position: relative;
     z-index: 1;
@@ -706,7 +706,7 @@ i.extra-large {
         padding: $sm;
         opacity: 1;
         border-bottom: none;
-        color: $primary-color !important;
+        color: $primary-accent !important;
     }
     .link:hover {
         @include transition;
@@ -776,8 +776,9 @@ i.extra-large {
 input, textarea {
     background: rgba($white-color, .27);
     color: $white-color;
-    font-size: 24px;
-    font-weight: 300;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 2em;
     border: none;
     padding: 5px 30px;
@@ -1064,11 +1065,11 @@ i.sm-icon {
 .lighter{
     @include opacity;}
 .bottom-border {
-    border-bottom: solid 1px $grey-color;}
+    border-bottom: solid 1px $light-grey-color;}
 .left-border {
-    border-left: solid 1px $grey-color;}
+    border-left: solid 1px $light-grey-color;}
 .right-border {
-    border-right: solid 1px $grey-color;}
+    border-right: solid 1px $light-grey-color;}
 .border {
     border: solid 1px rgba(0,0,0,.1);}
 .inline {

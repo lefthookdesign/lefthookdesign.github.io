@@ -2,6 +2,12 @@
   var projects = [
     {
       "title": "Logo & Branding",
+      "subtitle":"Still I Rise Greenhouse",
+      "thumbnail": "/work/stillirise-logo/featured-tile.png",
+      "link": "/work/stillirise-logo.html"
+    },
+    {
+      "title": "Logo & Branding",
       "subtitle":"Body Vitality",
       "thumbnail": "/work/bodyvitality-logo/featured-tile.png",
       "link": "/work/bodyvitality-logo.html"

@@ -3126,12 +3126,12 @@ Main site content
 }
 
 .grey-color {
-  color: #A0A8C7;
-  fill: #A0A8C7;
+  color: #C1C2C7;
+  fill: #C1C2C7;
 }
 
 .grey-bg {
-  background: #A0A8C7;
+  background: #C1C2C7;
 }
 
 .dark-grey-color {
@@ -3185,11 +3185,8 @@ body img::before, body img::after {
 }
 
 .footer {
-  background: -webkit-linear-gradient(0deg, #0E0F34, #3F3392);
-  background: -o-linear-gradient(0deg, #0E0F34, #3F3392);
-  background: -moz-linear-gradient(0deg, #0E0F34, #3F3392);
-  background: linear-gradient(0deg, #0E0F34, #3F3392);
-  color: #A0A8C7 !important;
+  background: #1e1848;
+  color: #C1C2C7 !important;
   position: relative;
   z-index: 1;
 }
@@ -3765,7 +3762,7 @@ i.extra-large {
   padding: 15px;
   opacity: 1;
   border-bottom: none;
-  color: #3F3392 !important;
+  color: #1e1848 !important;
 }
 .nav.scrolled .link:hover {
   -webkit-transition: all 0.5s ease-in-out;
@@ -3844,8 +3841,9 @@ i.extra-large {
 input, textarea {
   background: rgba(255, 255, 255, 0.27);
   color: #fff;
-  font-size: 24px;
-  font-weight: 300;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
   line-height: 2em;
   border: none;
   padding: 5px 30px;
@@ -4257,15 +4255,15 @@ i.sm-icon {
 }
 
 .bottom-border {
-  border-bottom: solid 1px #A0A8C7;
+  border-bottom: solid 1px #fafafa;
 }
 
 .left-border {
-  border-left: solid 1px #A0A8C7;
+  border-left: solid 1px #fafafa;
 }
 
 .right-border {
-  border-right: solid 1px #A0A8C7;
+  border-right: solid 1px #fafafa;
 }
 
 .border {
