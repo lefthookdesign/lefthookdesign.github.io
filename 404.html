@@ -19,21 +19,19 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
-    
-<div id="landing-hero" class="light-grey-bg full-width">
-    <div id="nav" class="nav nav-scrolled"></div>
-    <div class="max-width sm-padding primary-color">
-        <div class="row primary-color full-width full-height center-xs middle-xs" style="background-image: url(assets/img/ufo-middle.svg); background-repeat: no-repeat; background-position: center; background-size: 50%;">
-            <div class="col-xs-12 col-sm-4 sm-padding">
-                <h1 class="sm-padding"><b>404</b></h1>
-                <h4 class="sm-padding">The page you're looking for doesn't seem to exist.</h4>
-            </div>
-        </div>
+<div id="nav" class="nav full-width center-align hide-for-small scrolled"></div>
+<div id="nav-mobile" class="nav full-width center-align show-for-small scrolled"></div>
+
+<div id="landing-hero" class="full-width">
+    <div class="max-width center-xs sm-padding primary-color">
+      <img src="assets/img/ufo.png" class="full-width md-padding" style="max-width: 400px;"/>
+        <h1 class="sm-padding"><b>404</b></h1>
+        <h4 class="sm-padding">The page you're looking for doesn't seem to exist.</h4>
     </div>
 </div>
 
 <div id="footer"></div>
-    
+
 <script>
     $("#nav").load("closet/header.html");
     $("#footer").load("closet/footer.html");
@@ -52,6 +50,6 @@ $(function(){
     })
 })
 </script>
-        
+
 </body>
 </doctype>
