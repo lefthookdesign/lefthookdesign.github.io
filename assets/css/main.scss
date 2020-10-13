@@ -600,12 +600,13 @@ i.extra-large {
   .link{
       @include transition;
       display: inline-block;
-      font-size: 0.9em;
+      font-size: 14px;
       letter-spacing: 0.06em;
       padding: $sm;
       opacity: .85;
       border-bottom: none;
       color: $white-color;
+      text-transform: uppercase;
   }
 
   .active{
@@ -668,7 +669,6 @@ i.extra-large {
     .link{
         @include transition;
         display: inline-block;
-        font-size: 0.9em;
         letter-spacing: 0.06em;
         padding: $sm;
         opacity: 1;
@@ -725,7 +725,6 @@ i.extra-large {
     .link{
         @include transition;
         display: inline-block;
-        font-size: 0.9em;
         letter-spacing: 0.06em;
         padding: $sm;
         opacity: 1;
