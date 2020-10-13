@@ -3116,6 +3116,15 @@ Main site content
   background: #FF4080;
 }
 
+.teal-color {
+  color: #10CFD7;
+  fill: #10CFD7;
+}
+
+.teal-bg {
+  background: #10CFD7;
+}
+
 .light-grey-color {
   color: #fafafa;
   fill: #fafafa;
