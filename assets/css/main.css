@@ -3659,7 +3659,7 @@ i.extra-large {
   transition: all 0.5s ease-in-out;
   display: inline-block;
   font-size: 14px;
-  letter-spacing: 0.06em;
+  letter-spacing: 1px;
   padding: 15px;
   opacity: 0.85;
   border-bottom: none;
@@ -3698,6 +3698,7 @@ i.extra-large {
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
+  letter-spacing: 1px;
 }
 .nav .button:hover {
   background: #FF4080;
@@ -3919,25 +3920,26 @@ input, textarea {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  color: #3F3392;
+  color: #FF4080;
 }
 .button-text i {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
   top: 5px;
+  color: #FF4080;
 }
 
 .button-text:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #FF4080 !important;
+  color: #3F3392 !important;
 }
 .button-text:hover i {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin-left: 4px;
-  color: #FF4080;
+  color: #3F3392;
 }
 
 .button-white {

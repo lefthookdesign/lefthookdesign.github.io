@@ -601,7 +601,7 @@ i.extra-large {
       @include transition;
       display: inline-block;
       font-size: 14px;
-      letter-spacing: 0.06em;
+      letter-spacing: 1px;
       padding: $sm;
       opacity: .85;
       border-bottom: none;
@@ -650,6 +650,7 @@ i.extra-large {
     color: $white-color;
     text-transform: uppercase;
     font-size: 13px;
+    letter-spacing: 1px;
   }
   .button:hover {
       background: $accent-color;
@@ -842,20 +843,21 @@ input, textarea {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    color: $primary-color;
+    color: $accent-color;
     i {
-        @include transition;
-        position: relative;
-        top: 5px;
-        }
+      @include transition;
+      position: relative;
+      top: 5px;
+      color: $accent-color;
+    }
 }
 .button-text:hover{
     @include transition;
-    color: $accent-color !important;
+    color: $primary-color !important;
     i {
-        @include transition;
-        margin-left: 4px;
-        color: $accent-color;
+      @include transition;
+      margin-left: 4px;
+      color: $primary-color;
     }
 }
 
