@@ -600,8 +600,9 @@ i.extra-large {
   .link{
       @include transition;
       display: inline-block;
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 1px;
+      font-weight: 700;
       padding: $sm;
       opacity: .85;
       border-bottom: none;
@@ -649,8 +650,9 @@ i.extra-large {
     background: $accent-color;
     color: $white-color;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
+    font-weight: 700;
   }
   .button:hover {
       background: $accent-color;

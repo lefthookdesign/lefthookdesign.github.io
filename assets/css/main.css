@@ -3658,8 +3658,9 @@ i.extra-large {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
+  font-weight: 700;
   padding: 15px;
   opacity: 0.85;
   border-bottom: none;
@@ -3697,8 +3698,9 @@ i.extra-large {
   background: #FF4080;
   color: #fff;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 .nav .button:hover {
   background: #FF4080;
