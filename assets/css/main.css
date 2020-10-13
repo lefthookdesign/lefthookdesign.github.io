@@ -3216,11 +3216,20 @@ body img::before, body img::after {
 .bw {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 a .bw:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+a h4:hover {
+  color: #6B96FF;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #hero.bg-image {

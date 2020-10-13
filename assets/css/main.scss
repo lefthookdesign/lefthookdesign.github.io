@@ -225,11 +225,20 @@ body {
 .bw {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    @include transition;
 }
-a .bw:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+a {
+  .bw:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    @include transition;
+  }
+  h4:hover {
+    color: $secondary-color;
+    @include transition;
+  }
 }
+
 #hero.bg-image {
     background-size: cover;
     background-position: center;
