@@ -648,6 +648,8 @@ i.extra-large {
   .button {
     background: $accent-color;
     color: $white-color;
+    text-transform: uppercase;
+    font-size: 13px;
   }
   .button:hover {
       background: $accent-color;
