@@ -3220,18 +3220,19 @@ body img::before, body img::after {
   transition: all 0.5s ease-in-out;
 }
 
-a .bw:hover {
+.service h4 {
+  color: #767483;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+a.service:hover .bw {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-a h4 {
-  color: #767483;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-a h4:hover {
+a.service:hover h4 {
   color: #6B96FF;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;

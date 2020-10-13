@@ -227,17 +227,17 @@ body {
     filter: grayscale(100%);
     @include transition;
 }
-a {
-  .bw:hover {
+.service h4{
+  color: $dark-grey-color;
+  @include transition;
+}
+a.service:hover {
+  .bw {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     @include transition;
   }
-  h4{
-    color: $dark-grey-color;
-    @include transition;
-  }
-  h4:hover {
+  h4 {
     color: $secondary-color;
     @include transition;
   }
