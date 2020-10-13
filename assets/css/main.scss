@@ -233,6 +233,10 @@ a {
     filter: grayscale(0%);
     @include transition;
   }
+  h4{
+    color: $dark-grey-color;
+    @include transition;
+  }
   h4:hover {
     color: $secondary-color;
     @include transition;

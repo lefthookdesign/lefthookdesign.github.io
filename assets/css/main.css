@@ -3226,6 +3226,11 @@ a .bw:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+a h4 {
+  color: #767483;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 a h4:hover {
   color: #6B96FF;
   -webkit-transition: all 0.5s ease-in-out;
